@@ -65,7 +65,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseLayerManagement_1 = require("../script/management/BaseLayerManagement");
+var LayerManagement_1 = require("../script/management/LayerManagement");
+var LoadManagement_1 = require("../script/management/LoadManagement");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var HallMain = /** @class */ (function (_super) {
     __extends(HallMain, _super);
@@ -75,8 +76,15 @@ var HallMain = /** @class */ (function (_super) {
     HallMain.prototype.onLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                BaseLayerManagement_1.BaseLayerManagement.instance.init(this.node, { height: 750, width: 1334 });
-                return [2 /*return*/];
+                switch (_a.label) {
+                    case 0:
+                        LayerManagement_1.LayerManagement.instance.init(this.node, { height: 720, width: 1280 });
+                        return [4 /*yield*/, LoadManagement_1.default.install.loadPrefab("prefabAB", "carPrefab")];
+                    case 1:
+                        _a.sent();
+                        LayerManagement_1.LayerManagement.instance.addNode(LayerManagement_1.LayerType.UI, LoadManagement_1.default.install.getLoadList().get("carPrefab"), "CarPrefabV");
+                        return [2 /*return*/];
+                }
             });
         });
     };

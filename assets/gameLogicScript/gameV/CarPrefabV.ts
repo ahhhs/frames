@@ -11,6 +11,6 @@ const { ccclass, property } = cc._decorator;
 export class CarPrefabV extends cc.Component {
 
     public init() {
-        console.log("初始化了");
+        console.log("init", this.node.width, this.node.height);
     }
 }

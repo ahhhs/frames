@@ -37,7 +37,7 @@ var CarPrefabV = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     CarPrefabV.prototype.init = function () {
-        console.log("初始化了");
+        console.log("init", this.node.width, this.node.height);
     };
     CarPrefabV = __decorate([
         ccclass

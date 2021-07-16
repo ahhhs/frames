@@ -5,6 +5,7 @@
  */
 
 import AdaptiveComm from '../common/AdaptiveComm';
+import AdaptiveComms from '../common/AdaptiveComms';
 
 export enum LayerType {
     "UI",
@@ -19,16 +20,16 @@ export class NodeSize {
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export class BaseLayerManagement {
+export class LayerManagement {
 
-    private static _instance: BaseLayerManagement;
+    private static _instance: LayerManagement;
     private root: cc.Node = undefined;
     private rootZIndex: 0;
     private size: NodeSize;
     public static get instance() {
 
         if (!this._instance) {
-            this._instance = new BaseLayerManagement();
+            this._instance = new LayerManagement();
         }
         return this._instance;
     }
@@ -65,7 +66,7 @@ export class BaseLayerManagement {
         node.name = string + "Layer";
         node.width = this.size.width;
         node.height = this.size.height;
-        node.addComponent(AdaptiveComm);
+        node.addComponent(AdaptiveComms).init();
         this.root.addChild(node, this.rootZIndex++);
     }
     /**
@@ -93,6 +94,9 @@ export class BaseLayerManagement {
         let nodes: cc.Node = cc.instantiate(node);
         nodes.addComponent(script).init();
         nodes.zIndex = ZIndex;
-        BaseLayerManagement.instance.getLayer(LayerType[parentNode]).addChild(nodes);
+        this.getLayer(LayerType[parentNode]).addChild(nodes);
+        if (nodes.getComponent(cc.Widget)) {
+            nodes.getComponent(cc.Widget).alignMode = cc.Widget.AlignMode.ONCE;
+        }
     }
 }

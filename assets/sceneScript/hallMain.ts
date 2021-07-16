@@ -5,7 +5,7 @@
  * Description:
  */
 
-import { BaseLayerManagement, LayerType } from '../script/management/BaseLayerManagement';
+import { LayerManagement, LayerType } from '../script/management/LayerManagement';
 import LoadManagement from '../script/management/LoadManagement';
 
 const { ccclass, property } = cc._decorator;
@@ -14,7 +14,9 @@ const { ccclass, property } = cc._decorator;
 export default class HallMain extends cc.Component {
 
     async onLoad() {
-        BaseLayerManagement.instance.init(this.node, { height: 750, width: 1334 });
-        
+
+        LayerManagement.instance.init(this.node, { height: 720, width: 1280 });
+        await LoadManagement.install.loadPrefab("prefabAB", "carPrefab");
+        LayerManagement.instance.addNode(LayerType.UI, LoadManagement.install.getLoadList().get("carPrefab"), "CarPrefabV");
     }
 }

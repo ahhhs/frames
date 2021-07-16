@@ -18,9 +18,9 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 312,
+                "height": 311.171875,
                 "type": "panel",
-                "width": 225
+                "width": 266
               },
               {
                 "active": 0,
@@ -28,14 +28,14 @@
                   "assets",
                   "cloud-function"
                 ],
-                "height": 587,
+                "height": 585.3125,
                 "type": "panel",
-                "width": 225
+                "width": 266
               }
             ],
-            "height": 902,
+            "height": 899.5,
             "type": "dock-v",
-            "width": 225
+            "width": 266
           },
           {
             "active": 0,
@@ -44,9 +44,9 @@
               "cocos-services",
               "node-library"
             ],
-            "height": 902,
+            "height": 899.5,
             "type": "panel",
-            "width": 304
+            "width": 414
           },
           {
             "children": [
@@ -55,9 +55,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 633,
+                "height": 630.5,
                 "type": "panel",
-                "width": 1385
+                "width": 1234
               },
               {
                 "active": 0,
@@ -68,12 +68,12 @@
                 ],
                 "height": 266,
                 "type": "panel",
-                "width": 1385
+                "width": 1234
               }
             ],
-            "height": 902,
+            "height": 899.5,
             "type": "dock-v",
-            "width": 1385
+            "width": 1234
           }
         ],
         "type": "dock-h"
@@ -90,7 +90,8 @@
         "timeline",
         "game-window"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {},
   "panelLabelWidth": {
