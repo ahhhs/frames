@@ -10,10 +10,12 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}
-require('./assets/demo/demo');
+require('./assets/hall/TestPrefabUI');
+require('./assets/hall/demo');
 require('./assets/script/common/AdaptiveComm');
 require('./assets/script/common/GameBase');
 require('./assets/script/management/BaseLayerManagement');
+require('./assets/script/management/LoadManagement');
 
                     }
                     if (nodeEnv) {

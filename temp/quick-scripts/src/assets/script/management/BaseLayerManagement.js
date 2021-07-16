@@ -50,9 +50,16 @@ var BaseLayerManagement = /** @class */ (function () {
         this.initData(size);
         this.addLayerMain();
     };
+    /**
+     * 初始化参数
+     * @param size
+     */
     BaseLayerManagement.prototype.initData = function (size) {
         this.size = size;
     };
+    /**
+     * 添加层级入口
+     */
     BaseLayerManagement.prototype.addLayerMain = function () {
         for (var i = 0; i < Object.values(LayerType).length / 2; i++) {
             this.addLayer(LayerType[i]);
@@ -77,8 +84,24 @@ var BaseLayerManagement = /** @class */ (function () {
     BaseLayerManagement.prototype.getLayer = function (name) {
         return this.root.getChildByName(name + "Layer");
     };
+    /**
+     * 获得根节点
+     * @returns
+     */
     BaseLayerManagement.prototype.getRootNode = function () {
         return this.root;
+    };
+    /**
+     * 层级添加node
+     * @param parentNode 父节点
+     * @param node 目标节点
+     * @param script 目标脚本
+     */
+    BaseLayerManagement.prototype.addNode = function (parentNode, node, script, ZIndex) {
+        if (ZIndex === void 0) { ZIndex = 0; }
+        var nodes = cc.instantiate(node);
+        nodes.addComponent(script).init();
+        BaseLayerManagement_1.instance.getLayer(LayerType[parentNode]).addChild(nodes);
     };
     var BaseLayerManagement_1;
     BaseLayerManagement = BaseLayerManagement_1 = __decorate([

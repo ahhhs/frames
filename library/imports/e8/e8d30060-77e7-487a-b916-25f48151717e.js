@@ -4,10 +4,9 @@ cc._RF.push(module, 'e8d30Bgd+dIerkWJfSBUXF+', 'AdaptiveComm');
 
 "use strict";
 /*
- * Copyright (C) 2021, Flickering Inc. All rights reserved.
- * Author: wenqianqin (wenqianqin@flickering.ai)
+ * Author: ahhh (new_q8@163.com)
  *
- * Description:
+ * Description: 适配脚本
  */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {

@@ -38,13 +38,17 @@ export class BaseLayerManagement {
         this.initData(size);
         this.addLayerMain();
     }
-
+    /**
+     * 初始化参数
+     * @param size 
+     */
     private initData(size: NodeSize) {
         this.size = size;
     }
-
+    /**
+     * 添加层级入口
+     */
     private addLayerMain() {
-
         for (let i = 0; i < Object.values(LayerType).length / 2; i++) {
             this.addLayer(LayerType[i]);
         }
@@ -68,8 +72,23 @@ export class BaseLayerManagement {
     public getLayer(name: string) {
         return this.root.getChildByName(name + "Layer");
     }
-
+    /**
+     * 获得根节点
+     * @returns 
+     */
     public getRootNode() {
         return this.root;
+    }
+    /**
+     * 层级添加node
+     * @param parentNode 父节点
+     * @param node 目标节点
+     * @param script 目标脚本
+     */
+    public addNode(parentNode: number, node: cc.Node, script: string, ZIndex: number = 0) {
+        let nodes: cc.Node = cc.instantiate(node);
+        nodes.addComponent(script).init();
+        nodes.zIndex = ZIndex;
+        BaseLayerManagement.instance.getLayer(LayerType[parentNode]).addChild(nodes);
     }
 }
