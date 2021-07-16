@@ -1,80 +1,77 @@
-2021-07-16T07:30:30.631Z - normal: Load ~/.CocosCreator/settings.json
-2021-07-16T07:30:30.665Z - normal: Initializing Asset Database
-2021-07-16T07:30:30.667Z - normal: checking language setting...
-2021-07-16T07:30:30.667Z - normal: Language: zh
-2021-07-16T07:30:31.321Z - success: protocol editor-framework registered
-2021-07-16T07:30:31.321Z - success: protocol app registered
-2021-07-16T07:30:31.321Z - success: protocol theme registered
-2021-07-16T07:30:31.321Z - success: protocol packages registered
-2021-07-16T07:30:31.321Z - success: protocol uuid registerred
-2021-07-16T07:30:31.321Z - success: protocol db registerred
-2021-07-16T07:30:31.321Z - success: protocol thumbnail registerred
-2021-07-16T07:30:31.321Z - success: protocol unpack registerred
-2021-07-16T07:30:31.321Z - success: protocol disable-commonjs registerred
-2021-07-16T07:30:31.581Z - normal: connected!
-2021-07-16T07:30:31.582Z - normal: Check project /Users/tanwenqian/Desktop/frame/frames
-2021-07-16T07:30:31.583Z - normal: Initializing project /Users/tanwenqian/Desktop/frame/frames
-2021-07-16T07:30:31.692Z - success: adapters loaded
-2021-07-16T07:30:31.695Z - success: asset-db-debugger loaded
-2021-07-16T07:30:31.739Z - success: fb-audience-network loaded
-2021-07-16T07:30:31.759Z - success: fb-live-stream loaded
-2021-07-16T07:30:31.760Z - success: google-play-instant loaded
-2021-07-16T07:30:31.761Z - success: jsb-adapter loaded
-2021-07-16T07:30:31.763Z - success: package-manager loaded
-2021-07-16T07:30:31.764Z - success: runtime-adapters loaded
-2021-07-16T07:30:31.766Z - success: runtime-dev-tools loaded
-2021-07-16T07:30:31.768Z - success: ui-kit-preview-extra loaded
-2021-07-16T07:30:31.769Z - success: ui-kit-preview loaded
-2021-07-16T07:30:31.805Z - success: alipay-minigame loaded
-2021-07-16T07:30:31.856Z - success: assets loaded
-2021-07-16T07:30:31.857Z - success: baidugame-opendata loaded
-2021-07-16T07:30:31.858Z - success: baidugame loaded
-2021-07-16T07:30:31.860Z - success: builder loaded
-2021-07-16T07:30:31.862Z - success: bytedance-opendata loaded
-2021-07-16T07:30:31.863Z - success: bytedance loaded
-2021-07-16T07:30:31.865Z - success: channel-upload-tools loaded
-2021-07-16T07:30:31.868Z - success: cloud-function loaded
-2021-07-16T07:30:31.972Z - success: cocos-services loaded
-2021-07-16T07:30:31.975Z - success: console loaded
-2021-07-16T07:30:31.976Z - success: curve-editor loaded
-2021-07-16T07:30:31.984Z - success: fb-instant-games loaded
-2021-07-16T07:30:31.986Z - success: game-window loaded
-2021-07-16T07:30:31.986Z - success: google-instant-games loaded
-2021-07-16T07:30:31.989Z - success: hierarchy loaded
-2021-07-16T07:30:31.990Z - success: huawei-agc loaded
-2021-07-16T07:30:31.992Z - success: huawei-runtime loaded
-2021-07-16T07:30:31.995Z - success: inspector loaded
-2021-07-16T07:30:32.005Z - success: cpk-publish loaded
-2021-07-16T07:30:32.006Z - success: keystore loaded
-2021-07-16T07:30:32.016Z - success: link-sure-runtime loaded
-2021-07-16T07:30:32.023Z - success: node-library loaded
-2021-07-16T07:30:32.024Z - success: open-recent-items loaded
-2021-07-16T07:30:32.026Z - success: oppo-runtime loaded
-2021-07-16T07:30:32.027Z - success: package-asset loaded
-2021-07-16T07:30:32.028Z - success: preferences loaded
-2021-07-16T07:30:32.031Z - success: project-importer loaded
-2021-07-16T07:30:32.033Z - success: project-settings loaded
-2021-07-16T07:30:32.043Z - success: qtt-runtime loaded
-2021-07-16T07:30:32.045Z - success: scene loaded
-2021-07-16T07:30:32.046Z - success: simulator-debugger loaded
-2021-07-16T07:30:32.046Z - success: sprite-editor loaded
-2021-07-16T07:30:32.073Z - success: store loaded
-2021-07-16T07:30:32.076Z - success: timeline loaded
-2021-07-16T07:30:32.079Z - success: vivo-runtime loaded
-2021-07-16T07:30:32.081Z - success: wechatgame-opendata loaded
-2021-07-16T07:30:32.083Z - success: wechatgame loaded
-2021-07-16T07:30:32.085Z - success: xiaomi-runtime loaded
-2021-07-16T07:30:32.122Z - success: im-plugin loaded
-2021-07-16T07:30:32.125Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
-2021-07-16T07:30:32.125Z - success: preview server running at http://localhost:7457
-2021-07-16T07:30:34.009Z - info: Cocos Service load base data!
-2021-07-16T07:30:37.539Z - normal: Initializing Cocos2d
-2021-07-16T07:30:37.847Z - normal: Initializing engine extends
-2021-07-16T07:30:41.308Z - normal: Loading packages
-2021-07-16T07:30:41.311Z - normal: Watching packages
-2021-07-16T07:30:41.382Z - normal: Run Application
-2021-07-16T08:14:58.253Z - warn: The Asset used by node "testPrefabB" is missing. Detailed information:
-Node path: "testPrefabB"
-Missing uuid: "b4662474-2d99-4d79-ab79-7bb6564dd27a"
-
-2021-07-16T08:22:13.499Z - warn: 'demo.node' hides inherited property 'cc.Component.node'. To make the current property override that implementation, add the `override: true` attribute please.
+2021-07-16T09:36:33.938Z - normal: Load ~/.CocosCreator/settings.json
+2021-07-16T09:36:33.972Z - normal: Initializing Asset Database
+2021-07-16T09:36:33.974Z - normal: checking language setting...
+2021-07-16T09:36:33.974Z - normal: Language: zh
+2021-07-16T09:36:34.625Z - success: protocol editor-framework registered
+2021-07-16T09:36:34.625Z - success: protocol app registered
+2021-07-16T09:36:34.625Z - success: protocol theme registered
+2021-07-16T09:36:34.625Z - success: protocol packages registered
+2021-07-16T09:36:34.625Z - success: protocol uuid registerred
+2021-07-16T09:36:34.625Z - success: protocol db registerred
+2021-07-16T09:36:34.625Z - success: protocol thumbnail registerred
+2021-07-16T09:36:34.626Z - success: protocol unpack registerred
+2021-07-16T09:36:34.626Z - success: protocol disable-commonjs registerred
+2021-07-16T09:36:34.932Z - normal: connected!
+2021-07-16T09:36:34.933Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
+2021-07-16T09:36:34.934Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
+2021-07-16T09:36:35.037Z - success: adapters loaded
+2021-07-16T09:36:35.041Z - success: asset-db-debugger loaded
+2021-07-16T09:36:35.079Z - success: fb-audience-network loaded
+2021-07-16T09:36:35.096Z - success: fb-live-stream loaded
+2021-07-16T09:36:35.098Z - success: google-play-instant loaded
+2021-07-16T09:36:35.099Z - success: jsb-adapter loaded
+2021-07-16T09:36:35.101Z - success: package-manager loaded
+2021-07-16T09:36:35.102Z - success: runtime-adapters loaded
+2021-07-16T09:36:35.103Z - success: runtime-dev-tools loaded
+2021-07-16T09:36:35.105Z - success: ui-kit-preview-extra loaded
+2021-07-16T09:36:35.107Z - success: ui-kit-preview loaded
+2021-07-16T09:36:35.142Z - success: alipay-minigame loaded
+2021-07-16T09:36:35.189Z - success: assets loaded
+2021-07-16T09:36:35.191Z - success: baidugame-opendata loaded
+2021-07-16T09:36:35.192Z - success: baidugame loaded
+2021-07-16T09:36:35.193Z - success: builder loaded
+2021-07-16T09:36:35.195Z - success: bytedance-opendata loaded
+2021-07-16T09:36:35.197Z - success: bytedance loaded
+2021-07-16T09:36:35.198Z - success: channel-upload-tools loaded
+2021-07-16T09:36:35.202Z - success: cloud-function loaded
+2021-07-16T09:36:35.304Z - success: cocos-services loaded
+2021-07-16T09:36:35.307Z - success: console loaded
+2021-07-16T09:36:35.308Z - success: curve-editor loaded
+2021-07-16T09:36:35.317Z - success: fb-instant-games loaded
+2021-07-16T09:36:35.319Z - success: game-window loaded
+2021-07-16T09:36:35.319Z - success: google-instant-games loaded
+2021-07-16T09:36:35.321Z - success: hierarchy loaded
+2021-07-16T09:36:35.323Z - success: huawei-agc loaded
+2021-07-16T09:36:35.325Z - success: huawei-runtime loaded
+2021-07-16T09:36:35.327Z - success: inspector loaded
+2021-07-16T09:36:35.338Z - success: cpk-publish loaded
+2021-07-16T09:36:35.338Z - success: keystore loaded
+2021-07-16T09:36:35.349Z - success: link-sure-runtime loaded
+2021-07-16T09:36:35.357Z - success: node-library loaded
+2021-07-16T09:36:35.357Z - success: open-recent-items loaded
+2021-07-16T09:36:35.360Z - success: oppo-runtime loaded
+2021-07-16T09:36:35.361Z - success: package-asset loaded
+2021-07-16T09:36:35.362Z - success: preferences loaded
+2021-07-16T09:36:35.365Z - success: project-importer loaded
+2021-07-16T09:36:35.367Z - success: project-settings loaded
+2021-07-16T09:36:35.378Z - success: qtt-runtime loaded
+2021-07-16T09:36:35.381Z - success: scene loaded
+2021-07-16T09:36:35.382Z - success: simulator-debugger loaded
+2021-07-16T09:36:35.382Z - success: sprite-editor loaded
+2021-07-16T09:36:35.409Z - success: store loaded
+2021-07-16T09:36:35.412Z - success: timeline loaded
+2021-07-16T09:36:35.415Z - success: vivo-runtime loaded
+2021-07-16T09:36:35.416Z - success: wechatgame-opendata loaded
+2021-07-16T09:36:35.418Z - success: wechatgame loaded
+2021-07-16T09:36:35.420Z - success: xiaomi-runtime loaded
+2021-07-16T09:36:35.455Z - success: im-plugin loaded
+2021-07-16T09:36:35.457Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
+2021-07-16T09:36:35.458Z - success: preview server running at http://localhost:7457
+2021-07-16T09:36:37.186Z - info: Cocos Service load base data!
+2021-07-16T09:36:40.794Z - normal: Initializing Cocos2d
+2021-07-16T09:36:41.035Z - normal: Initializing engine extends
+2021-07-16T09:36:43.648Z - warn: [db-task][init] Backup unused meta file: db://assets/config.meta
+2021-07-16T09:36:43.649Z - warn: [db-task][init] Backup unused meta file: db://assets/resources.meta
+2021-07-16T09:36:53.322Z - normal: Loading packages
+2021-07-16T09:36:53.324Z - normal: Watching packages
+2021-07-16T09:36:53.385Z - normal: Run Application

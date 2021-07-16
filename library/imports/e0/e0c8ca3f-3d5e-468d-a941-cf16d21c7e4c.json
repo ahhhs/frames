@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "block_shadow_3",
+    "texture": "7f250217-792b-4c81-be22-cdf33caffdce",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      110,
+      120
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      110,
+      120
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
