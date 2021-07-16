@@ -574,24 +574,24 @@
     "meta": 1626423762374,
     "relativePath": "scene/demo.fire"
   },
-  "5a59af37-8bbd-4647-bd84-448c84e9311b": {
-    "asset": 1626424143625,
-    "meta": 1626424196962,
-    "relativePath": "script/management/LoadManagement.ts"
-  },
   "fd93e606-50fe-4cee-be8d-fcacff14987b": {
     "asset": 1626425340469,
     "meta": 1626425776849,
     "relativePath": "hall/TestPrefabUI.ts"
   },
   "d9c63729-0f19-4d2d-a3f9-330ca7642418": {
-    "asset": 1626425800824,
-    "meta": 1626425805186,
+    "asset": 1626425978872,
+    "meta": 1626426363598,
     "relativePath": "hall/demo.ts"
   },
   "7448a832-0f6b-43e2-b7b8-8e2cccac6046": {
-    "asset": 1626425912378,
-    "meta": 1626425915390,
+    "asset": 1626426089731,
+    "meta": 1626426363630,
     "relativePath": "script/management/BaseLayerManagement.ts"
+  },
+  "5a59af37-8bbd-4647-bd84-448c84e9311b": {
+    "asset": 1626425968007,
+    "meta": 1626426363652,
+    "relativePath": "script/management/LoadManagement.ts"
   }
 }

@@ -101,6 +101,7 @@ var BaseLayerManagement = /** @class */ (function () {
         if (ZIndex === void 0) { ZIndex = 0; }
         var nodes = cc.instantiate(node);
         nodes.addComponent(script).init();
+        nodes.zIndex = ZIndex;
         BaseLayerManagement_1.instance.getLayer(LayerType[parentNode]).addChild(nodes);
     };
     var BaseLayerManagement_1;

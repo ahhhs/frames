@@ -85,9 +85,6 @@ var NewClass = /** @class */ (function (_super) {
                         return [4 /*yield*/, LoadManagement_1.default.install.loadPrefabs("prefabAB", "prefabArr")];
                     case 2:
                         _a.sent();
-                        // let node: cc.Node = cc.instantiate(LoadManagement.install.getLoadList().get("testPrefab"));
-                        // node.addComponent("TestPrefabUI");
-                        // BaseLayerManagement.instance.getLayer(LayerType[LayerType.UI]).addChild(node)
                         BaseLayerManagement_1.BaseLayerManagement.instance.addNode(BaseLayerManagement_1.LayerType.UI, LoadManagement_1.default.install.getLoadList().get("testPrefab"), "TestPrefabUI");
                         return [2 /*return*/];
                 }
