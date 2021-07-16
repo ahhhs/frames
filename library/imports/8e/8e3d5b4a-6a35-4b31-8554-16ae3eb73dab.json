@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zhaozi_4_0",
+    "texture": "695b33da-0c88-4f39-ac7e-707d1849a0ac",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      440,
+      370
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      440,
+      370
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

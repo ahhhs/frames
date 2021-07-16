@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_topic4_2",
+    "texture": "9e524e55-29ec-4e5f-a525-6d2ee4993735",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1280,
+      1580
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1280,
+      1580
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

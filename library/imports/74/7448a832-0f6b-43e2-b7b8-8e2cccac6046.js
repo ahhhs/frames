@@ -45,6 +45,11 @@ var BaseLayerManagement = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    /**
+     * 初始化
+     * @param node 根节点
+     * @param size 屏幕大小
+     */
     BaseLayerManagement.prototype.init = function (node, size) {
         this.root = node;
         this.initData(size);
