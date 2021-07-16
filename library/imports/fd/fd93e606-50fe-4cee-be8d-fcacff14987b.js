@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'd9c63cpDxlNLaP5MwynZCQY', 'demo');
-// demo/demo.ts
+cc._RF.push(module, 'fd93eYGUP5M7r6N/Kz/FJh7', 'TestPrefabUI');
+// hall/TestPrefabUI.ts
 
 "use strict";
 /*
@@ -29,21 +29,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseLayerManagement_1 = require("../script/management/BaseLayerManagement");
+exports.TestPrefabUI = void 0;
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
+var TestPrefabUI = /** @class */ (function (_super) {
+    __extends(TestPrefabUI, _super);
+    function TestPrefabUI() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    NewClass.prototype.onLoad = function () {
-        BaseLayerManagement_1.BaseLayerManagement.instance.init(this.node, { height: 750, width: 1334 });
+    TestPrefabUI.prototype.init = function () {
+        console.log("初始化了");
     };
-    NewClass = __decorate([
+    TestPrefabUI = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
+    ], TestPrefabUI);
+    return TestPrefabUI;
 }(cc.Component));
-exports.default = NewClass;
+exports.TestPrefabUI = TestPrefabUI;
 
 cc._RF.pop();

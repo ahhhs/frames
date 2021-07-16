@@ -2,7 +2,7 @@
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/demo/demo.js';
+                    var __filename = 'preview-scripts/assets/hall/TestPrefabUI.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
                     } : function (request) {
@@ -10,8 +10,8 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, 'd9c63cpDxlNLaP5MwynZCQY', 'demo');
-// demo/demo.ts
+cc._RF.push(module, 'fd93eYGUP5M7r6N/Kz/FJh7', 'TestPrefabUI');
+// hall/TestPrefabUI.ts
 
 "use strict";
 /*
@@ -40,22 +40,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var BaseLayerManagement_1 = require("../script/management/BaseLayerManagement");
+exports.TestPrefabUI = void 0;
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var NewClass = /** @class */ (function (_super) {
-    __extends(NewClass, _super);
-    function NewClass() {
+var TestPrefabUI = /** @class */ (function (_super) {
+    __extends(TestPrefabUI, _super);
+    function TestPrefabUI() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    NewClass.prototype.onLoad = function () {
-        BaseLayerManagement_1.BaseLayerManagement.instance.init(this.node, { height: 750, width: 1334 });
+    TestPrefabUI.prototype.init = function () {
+        console.log("初始化了");
     };
-    NewClass = __decorate([
+    TestPrefabUI = __decorate([
         ccclass
-    ], NewClass);
-    return NewClass;
+    ], TestPrefabUI);
+    return TestPrefabUI;
 }(cc.Component));
-exports.default = NewClass;
+exports.TestPrefabUI = TestPrefabUI;
 
 cc._RF.pop();
                     }
@@ -68,4 +68,4 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9kZW1vL2RlbW8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBOzs7OztHQUtHOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFSCxnRkFBK0U7QUFFekUsSUFBQSxLQUF3QixFQUFFLENBQUMsVUFBVSxFQUFuQyxPQUFPLGFBQUEsRUFBRSxRQUFRLGNBQWtCLENBQUM7QUFHNUM7SUFBc0MsNEJBQVk7SUFBbEQ7O0lBS0EsQ0FBQztJQUpHLHlCQUFNLEdBQU47UUFDSSx5Q0FBbUIsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxJQUFJLEVBQUUsRUFBRSxNQUFNLEVBQUUsR0FBRyxFQUFFLEtBQUssRUFBRSxJQUFJLEVBQUUsQ0FBQyxDQUFDO0lBRS9FLENBQUM7SUFKZ0IsUUFBUTtRQUQ1QixPQUFPO09BQ2EsUUFBUSxDQUs1QjtJQUFELGVBQUM7Q0FMRCxBQUtDLENBTHFDLEVBQUUsQ0FBQyxTQUFTLEdBS2pEO2tCQUxvQixRQUFRIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIENvcHlyaWdodCAoQykgMjAyMSwgRmxpY2tlcmluZyBJbmMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuXG4gKiBBdXRob3I6IHdlbnFpYW5xaW4gKHdlbnFpYW5xaW5AZmxpY2tlcmluZy5haSlcbiAqXG4gKiBEZXNjcmlwdGlvbjpcbiAqL1xuXG5pbXBvcnQgeyBCYXNlTGF5ZXJNYW5hZ2VtZW50IH0gZnJvbSAnLi4vc2NyaXB0L21hbmFnZW1lbnQvQmFzZUxheWVyTWFuYWdlbWVudCc7XG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBOZXdDbGFzcyBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG4gICAgb25Mb2FkKCkge1xuICAgICAgICBCYXNlTGF5ZXJNYW5hZ2VtZW50Lmluc3RhbmNlLmluaXQodGhpcy5ub2RlLCB7IGhlaWdodDogNzUwLCB3aWR0aDogMTMzNCB9KTtcbiAgICAgICAgXG4gICAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9oYWxsL1Rlc3RQcmVmYWJVSS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7Ozs7O0dBS0c7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFRyxJQUFBLEtBQXdCLEVBQUUsQ0FBQyxVQUFVLEVBQW5DLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBa0IsQ0FBQztBQUc1QztJQUFrQyxnQ0FBWTtJQUE5Qzs7SUFLQSxDQUFDO0lBSFUsMkJBQUksR0FBWDtRQUNJLE9BQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7SUFDeEIsQ0FBQztJQUpRLFlBQVk7UUFEeEIsT0FBTztPQUNLLFlBQVksQ0FLeEI7SUFBRCxtQkFBQztDQUxELEFBS0MsQ0FMaUMsRUFBRSxDQUFDLFNBQVMsR0FLN0M7QUFMWSxvQ0FBWSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBDb3B5cmlnaHQgKEMpIDIwMjEsIEZsaWNrZXJpbmcgSW5jLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICogQXV0aG9yOiB3ZW5xaWFucWluICh3ZW5xaWFucWluQGZsaWNrZXJpbmcuYWkpXG4gKlxuICogRGVzY3JpcHRpb246XG4gKi9cblxuY29uc3QgeyBjY2NsYXNzLCBwcm9wZXJ0eSB9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbmV4cG9ydCBjbGFzcyBUZXN0UHJlZmFiVUkgZXh0ZW5kcyBjYy5Db21wb25lbnQge1xuXG4gICAgcHVibGljIGluaXQoKSB7XG4gICAgICAgIGNvbnNvbGUubG9nKFwi5Yid5aeL5YyW5LqGXCIpO1xuICAgIH1cbn1cbiJdfQ==
