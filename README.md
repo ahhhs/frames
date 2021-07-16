@@ -4,7 +4,7 @@
 1. LoadManagement
 2. BaseLayerManagement
 
-### 2021.7.16
+### 2021.7.16
 
 1. 新增了适配脚本
 2. 新增了层级管理器
