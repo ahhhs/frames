@@ -32,7 +32,11 @@ export class BaseLayerManagement {
         }
         return this._instance;
     }
-
+    /**
+     * 初始化
+     * @param node 根节点
+     * @param size 屏幕大小
+     */
     public init(node: cc.Node, size: NodeSize) {
         this.root = node;
         this.initData(size);
