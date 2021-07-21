@@ -1,152 +1,259 @@
-2021-07-16T11:52:24.315Z - normal: Load ~/.CocosCreator/settings.json
-2021-07-16T11:52:24.346Z - normal: Initializing Asset Database
-2021-07-16T11:52:24.348Z - normal: checking language setting...
-2021-07-16T11:52:24.348Z - normal: Language: zh
-2021-07-16T11:52:24.920Z - success: protocol editor-framework registered
-2021-07-16T11:52:24.920Z - success: protocol app registered
-2021-07-16T11:52:24.920Z - success: protocol theme registered
-2021-07-16T11:52:24.920Z - success: protocol packages registered
-2021-07-16T11:52:24.920Z - success: protocol uuid registerred
-2021-07-16T11:52:24.920Z - success: protocol db registerred
-2021-07-16T11:52:24.920Z - success: protocol thumbnail registerred
-2021-07-16T11:52:24.921Z - success: protocol unpack registerred
-2021-07-16T11:52:24.921Z - success: protocol disable-commonjs registerred
-2021-07-16T11:52:25.104Z - normal: connected!
-2021-07-16T11:52:25.105Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
-2021-07-16T11:52:25.106Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
-2021-07-16T11:52:25.200Z - success: adapters loaded
-2021-07-16T11:52:25.203Z - success: asset-db-debugger loaded
-2021-07-16T11:52:25.240Z - success: fb-audience-network loaded
-2021-07-16T11:52:25.260Z - success: fb-live-stream loaded
-2021-07-16T11:52:25.262Z - success: google-play-instant loaded
-2021-07-16T11:52:25.262Z - success: jsb-adapter loaded
-2021-07-16T11:52:25.265Z - success: package-manager loaded
-2021-07-16T11:52:25.265Z - success: runtime-adapters loaded
-2021-07-16T11:52:25.267Z - success: runtime-dev-tools loaded
-2021-07-16T11:52:25.269Z - success: ui-kit-preview-extra loaded
-2021-07-16T11:52:25.270Z - success: ui-kit-preview loaded
-2021-07-16T11:52:25.308Z - success: alipay-minigame loaded
-2021-07-16T11:52:25.355Z - success: assets loaded
-2021-07-16T11:52:25.357Z - success: baidugame-opendata loaded
-2021-07-16T11:52:25.357Z - success: baidugame loaded
-2021-07-16T11:52:25.359Z - success: builder loaded
-2021-07-16T11:52:25.360Z - success: bytedance-opendata loaded
-2021-07-16T11:52:25.361Z - success: bytedance loaded
-2021-07-16T11:52:25.364Z - success: channel-upload-tools loaded
-2021-07-16T11:52:25.366Z - success: cloud-function loaded
-2021-07-16T11:52:25.466Z - success: cocos-services loaded
-2021-07-16T11:52:25.469Z - success: console loaded
-2021-07-16T11:52:25.470Z - success: curve-editor loaded
-2021-07-16T11:52:25.477Z - success: fb-instant-games loaded
-2021-07-16T11:52:25.479Z - success: game-window loaded
-2021-07-16T11:52:25.479Z - success: google-instant-games loaded
-2021-07-16T11:52:25.482Z - success: hierarchy loaded
-2021-07-16T11:52:25.483Z - success: huawei-agc loaded
-2021-07-16T11:52:25.485Z - success: huawei-runtime loaded
-2021-07-16T11:52:25.487Z - success: inspector loaded
-2021-07-16T11:52:25.496Z - success: cpk-publish loaded
-2021-07-16T11:52:25.496Z - success: keystore loaded
-2021-07-16T11:52:25.505Z - success: link-sure-runtime loaded
-2021-07-16T11:52:25.513Z - success: node-library loaded
-2021-07-16T11:52:25.514Z - success: open-recent-items loaded
-2021-07-16T11:52:25.515Z - success: oppo-runtime loaded
-2021-07-16T11:52:25.516Z - success: package-asset loaded
-2021-07-16T11:52:25.517Z - success: preferences loaded
-2021-07-16T11:52:25.519Z - success: project-importer loaded
-2021-07-16T11:52:25.521Z - success: project-settings loaded
-2021-07-16T11:52:25.531Z - success: qtt-runtime loaded
-2021-07-16T11:52:25.533Z - success: scene loaded
-2021-07-16T11:52:25.534Z - success: simulator-debugger loaded
-2021-07-16T11:52:25.534Z - success: sprite-editor loaded
-2021-07-16T11:52:25.557Z - success: store loaded
-2021-07-16T11:52:25.560Z - success: timeline loaded
-2021-07-16T11:52:25.562Z - success: vivo-runtime loaded
-2021-07-16T11:52:25.563Z - success: wechatgame-opendata loaded
-2021-07-16T11:52:25.564Z - success: wechatgame loaded
-2021-07-16T11:52:25.566Z - success: xiaomi-runtime loaded
-2021-07-16T11:52:25.601Z - success: im-plugin loaded
-2021-07-16T11:52:25.604Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
-2021-07-16T11:52:25.604Z - success: preview server running at http://localhost:7457
-2021-07-16T11:52:27.196Z - info: Cocos Service load base data!
-2021-07-16T11:52:30.855Z - normal: Initializing Cocos2d
-2021-07-16T11:52:31.098Z - normal: Initializing engine extends
-2021-07-16T11:52:31.699Z - normal: Loading packages
-2021-07-16T11:52:31.701Z - normal: Watching packages
-2021-07-16T11:52:31.793Z - normal: Run Application
-2021-07-16T09:36:33.938Z - normal: Load ~/.CocosCreator/settings.json
-2021-07-16T09:36:33.972Z - normal: Initializing Asset Database
-2021-07-16T09:36:33.974Z - normal: checking language setting...
-2021-07-16T09:36:33.974Z - normal: Language: zh
-2021-07-16T09:36:34.625Z - success: protocol editor-framework registered
-2021-07-16T09:36:34.625Z - success: protocol app registered
-2021-07-16T09:36:34.625Z - success: protocol theme registered
-2021-07-16T09:36:34.625Z - success: protocol packages registered
-2021-07-16T09:36:34.625Z - success: protocol uuid registerred
-2021-07-16T09:36:34.625Z - success: protocol db registerred
-2021-07-16T09:36:34.625Z - success: protocol thumbnail registerred
-2021-07-16T09:36:34.626Z - success: protocol unpack registerred
-2021-07-16T09:36:34.626Z - success: protocol disable-commonjs registerred
-2021-07-16T09:36:34.932Z - normal: connected!
-2021-07-16T09:36:34.933Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
-2021-07-16T09:36:34.934Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
-2021-07-16T09:36:35.037Z - success: adapters loaded
-2021-07-16T09:36:35.041Z - success: asset-db-debugger loaded
-2021-07-16T09:36:35.079Z - success: fb-audience-network loaded
-2021-07-16T09:36:35.096Z - success: fb-live-stream loaded
-2021-07-16T09:36:35.098Z - success: google-play-instant loaded
-2021-07-16T09:36:35.099Z - success: jsb-adapter loaded
-2021-07-16T09:36:35.101Z - success: package-manager loaded
-2021-07-16T09:36:35.102Z - success: runtime-adapters loaded
-2021-07-16T09:36:35.103Z - success: runtime-dev-tools loaded
-2021-07-16T09:36:35.105Z - success: ui-kit-preview-extra loaded
-2021-07-16T09:36:35.107Z - success: ui-kit-preview loaded
-2021-07-16T09:36:35.142Z - success: alipay-minigame loaded
-2021-07-16T09:36:35.189Z - success: assets loaded
-2021-07-16T09:36:35.191Z - success: baidugame-opendata loaded
-2021-07-16T09:36:35.192Z - success: baidugame loaded
-2021-07-16T09:36:35.193Z - success: builder loaded
-2021-07-16T09:36:35.195Z - success: bytedance-opendata loaded
-2021-07-16T09:36:35.197Z - success: bytedance loaded
-2021-07-16T09:36:35.198Z - success: channel-upload-tools loaded
-2021-07-16T09:36:35.202Z - success: cloud-function loaded
-2021-07-16T09:36:35.304Z - success: cocos-services loaded
-2021-07-16T09:36:35.307Z - success: console loaded
-2021-07-16T09:36:35.308Z - success: curve-editor loaded
-2021-07-16T09:36:35.317Z - success: fb-instant-games loaded
-2021-07-16T09:36:35.319Z - success: game-window loaded
-2021-07-16T09:36:35.319Z - success: google-instant-games loaded
-2021-07-16T09:36:35.321Z - success: hierarchy loaded
-2021-07-16T09:36:35.323Z - success: huawei-agc loaded
-2021-07-16T09:36:35.325Z - success: huawei-runtime loaded
-2021-07-16T09:36:35.327Z - success: inspector loaded
-2021-07-16T09:36:35.338Z - success: cpk-publish loaded
-2021-07-16T09:36:35.338Z - success: keystore loaded
-2021-07-16T09:36:35.349Z - success: link-sure-runtime loaded
-2021-07-16T09:36:35.357Z - success: node-library loaded
-2021-07-16T09:36:35.357Z - success: open-recent-items loaded
-2021-07-16T09:36:35.360Z - success: oppo-runtime loaded
-2021-07-16T09:36:35.361Z - success: package-asset loaded
-2021-07-16T09:36:35.362Z - success: preferences loaded
-2021-07-16T09:36:35.365Z - success: project-importer loaded
-2021-07-16T09:36:35.367Z - success: project-settings loaded
-2021-07-16T09:36:35.378Z - success: qtt-runtime loaded
-2021-07-16T09:36:35.381Z - success: scene loaded
-2021-07-16T09:36:35.382Z - success: simulator-debugger loaded
-2021-07-16T09:36:35.382Z - success: sprite-editor loaded
-2021-07-16T09:36:35.409Z - success: store loaded
-2021-07-16T09:36:35.412Z - success: timeline loaded
-2021-07-16T09:36:35.415Z - success: vivo-runtime loaded
-2021-07-16T09:36:35.416Z - success: wechatgame-opendata loaded
-2021-07-16T09:36:35.418Z - success: wechatgame loaded
-2021-07-16T09:36:35.420Z - success: xiaomi-runtime loaded
-2021-07-16T09:36:35.455Z - success: im-plugin loaded
-2021-07-16T09:36:35.457Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
-2021-07-16T09:36:35.458Z - success: preview server running at http://localhost:7457
-2021-07-16T09:36:37.186Z - info: Cocos Service load base data!
-2021-07-16T09:36:40.794Z - normal: Initializing Cocos2d
-2021-07-16T09:36:41.035Z - normal: Initializing engine extends
-2021-07-16T09:36:43.648Z - warn: [db-task][init] Backup unused meta file: db://assets/config.meta
-2021-07-16T09:36:43.649Z - warn: [db-task][init] Backup unused meta file: db://assets/resources.meta
-2021-07-16T09:36:53.322Z - normal: Loading packages
-2021-07-16T09:36:53.324Z - normal: Watching packages
-2021-07-16T09:36:53.385Z - normal: Run Application
+2021-07-21T01:54:44.164Z - normal: Load ~/.CocosCreator/settings.json
+2021-07-21T01:54:44.197Z - normal: Initializing Asset Database
+2021-07-21T01:54:44.199Z - normal: checking language setting...
+2021-07-21T01:54:44.199Z - normal: Language: zh
+2021-07-21T01:54:44.822Z - success: protocol editor-framework registered
+2021-07-21T01:54:44.823Z - success: protocol app registered
+2021-07-21T01:54:44.823Z - success: protocol theme registered
+2021-07-21T01:54:44.823Z - success: protocol packages registered
+2021-07-21T01:54:44.823Z - success: protocol uuid registerred
+2021-07-21T01:54:44.823Z - success: protocol db registerred
+2021-07-21T01:54:44.823Z - success: protocol thumbnail registerred
+2021-07-21T01:54:44.823Z - success: protocol unpack registerred
+2021-07-21T01:54:44.823Z - success: protocol disable-commonjs registerred
+2021-07-21T01:54:47.175Z - normal: connected!
+2021-07-21T01:54:47.176Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
+2021-07-21T01:54:47.177Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
+2021-07-21T01:54:47.287Z - success: adapters loaded
+2021-07-21T01:54:47.289Z - success: asset-db-debugger loaded
+2021-07-21T01:54:47.334Z - success: fb-audience-network loaded
+2021-07-21T01:54:47.351Z - success: fb-live-stream loaded
+2021-07-21T01:54:47.352Z - success: google-play-instant loaded
+2021-07-21T01:54:47.353Z - success: jsb-adapter loaded
+2021-07-21T01:54:47.355Z - success: package-manager loaded
+2021-07-21T01:54:47.356Z - success: runtime-adapters loaded
+2021-07-21T01:54:47.358Z - success: runtime-dev-tools loaded
+2021-07-21T01:54:47.360Z - success: ui-kit-preview-extra loaded
+2021-07-21T01:54:47.362Z - success: ui-kit-preview loaded
+2021-07-21T01:54:47.397Z - success: alipay-minigame loaded
+2021-07-21T01:54:47.443Z - success: assets loaded
+2021-07-21T01:54:47.444Z - success: baidugame-opendata loaded
+2021-07-21T01:54:47.445Z - success: baidugame loaded
+2021-07-21T01:54:47.447Z - success: builder loaded
+2021-07-21T01:54:47.450Z - success: bytedance-opendata loaded
+2021-07-21T01:54:47.451Z - success: bytedance loaded
+2021-07-21T01:54:47.452Z - success: channel-upload-tools loaded
+2021-07-21T01:54:47.456Z - success: cloud-function loaded
+2021-07-21T01:54:47.558Z - success: cocos-services loaded
+2021-07-21T01:54:47.560Z - success: console loaded
+2021-07-21T01:54:47.561Z - success: curve-editor loaded
+2021-07-21T01:54:47.570Z - success: fb-instant-games loaded
+2021-07-21T01:54:47.572Z - success: game-window loaded
+2021-07-21T01:54:47.573Z - success: google-instant-games loaded
+2021-07-21T01:54:47.575Z - success: hierarchy loaded
+2021-07-21T01:54:47.577Z - success: huawei-agc loaded
+2021-07-21T01:54:47.579Z - success: huawei-runtime loaded
+2021-07-21T01:54:47.581Z - success: inspector loaded
+2021-07-21T01:54:47.591Z - success: cpk-publish loaded
+2021-07-21T01:54:47.592Z - success: keystore loaded
+2021-07-21T01:54:47.602Z - success: link-sure-runtime loaded
+2021-07-21T01:54:47.610Z - success: node-library loaded
+2021-07-21T01:54:47.611Z - success: open-recent-items loaded
+2021-07-21T01:54:47.613Z - success: oppo-runtime loaded
+2021-07-21T01:54:47.614Z - success: package-asset loaded
+2021-07-21T01:54:47.615Z - success: preferences loaded
+2021-07-21T01:54:47.618Z - success: project-importer loaded
+2021-07-21T01:54:47.619Z - success: project-settings loaded
+2021-07-21T01:54:47.629Z - success: qtt-runtime loaded
+2021-07-21T01:54:47.632Z - success: scene loaded
+2021-07-21T01:54:47.632Z - success: simulator-debugger loaded
+2021-07-21T01:54:47.633Z - success: sprite-editor loaded
+2021-07-21T01:54:47.660Z - success: store loaded
+2021-07-21T01:54:47.663Z - success: timeline loaded
+2021-07-21T01:54:47.667Z - success: vivo-runtime loaded
+2021-07-21T01:54:47.668Z - success: wechatgame-opendata loaded
+2021-07-21T01:54:47.670Z - success: wechatgame loaded
+2021-07-21T01:54:47.672Z - success: xiaomi-runtime loaded
+2021-07-21T01:54:47.708Z - success: im-plugin loaded
+2021-07-21T01:54:47.710Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
+2021-07-21T01:54:47.711Z - success: preview server running at http://localhost:7457
+2021-07-21T01:54:49.666Z - info: Cocos Service load base data!
+2021-07-21T01:54:52.911Z - normal: Initializing Cocos2d
+2021-07-21T01:54:53.148Z - normal: Initializing engine extends
+2021-07-21T01:54:53.807Z - normal: Loading packages
+2021-07-21T01:54:53.809Z - normal: Watching packages
+2021-07-21T01:54:53.873Z - normal: Run Application
+2021-07-21T08:12:42.517Z - failed: load script [../script/management/LayerManagement] failed : Error: Cannot find module '../script/management/LayerManagement'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:43:25)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+2021-07-21T08:12:42.517Z - failed: load script [./assets/sceneScript/HallLayerManagement] failed : TypeError: Cannot read property 'LayerCommon' of undefined
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:66:21)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:79:19)
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:81:3)
+    at Module._compile (internal/modules/cjs/loader.js:839:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:851:10)
+    at Module.load (internal/modules/cjs/loader.js:701:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:633:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:625:3)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+2021-07-21T08:12:42.518Z - failed: load script [../script/management/LayerManagement] failed : Error: Cannot find module '../script/management/LayerManagement'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:78:25)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:112:25
+2021-07-21T08:12:42.518Z - failed: load script [../script/management/LayerManagement] failed : Error: Cannot find module '../script/management/LayerManagement'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:43:25)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+2021-07-21T08:12:42.519Z - failed: load script [./HallLayerManagement] failed : TypeError: Cannot read property 'LayerCommon' of undefined
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:66:21)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:79:19)
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:81:3)
+    at Module._compile (internal/modules/cjs/loader.js:839:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:851:10)
+    at Module.load (internal/modules/cjs/loader.js:701:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:633:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:625:3)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+2021-07-21T08:14:35.300Z - failed: load script [../script/management/LayerCommon] failed : Error: Cannot find module '../script/management/LayerCommon'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:43:21)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+2021-07-21T08:14:35.300Z - failed: load script [./assets/sceneScript/HallLayerManagement] failed : TypeError: Cannot read property 'LayerBase' of undefined
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:66:17)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:79:19)
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:81:3)
+    at Module._compile (internal/modules/cjs/loader.js:839:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:851:10)
+    at Module.load (internal/modules/cjs/loader.js:701:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:633:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:625:3)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+2021-07-21T08:14:35.301Z - failed: load script [../script/management/LayerCommon] failed : Error: Cannot find module '../script/management/LayerCommon'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:78:21)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:112:25
+2021-07-21T08:14:35.301Z - failed: load script [../script/management/LayerCommon] failed : Error: Cannot find module '../script/management/LayerCommon'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:43:21)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+2021-07-21T08:14:35.301Z - failed: load script [./HallLayerManagement] failed : TypeError: Cannot read property 'LayerBase' of undefined
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:66:17)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:72:25
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:79:19)
+    at Object.<anonymous> (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallLayerManagement.js:81:3)
+    at Module._compile (internal/modules/cjs/loader.js:839:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:851:10)
+    at Module.load (internal/modules/cjs/loader.js:701:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:633:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:625:3)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+2021-07-21T08:26:10.453Z - failed: load script [../script/management/LoadManagement] failed : Error: Cannot find module '../script/management/LoadManagement'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at __require (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:7:35)
+    at __define (/Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:79:24)
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/sceneScript/HallMain.js:112:25

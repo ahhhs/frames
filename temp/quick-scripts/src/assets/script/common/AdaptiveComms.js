@@ -3,8 +3,11 @@ cc._RF.push(module, '5e698vmH65J24tFNPwJYmFO', 'AdaptiveComms');
 // script/common/AdaptiveComms.ts
 
 "use strict";
-// Copyright (C) 2019, Flickering Inc. All rights reserved.
-// Author: hongchangfu (hongchangfu@flickering.ai)
+/*
+ * Author: ahhh (new_q8@163.com)
+ *
+ * Description: 等比例适配
+ */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -25,7 +28,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// 用于界面适配
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var AdaptiveComms = /** @class */ (function (_super) {
     __extends(AdaptiveComms, _super);
@@ -45,7 +47,6 @@ var AdaptiveComms = /** @class */ (function (_super) {
             nodeSize.height = nodeSize.width / scale;
         else
             nodeSize.width = nodeSize.height * scale;
-        console.log("输出:", nodeSize);
         this.node.setContentSize(nodeSize);
     };
     AdaptiveComms = __decorate([

@@ -6,7 +6,7 @@ cc._RF.push(module, 'e8d30Bgd+dIerkWJfSBUXF+', 'AdaptiveComm');
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: 适配脚本
+ * Description: 等宽高适配
  */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -34,7 +34,7 @@ var AdaptiveComm = /** @class */ (function (_super) {
     function AdaptiveComm() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    AdaptiveComm.prototype.onLoad = function () {
+    AdaptiveComm.prototype.init = function () {
         this.node.width = cc.winSize.width;
         this.node.height = cc.winSize.height;
     };

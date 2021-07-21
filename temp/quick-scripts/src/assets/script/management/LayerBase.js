@@ -1,12 +1,12 @@
 "use strict";
-cc._RF.push(module, '7448agyD2tD4re4jizMrGBG', 'LayerManagement');
-// script/management/LayerManagement.ts
+cc._RF.push(module, '7448agyD2tD4re4jizMrGBG', 'LayerBase');
+// script/management/LayerBase.ts
 
 "use strict";
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: ui层级管理器
+ * Description: 层级基类
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -15,8 +15,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LayerManagement = exports.NodeSize = exports.LayerType = void 0;
-var AdaptiveComms_1 = require("../common/AdaptiveComms");
+exports.LayerBase = exports.NodeSize = exports.LayerType = void 0;
+var AdaptiveComm_1 = require("../common/AdaptiveComm");
 var LayerType;
 (function (LayerType) {
     LayerType[LayerType["UI"] = 0] = "UI";
@@ -30,55 +30,37 @@ var NodeSize = /** @class */ (function () {
 }());
 exports.NodeSize = NodeSize;
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var LayerManagement = /** @class */ (function () {
-    function LayerManagement() {
+var LayerBase = /** @class */ (function () {
+    function LayerBase() {
         this.root = undefined;
+        this.nodeList = [];
     }
-    LayerManagement_1 = LayerManagement;
-    Object.defineProperty(LayerManagement, "instance", {
-        get: function () {
-            if (!this._instance) {
-                this._instance = new LayerManagement_1();
-            }
-            return this._instance;
-        },
-        enumerable: false,
-        configurable: true
-    });
     /**
      * 初始化
      * @param node 根节点
      * @param size 屏幕大小
      */
-    LayerManagement.prototype.init = function (node, size) {
+    LayerBase.prototype.init = function (node, size) {
         this.root = node;
-        this.initData(size);
         this.addLayerMain();
-    };
-    /**
-     * 初始化参数
-     * @param size
-     */
-    LayerManagement.prototype.initData = function (size) {
-        this.size = size;
     };
     /**
      * 添加层级入口
      */
-    LayerManagement.prototype.addLayerMain = function () {
+    LayerBase.prototype.addLayerMain = function () {
         for (var i = 0; i < Object.values(LayerType).length / 2; i++) {
             this.addLayer(LayerType[i]);
         }
     };
     /**
      * 添加层级
+     *
+     * @description 添加层级node,并且添加适配脚本
      */
-    LayerManagement.prototype.addLayer = function (string) {
+    LayerBase.prototype.addLayer = function (string) {
         var node = new cc.Node();
         node.name = string + "Layer";
-        node.width = this.size.width;
-        node.height = this.size.height;
-        node.addComponent(AdaptiveComms_1.default).init();
+        node.addComponent(AdaptiveComm_1.default).init();
         this.root.addChild(node, this.rootZIndex++);
     };
     /**
@@ -86,38 +68,41 @@ var LayerManagement = /** @class */ (function () {
      * @param name nodeName
      * @returns
      */
-    LayerManagement.prototype.getLayer = function (name) {
+    LayerBase.prototype.getLayer = function (name) {
         return this.root.getChildByName(name + "Layer");
     };
     /**
      * 获得根节点
      * @returns
      */
-    LayerManagement.prototype.getRootNode = function () {
+    LayerBase.prototype.getRootNode = function () {
         return this.root;
     };
     /**
      * 层级添加node
+     * @description 添加目标节点到父节点上,并且绑点相应的脚本
      * @param parentNode 父节点
      * @param node 目标节点
      * @param script 目标脚本
+     * @param isAdpitve 是否使用默认适配方式
+     * @param ZIndex 层级
      */
-    LayerManagement.prototype.addNode = function (parentNode, node, script, ZIndex) {
+    LayerBase.prototype.addNode = function (parentNode, node, script, isAdpitve, ZIndex) {
+        if (isAdpitve === void 0) { isAdpitve = true; }
         if (ZIndex === void 0) { ZIndex = 0; }
         var nodes = cc.instantiate(node);
         nodes.addComponent(script).init();
         nodes.zIndex = ZIndex;
         this.getLayer(LayerType[parentNode]).addChild(nodes);
-        if (nodes.getComponent(cc.Widget)) {
-            nodes.getComponent(cc.Widget).alignMode = cc.Widget.AlignMode.ONCE;
-        }
     };
-    var LayerManagement_1;
-    LayerManagement = LayerManagement_1 = __decorate([
+    LayerBase.prototype.getAllNode = function () {
+        return this.nodeList;
+    };
+    LayerBase = __decorate([
         ccclass
-    ], LayerManagement);
-    return LayerManagement;
+    ], LayerBase);
+    return LayerBase;
 }());
-exports.LayerManagement = LayerManagement;
+exports.LayerBase = LayerBase;
 
 cc._RF.pop();

@@ -1,12 +1,12 @@
 "use strict";
-cc._RF.push(module, '5a59a83i71GR72ERIyE6TEb', 'LoadManagement');
-// script/management/LoadManagement.ts
+cc._RF.push(module, '5a59a83i71GR72ERIyE6TEb', 'LoadBase');
+// script/management/LoadBase.ts
 
 "use strict";
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: 加载管理器
+ * Description: 加载基类
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16,28 +16,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var LoadManagement = /** @class */ (function () {
-    function LoadManagement() {
+var LoadBase = /** @class */ (function () {
+    function LoadBase() {
         this.loadArr = new Map();
     }
-    LoadManagement_1 = LoadManagement;
-    Object.defineProperty(LoadManagement, "install", {
+    LoadBase_1 = LoadBase;
+    Object.defineProperty(LoadBase, "instance", {
         get: function () {
-            if (!this._install) {
-                this._install = new LoadManagement_1();
+            if (!this._instance) {
+                this._instance = new LoadBase_1();
             }
-            return this._install;
+            return this._instance;
         },
         enumerable: false,
         configurable: true
     });
     /**
      * 加载预制体
-     * @param url
-     * @param asserts
+     * @param url 路径
+     * @param asserts 资源name
      * @returns
      */
-    LoadManagement.prototype.loadPrefab = function (url, asserts) {
+    LoadBase.prototype.loadPrefab = function (url, asserts) {
         var _this = this;
         return new Promise(function (res) {
             cc.assetManager.loadBundle(url, function (ell, bundle) {
@@ -52,10 +52,10 @@ var LoadManagement = /** @class */ (function () {
     };
     /**
      * 加载预制体文件夹
-     * @param url
-     * @param asserts
+     * @param url 路径
+     * @param fileName 文件夹name
      */
-    LoadManagement.prototype.loadPrefabs = function (url, fileName) {
+    LoadBase.prototype.loadPrefabs = function (url, fileName) {
         var _this = this;
         return new Promise(function (res) {
             cc.assetManager.loadBundle(url, function (ell, bundle) {
@@ -72,15 +72,15 @@ var LoadManagement = /** @class */ (function () {
      * 获得加载列表
      * @returns
      */
-    LoadManagement.prototype.getLoadList = function () {
+    LoadBase.prototype.getLoadList = function () {
         return this.loadArr;
     };
-    var LoadManagement_1;
-    LoadManagement = LoadManagement_1 = __decorate([
+    var LoadBase_1;
+    LoadBase = LoadBase_1 = __decorate([
         ccclass
-    ], LoadManagement);
-    return LoadManagement;
+    ], LoadBase);
+    return LoadBase;
 }());
-exports.default = LoadManagement;
+exports.default = LoadBase;
 
 cc._RF.pop();

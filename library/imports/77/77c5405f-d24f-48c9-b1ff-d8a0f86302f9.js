@@ -4,8 +4,7 @@ cc._RF.push(module, '77c54Bf0k9IybH/2KD4YwL5', 'GameBase');
 
 "use strict";
 /*
- * Copyright (C) 2021, Flickering Inc. All rights reserved.
- * Author: wenqianqin (wenqianqin@flickering.ai)
+ * Author: ahhh (new_q8@163.com)
  *
  * Description:
  */

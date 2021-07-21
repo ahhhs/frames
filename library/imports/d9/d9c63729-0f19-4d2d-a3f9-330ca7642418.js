@@ -1,13 +1,12 @@
 "use strict";
-cc._RF.push(module, 'd9c63cpDxlNLaP5MwynZCQY', 'hallMain');
-// sceneScript/hallMain.ts
+cc._RF.push(module, 'd9c63cpDxlNLaP5MwynZCQY', 'HallMain');
+// sceneScript/HallMain.ts
 
 "use strict";
 /*
- * Copyright (C) 2021, Flickering Inc. All rights reserved.
- * Author: wenqianqin (wenqianqin@flickering.ai)
+ * Author: ahhh (new_q8@163.com)
  *
- * Description:
+ * Description: Hall入口
  */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -65,8 +64,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var LayerManagement_1 = require("../script/management/LayerManagement");
-var LoadManagement_1 = require("../script/management/LoadManagement");
+var LayerBase_1 = require("../script/management/LayerBase");
+var LoadBase_1 = require("../script/management/LoadBase");
+var HallLayerManagement_1 = require("./HallLayerManagement");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var HallMain = /** @class */ (function (_super) {
     __extends(HallMain, _super);
@@ -78,11 +78,12 @@ var HallMain = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        LayerManagement_1.LayerManagement.instance.init(this.node, { height: 720, width: 1280 });
-                        return [4 /*yield*/, LoadManagement_1.default.install.loadPrefab("prefabAB", "carPrefab")];
+                        LoadBase_1.default;
+                        HallLayerManagement_1.default.instance.init(this.node, { height: 720, width: 1280 });
+                        return [4 /*yield*/, LoadBase_1.default.instance.loadPrefab("prefabAB", "carPrefab")];
                     case 1:
                         _a.sent();
-                        LayerManagement_1.LayerManagement.instance.addNode(LayerManagement_1.LayerType.UI, LoadManagement_1.default.install.getLoadList().get("carPrefab"), "CarPrefabV");
+                        HallLayerManagement_1.default.instance.addNode(LayerBase_1.LayerType.UI, LoadBase_1.default.instance.getLoadList().get("carPrefab"), "CarPrefabV");
                         return [2 /*return*/];
                 }
             });

@@ -1,7 +1,8 @@
-// Copyright (C) 2019, Flickering Inc. All rights reserved.
-// Author: hongchangfu (hongchangfu@flickering.ai)
-
-// 用于界面适配
+/*
+ * Author: ahhh (new_q8@163.com)
+ *
+ * Description: 等比例适配
+ */
 
 const { ccclass, property } = cc._decorator;
 
@@ -19,8 +20,6 @@ export default class AdaptiveComms extends cc.Component {
         let scale = size.width / size.height;
         if (scale < designScale) nodeSize.height = nodeSize.width / scale;
         else nodeSize.width = nodeSize.height * scale;
-
-        console.log("输出:",nodeSize);
         this.node.setContentSize(nodeSize);
     }
 }

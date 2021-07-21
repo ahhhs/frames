@@ -2,7 +2,7 @@
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/gameLogicScript/gameV/CarPrefabV.js';
+                    var __filename = 'preview-scripts/assets/sceneScript/HallLayerManagement.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
                     } : function (request) {
@@ -10,8 +10,8 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, 'fd93eYGUP5M7r6N/Kz/FJh7', 'CarPrefabV');
-// gameLogicScript/gameV/CarPrefabV.ts
+cc._RF.push(module, '7ffc29RrN9DyJrMcpgR8PIW', 'HallLayerManagement');
+// sceneScript/HallLayerManagement.ts
 
 "use strict";
 /*
@@ -40,21 +40,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CarPrefabV = void 0;
+var LayerBase_1 = require("../script/management/LayerBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var CarPrefabV = /** @class */ (function (_super) {
-    __extends(CarPrefabV, _super);
-    function CarPrefabV() {
+var HallLayerManagement = /** @class */ (function (_super) {
+    __extends(HallLayerManagement, _super);
+    function HallLayerManagement() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    CarPrefabV.prototype.init = function () {
-    };
-    CarPrefabV = __decorate([
+    HallLayerManagement_1 = HallLayerManagement;
+    Object.defineProperty(HallLayerManagement, "instance", {
+        get: function () {
+            if (!this._instance) {
+                this._instance = new HallLayerManagement_1();
+            }
+            return this._instance;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    var HallLayerManagement_1;
+    HallLayerManagement = HallLayerManagement_1 = __decorate([
         ccclass
-    ], CarPrefabV);
-    return CarPrefabV;
-}(cc.Component));
-exports.CarPrefabV = CarPrefabV;
+    ], HallLayerManagement);
+    return HallLayerManagement;
+}(LayerBase_1.LayerBase));
+exports.default = HallLayerManagement;
 
 cc._RF.pop();
                     }
@@ -67,4 +77,4 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9nYW1lTG9naWNTY3JpcHQvZ2FtZVYvQ2FyUHJlZmFiVi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7Ozs7O0dBS0c7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFRyxJQUFBLEtBQXdCLEVBQUUsQ0FBQyxVQUFVLEVBQW5DLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBa0IsQ0FBQztBQUc1QztJQUFnQyw4QkFBWTtJQUE1Qzs7SUFLQSxDQUFDO0lBSFUseUJBQUksR0FBWDtJQUVBLENBQUM7SUFKUSxVQUFVO1FBRHRCLE9BQU87T0FDSyxVQUFVLENBS3RCO0lBQUQsaUJBQUM7Q0FMRCxBQUtDLENBTCtCLEVBQUUsQ0FBQyxTQUFTLEdBSzNDO0FBTFksZ0NBQVUiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogQ29weXJpZ2h0IChDKSAyMDIxLCBGbGlja2VyaW5nIEluYy4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cbiAqIEF1dGhvcjogd2VucWlhbnFpbiAod2VucWlhbnFpbkBmbGlja2VyaW5nLmFpKVxuICpcbiAqIERlc2NyaXB0aW9uOlxuICovXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5leHBvcnQgY2xhc3MgQ2FyUHJlZmFiViBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG5cbiAgICBwdWJsaWMgaW5pdCgpIHtcbiAgICAgICAgXG4gICAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zY2VuZVNjcmlwdC9IYWxsTGF5ZXJNYW5hZ2VtZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTs7Ozs7R0FLRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRUgsNERBQTJEO0FBRXJELElBQUEsS0FBd0IsRUFBRSxDQUFDLFVBQVUsRUFBbkMsT0FBTyxhQUFBLEVBQUUsUUFBUSxjQUFrQixDQUFDO0FBRzVDO0lBQWlELHVDQUFTO0lBQTFEOztJQVNBLENBQUM7NEJBVG9CLG1CQUFtQjtJQUdwQyxzQkFBa0IsK0JBQVE7YUFBMUI7WUFDSSxJQUFJLENBQUMsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDakIsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLHFCQUFtQixFQUFFLENBQUM7YUFDOUM7WUFDRCxPQUFPLElBQUksQ0FBQyxTQUFTLENBQUM7UUFDMUIsQ0FBQzs7O09BQUE7O0lBUmdCLG1CQUFtQjtRQUR2QyxPQUFPO09BQ2EsbUJBQW1CLENBU3ZDO0lBQUQsMEJBQUM7Q0FURCxBQVNDLENBVGdELHFCQUFTLEdBU3pEO2tCQVRvQixtQkFBbUIiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogQ29weXJpZ2h0IChDKSAyMDIxLCBGbGlja2VyaW5nIEluYy4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cbiAqIEF1dGhvcjogd2VucWlhbnFpbiAod2VucWlhbnFpbkBmbGlja2VyaW5nLmFpKVxuICpcbiAqIERlc2NyaXB0aW9uOlxuICovXG5cbmltcG9ydCB7IExheWVyQmFzZSB9IGZyb20gJy4uL3NjcmlwdC9tYW5hZ2VtZW50L0xheWVyQmFzZSc7XG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHkgfSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBIYWxsTGF5ZXJNYW5hZ2VtZW50IGV4dGVuZHMgTGF5ZXJCYXNlIHtcbiAgICBwcml2YXRlIHN0YXRpYyBfaW5zdGFuY2U6IEhhbGxMYXllck1hbmFnZW1lbnQ7XG5cbiAgICBwdWJsaWMgc3RhdGljIGdldCBpbnN0YW5jZSgpIHtcbiAgICAgICAgaWYgKCF0aGlzLl9pbnN0YW5jZSkge1xuICAgICAgICAgICAgdGhpcy5faW5zdGFuY2UgPSBuZXcgSGFsbExheWVyTWFuYWdlbWVudCgpO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiB0aGlzLl9pbnN0YW5jZTtcbiAgICB9XG59XG4iXX0=

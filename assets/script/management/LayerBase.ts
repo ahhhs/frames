@@ -1,7 +1,7 @@
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: ui层级管理器
+ * Description: 层级基类
  */
 
 import AdaptiveComm from '../common/AdaptiveComm';
@@ -20,19 +20,12 @@ export class NodeSize {
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export class LayerManagement {
+export class LayerBase {
 
-    private static _instance: LayerManagement;
     private root: cc.Node = undefined;
     private rootZIndex: 0;
-    private size: NodeSize;
-    public static get instance() {
+    private nodeList: Array<cc.Node> = [];
 
-        if (!this._instance) {
-            this._instance = new LayerManagement();
-        }
-        return this._instance;
-    }
     /**
      * 初始化
      * @param node 根节点
@@ -40,15 +33,7 @@ export class LayerManagement {
      */
     public init(node: cc.Node, size: NodeSize) {
         this.root = node;
-        this.initData(size);
         this.addLayerMain();
-    }
-    /**
-     * 初始化参数
-     * @param size 
-     */
-    private initData(size: NodeSize) {
-        this.size = size;
     }
     /**
      * 添加层级入口
@@ -60,13 +45,13 @@ export class LayerManagement {
     }
     /**
      * 添加层级
+     * 
+     * @description 添加层级node,并且添加适配脚本
      */
     private addLayer(string: string) {
         const node = new cc.Node();
         node.name = string + "Layer";
-        node.width = this.size.width;
-        node.height = this.size.height;
-        node.addComponent(AdaptiveComms).init();
+        node.addComponent(AdaptiveComm).init();
         this.root.addChild(node, this.rootZIndex++);
     }
     /**
@@ -86,17 +71,23 @@ export class LayerManagement {
     }
     /**
      * 层级添加node
+     * @description 添加目标节点到父节点上,并且绑点相应的脚本
      * @param parentNode 父节点
      * @param node 目标节点
      * @param script 目标脚本
+     * @param isAdpitve 是否使用默认适配方式
+     * @param ZIndex 层级
      */
-    public addNode(parentNode: number, node: cc.Node, script: string, ZIndex: number = 0) {
+    public addNode(parentNode: number, node: cc.Node, script: string, isAdpitve: boolean = true, ZIndex: number = 0) {
         let nodes: cc.Node = cc.instantiate(node);
         nodes.addComponent(script).init();
         nodes.zIndex = ZIndex;
         this.getLayer(LayerType[parentNode]).addChild(nodes);
-        if (nodes.getComponent(cc.Widget)) {
-            nodes.getComponent(cc.Widget).alignMode = cc.Widget.AlignMode.ONCE;
-        }
+    }
+    public getAllNode() {
+        return this.nodeList;
+    }
+    public demo(){
+        
     }
 }

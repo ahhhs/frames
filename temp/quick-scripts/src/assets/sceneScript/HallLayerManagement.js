@@ -1,12 +1,13 @@
 "use strict";
-cc._RF.push(module, '5e698vmH65J24tFNPwJYmFO', 'AdaptiveComms');
-// script/common/AdaptiveComms.ts
+cc._RF.push(module, '7ffc29RrN9DyJrMcpgR8PIW', 'HallLayerManagement');
+// sceneScript/HallLayerManagement.ts
 
 "use strict";
 /*
- * Author: ahhh (new_q8@163.com)
+ * Copyright (C) 2021, Flickering Inc. All rights reserved.
+ * Author: wenqianqin (wenqianqin@flickering.ai)
  *
- * Description: 等比例适配
+ * Description:
  */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -28,32 +29,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var LayerBase_1 = require("../script/management/LayerBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var AdaptiveComms = /** @class */ (function (_super) {
-    __extends(AdaptiveComms, _super);
-    function AdaptiveComms() {
+var HallLayerManagement = /** @class */ (function (_super) {
+    __extends(HallLayerManagement, _super);
+    function HallLayerManagement() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    AdaptiveComms.prototype.init = function () {
-        this.fixedViewSize();
-    };
-    AdaptiveComms.prototype.fixedViewSize = function () {
-        var disignSize = cc.view.getDesignResolutionSize();
-        var designScale = disignSize.width / disignSize.height;
-        var nodeSize = cc.size(disignSize.width, disignSize.height);
-        var size = cc.view.getFrameSize();
-        var scale = size.width / size.height;
-        if (scale < designScale)
-            nodeSize.height = nodeSize.width / scale;
-        else
-            nodeSize.width = nodeSize.height * scale;
-        this.node.setContentSize(nodeSize);
-    };
-    AdaptiveComms = __decorate([
+    HallLayerManagement_1 = HallLayerManagement;
+    Object.defineProperty(HallLayerManagement, "instance", {
+        get: function () {
+            if (!this._instance) {
+                this._instance = new HallLayerManagement_1();
+            }
+            return this._instance;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    var HallLayerManagement_1;
+    HallLayerManagement = HallLayerManagement_1 = __decorate([
         ccclass
-    ], AdaptiveComms);
-    return AdaptiveComms;
-}(cc.Component));
-exports.default = AdaptiveComms;
+    ], HallLayerManagement);
+    return HallLayerManagement;
+}(LayerBase_1.LayerBase));
+exports.default = HallLayerManagement;
 
 cc._RF.pop();
