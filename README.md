@@ -4,13 +4,13 @@
 1. LoadBase
 2. LaeerBase
 
+#### 结构思想
+    场景通过main脚本,加载Ctl,Ctl初始化加载View和Modele.
+
 ### 2021.7.26
 1. 修改核心类名称
 2. 新增mvc结构
 3. 增加了test插件
-
-#### 结构思想
-    场景通过main脚本,加载Ctl,Ctl初始化加载View和Modele.
 
 ### 2021.7.16
 
