@@ -6,13 +6,29 @@
 
 import AdaptiveComm from '../common/AdaptiveComm';
 import AdaptiveComms from '../common/AdaptiveComms';
-
+/**
+ * 层级类型
+ */
 export enum LayerType {
     "UI",
     "ADAPTIVE",
     "POPUP",
 }
+/**
+ * node uuid类型
+ */
+export class NodeType {
+    public name: string;
+    public uuid: string;
 
+    constructor(name: string, uuid: string) {
+        this.name = name;
+        this.uuid = uuid;
+    }
+}
+/**
+ * node 宽高大小
+ */
 export class NodeSize {
     public height: number;
     public width: number;
@@ -24,16 +40,18 @@ export class LayerBase {
 
     private root: cc.Node = undefined;
     private rootZIndex: 0;
-    private nodeList: Array<cc.Node> = [];
+    private nodeList: Array<NodeType> = [];
 
     /**
      * 初始化
      * @param node 根节点
-     * @param size 屏幕大小
+     * @param isAddLayer 是否要添加基础层级
      */
-    public init(node: cc.Node, size: NodeSize) {
+    public initLayerBase(node: cc.Node, isAddLayer: boolean = true) {
         this.root = node;
-        this.addLayerMain();
+        if (isAddLayer) {
+            this.addLayerMain();
+        }
     }
     /**
      * 添加层级入口
@@ -74,20 +92,34 @@ export class LayerBase {
      * @description 添加目标节点到父节点上,并且绑点相应的脚本
      * @param parentNode 父节点
      * @param node 目标节点
-     * @param script 目标脚本
      * @param isAdpitve 是否使用默认适配方式
      * @param ZIndex 层级
      */
-    public addNode(parentNode: number, node: cc.Node, script: string, isAdpitve: boolean = true, ZIndex: number = 0) {
+    public addNode(parentNode: number, node: cc.Node, isAdpitve: boolean = true, ZIndex: number = 0) {
         let nodes: cc.Node = cc.instantiate(node);
-        nodes.addComponent(script).init();
         nodes.zIndex = ZIndex;
         this.getLayer(LayerType[parentNode]).addChild(nodes);
     }
-    public getAllNode() {
+    /**
+     * 获得所有的node属性
+     * @returns 
+     */
+    public getAllNodeData() {
+        this.traverseNodeData(this.root);
         return this.nodeList;
     }
-    public demo(){
-        
+    /**
+     * 遍历目标node数据
+     * @param node 需要遍历获得的目标节点
+     */
+    public traverseNodeData(node: cc.Node) {
+        for (let i = 0; i < node.children.length; i++) {
+            let childNode: cc.Node = node.children[i];
+            let type = new NodeType(childNode.name, childNode.uuid);
+            this.nodeList.push(type);
+            if (childNode.children.length > 0) {
+                this.traverseNodeData(childNode);
+            }
+        }
     }
 }

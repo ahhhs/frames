@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'fd93eYGUP5M7r6N/Kz/FJh7', 'CarPrefabV');
-// gameLogicScript/gameV/CarPrefabV.ts
+cc._RF.push(module, 'fd93eYGUP5M7r6N/Kz/FJh7', 'CarPrefabMain');
+// prefabScript/carPrefab/CarPrefabMain.ts
 
 "use strict";
 /*
@@ -29,20 +29,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CarPrefabV = void 0;
+exports.CarPrefabMain = void 0;
+var CarPreafbC_1 = require("./CarPreafbC");
+var CarPrefabV_1 = require("./CarPrefabV");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
-var CarPrefabV = /** @class */ (function (_super) {
-    __extends(CarPrefabV, _super);
-    function CarPrefabV() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var CarPrefabMain = /** @class */ (function (_super) {
+    __extends(CarPrefabMain, _super);
+    function CarPrefabMain() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.carPrefabV = null;
+        return _this;
     }
-    CarPrefabV.prototype.init = function () {
+    CarPrefabMain.prototype.onLoad = function () {
+        CarPreafbC_1.default.instance.init(this.carPrefabV, {});
     };
-    CarPrefabV = __decorate([
+    __decorate([
+        property(CarPrefabV_1.default)
+    ], CarPrefabMain.prototype, "carPrefabV", void 0);
+    CarPrefabMain = __decorate([
         ccclass
-    ], CarPrefabV);
-    return CarPrefabV;
+    ], CarPrefabMain);
+    return CarPrefabMain;
 }(cc.Component));
-exports.CarPrefabV = CarPrefabV;
+exports.CarPrefabMain = CarPrefabMain;
 
 cc._RF.pop();

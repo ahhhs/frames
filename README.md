@@ -1,8 +1,15 @@
 # frames 框架
 
 ## 核心函数 
-1. LoadManagement
-2. BaseLayerManagement
+1. LoadBase
+2. LaeerBase
+
+### 2021.7.26
+1. 修改核心类名称
+2. 新增mvc结构
+
+#### 结构思想
+    场景通过main脚本,加载Ctl,Ctl初始化加载View和Modele.
 
 ### 2021.7.16
 

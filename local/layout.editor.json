@@ -18,9 +18,9 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 350.828125,
+                "height": 349.828125,
                 "type": "panel",
-                "width": 308
+                "width": 276
               },
               {
                 "active": 0,
@@ -28,14 +28,14 @@
                   "assets",
                   "cloud-function"
                 ],
-                "height": 664.671875,
+                "height": 665.671875,
                 "type": "panel",
-                "width": 308
+                "width": 276
               }
             ],
             "height": 1018.5,
             "type": "dock-v",
-            "width": 308
+            "width": 276
           },
           {
             "active": 0,
@@ -46,7 +46,7 @@
             ],
             "height": 1018.5,
             "type": "panel",
-            "width": 304
+            "width": 391
           },
           {
             "children": [
@@ -55,9 +55,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 711.65625,
+                "height": 709.65625,
                 "type": "panel",
-                "width": 1301.984375
+                "width": 1246.984375
               },
               {
                 "active": 0,
@@ -66,14 +66,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 303.84375,
+                "height": 305.84375,
                 "type": "panel",
-                "width": 1301.984375
+                "width": 1246.984375
               }
             ],
             "height": 1018.5,
             "type": "dock-v",
-            "width": 1301.984375
+            "width": 1246.984375
           }
         ],
         "type": "dock-h"
@@ -93,8 +93,16 @@
     },
     "worker": {}
   },
-  "panels": {},
+  "panels": {
+    "builder": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
   "panelLabelWidth": {
-    "inspector": null
+    "inspector": null,
+    "builder": null
   }
 }

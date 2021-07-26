@@ -1,10 +1,19 @@
 
-require('./assets/gameLogicScript/gameV/CarPrefabV');
-require('./assets/sceneScript/HallLayerManagement');
-require('./assets/sceneScript/HallMain');
+require('./assets/hall/scripts/HallLayerC');
+require('./assets/hall/scripts/HallLayerM');
+require('./assets/hall/scripts/HallLayerV');
+require('./assets/hall/scripts/HallMain');
+require('./assets/prefabScript/carPrefab/CarPreafbC');
+require('./assets/prefabScript/carPrefab/CarPreafbM');
+require('./assets/prefabScript/carPrefab/CarPrefabMain');
+require('./assets/prefabScript/carPrefab/CarPrefabV');
 require('./assets/script/common/AdaptiveComm');
 require('./assets/script/common/AdaptiveComms');
 require('./assets/script/common/GameBase');
 require('./assets/script/common/MD5');
 require('./assets/script/management/LayerBase');
 require('./assets/script/management/LoadBase');
+require('./assets/text/ABCCtl');
+require('./assets/text/ABCView');
+require('./assets/text/Helloworld');
+require('./assets/text/Model');

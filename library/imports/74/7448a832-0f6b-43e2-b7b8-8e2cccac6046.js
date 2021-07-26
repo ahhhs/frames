@@ -15,14 +15,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LayerBase = exports.NodeSize = exports.LayerType = void 0;
+exports.LayerBase = exports.NodeSize = exports.NodeType = exports.LayerType = void 0;
 var AdaptiveComm_1 = require("../common/AdaptiveComm");
+/**
+ * 层级类型
+ */
 var LayerType;
 (function (LayerType) {
     LayerType[LayerType["UI"] = 0] = "UI";
     LayerType[LayerType["ADAPTIVE"] = 1] = "ADAPTIVE";
     LayerType[LayerType["POPUP"] = 2] = "POPUP";
 })(LayerType = exports.LayerType || (exports.LayerType = {}));
+/**
+ * node uuid类型
+ */
+var NodeType = /** @class */ (function () {
+    function NodeType(name, uuid) {
+        this.name = name;
+        this.uuid = uuid;
+    }
+    return NodeType;
+}());
+exports.NodeType = NodeType;
+/**
+ * node 宽高大小
+ */
 var NodeSize = /** @class */ (function () {
     function NodeSize() {
     }
@@ -38,11 +55,14 @@ var LayerBase = /** @class */ (function () {
     /**
      * 初始化
      * @param node 根节点
-     * @param size 屏幕大小
+     * @param isAddLayer 是否要添加基础层级
      */
-    LayerBase.prototype.init = function (node, size) {
+    LayerBase.prototype.initLayerBase = function (node, isAddLayer) {
+        if (isAddLayer === void 0) { isAddLayer = true; }
         this.root = node;
-        this.addLayerMain();
+        if (isAddLayer) {
+            this.addLayerMain();
+        }
     };
     /**
      * 添加层级入口
@@ -83,20 +103,37 @@ var LayerBase = /** @class */ (function () {
      * @description 添加目标节点到父节点上,并且绑点相应的脚本
      * @param parentNode 父节点
      * @param node 目标节点
-     * @param script 目标脚本
      * @param isAdpitve 是否使用默认适配方式
      * @param ZIndex 层级
      */
-    LayerBase.prototype.addNode = function (parentNode, node, script, isAdpitve, ZIndex) {
+    LayerBase.prototype.addNode = function (parentNode, node, isAdpitve, ZIndex) {
         if (isAdpitve === void 0) { isAdpitve = true; }
         if (ZIndex === void 0) { ZIndex = 0; }
         var nodes = cc.instantiate(node);
-        nodes.addComponent(script).init();
         nodes.zIndex = ZIndex;
         this.getLayer(LayerType[parentNode]).addChild(nodes);
     };
-    LayerBase.prototype.getAllNode = function () {
+    /**
+     * 获得所有的node属性
+     * @returns
+     */
+    LayerBase.prototype.getAllNodeData = function () {
+        this.traverseNodeData(this.root);
         return this.nodeList;
+    };
+    /**
+     * 遍历目标node数据
+     * @param node 需要遍历获得的目标节点
+     */
+    LayerBase.prototype.traverseNodeData = function (node) {
+        for (var i = 0; i < node.children.length; i++) {
+            var childNode = node.children[i];
+            var type = new NodeType(childNode.name, childNode.uuid);
+            this.nodeList.push(type);
+            if (childNode.children.length > 0) {
+                this.traverseNodeData(childNode);
+            }
+        }
     };
     LayerBase = __decorate([
         ccclass
