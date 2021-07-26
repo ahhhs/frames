@@ -5,7 +5,8 @@
 2. LaeerBase
 
 #### 结构思想
-    场景通过main脚本,加载Ctl,Ctl初始化加载View和Modele.
+1. 企图把ui表现层独立分离
+2. 场景通过main脚本,加载Ctl,Ctl初始化加载View和Modele.
 
 ### 2021.7.26
 1. 修改核心类名称
