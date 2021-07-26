@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
+      "x": 59,
+      "y": 49,
       "width": 1920,
-      "height": 1080,
+      "height": 988,
       "layout": {
         "children": [
           {
@@ -18,9 +18,9 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 349.828125,
+                "height": 307.828125,
                 "type": "panel",
-                "width": 276
+                "width": 204
               },
               {
                 "active": 0,
@@ -28,14 +28,14 @@
                   "assets",
                   "cloud-function"
                 ],
-                "height": 665.671875,
+                "height": 587.671875,
                 "type": "panel",
-                "width": 276
+                "width": 204
               }
             ],
-            "height": 1018.5,
+            "height": 898.5,
             "type": "dock-v",
-            "width": 276
+            "width": 204
           },
           {
             "active": 0,
@@ -44,9 +44,9 @@
               "cocos-services",
               "node-library"
             ],
-            "height": 1018.5,
+            "height": 898.5,
             "type": "panel",
-            "width": 391
+            "width": 304
           },
           {
             "children": [
@@ -55,9 +55,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 709.65625,
+                "height": 407.21875,
                 "type": "panel",
-                "width": 1246.984375
+                "width": 1406
               },
               {
                 "active": 0,
@@ -66,14 +66,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 305.84375,
+                "height": 488.265625,
                 "type": "panel",
-                "width": 1246.984375
+                "width": 1406
               }
             ],
-            "height": 1018.5,
+            "height": 898.5,
             "type": "dock-v",
-            "width": 1246.984375
+            "width": 1406
           }
         ],
         "type": "dock-h"
@@ -99,6 +99,12 @@
       "y": 0,
       "width": 1920,
       "height": 1080
+    },
+    "hello-world": {
+      "x": 148,
+      "y": 359,
+      "width": 569,
+      "height": 635
     }
   },
   "panelLabelWidth": {

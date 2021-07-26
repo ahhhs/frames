@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator;
 export default class LoadBase {
 
     private static _instance: LoadBase;
-    private loadArr: Map<string, any> = new Map();
+    private loadList: Map<string, any> = new Map();
 
     public static get instance() {
         if (!this._instance) {
@@ -29,7 +29,7 @@ export default class LoadBase {
             cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
                 bundle.load(asserts, (ell, asserts) => {
                     if (asserts instanceof cc.Prefab) {
-                        this.loadArr.set(asserts.name, asserts);
+                        this.loadList.set(asserts.name, asserts);
                         res();
                     }
                 });
@@ -47,7 +47,7 @@ export default class LoadBase {
             cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
                 bundle.loadDir(fileName, (ell, asserts) => {
                     for (let i = 0; i < asserts.length; i++) {
-                        this.loadArr.set(asserts[i].name, asserts[i]);
+                        this.loadList.set(asserts[i].name, asserts[i]);
                     }
                     res()
                 });
@@ -59,6 +59,6 @@ export default class LoadBase {
      * @returns 
      */
     public getLoadList() {
-        return this.loadArr;
+        return this.loadList;
     }
 }

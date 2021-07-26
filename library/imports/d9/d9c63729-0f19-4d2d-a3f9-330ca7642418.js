@@ -76,8 +76,17 @@ var HallMain = /** @class */ (function (_super) {
     }
     HallMain.prototype.onLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var path, json;
             return __generator(this, function (_a) {
+                path = "db://assets/config/config1.json";
+                json = {
+                    name: "haha",
+                    age: 18
+                };
                 HallLayerC_1.default.instance.init(this.hallLayerV, {});
+                Editor.assetdb.createOrSave(path, JSON.stringify(json), function (err, results) {
+                    console.log("配置已经更新", err, results);
+                });
                 return [2 /*return*/];
             });
         });

@@ -18,7 +18,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var LoadBase = /** @class */ (function () {
     function LoadBase() {
-        this.loadArr = new Map();
+        this.loadList = new Map();
     }
     LoadBase_1 = LoadBase;
     Object.defineProperty(LoadBase, "instance", {
@@ -43,7 +43,7 @@ var LoadBase = /** @class */ (function () {
             cc.assetManager.loadBundle(url, function (ell, bundle) {
                 bundle.load(asserts, function (ell, asserts) {
                     if (asserts instanceof cc.Prefab) {
-                        _this.loadArr.set(asserts.name, asserts);
+                        _this.loadList.set(asserts.name, asserts);
                         res();
                     }
                 });
@@ -61,7 +61,7 @@ var LoadBase = /** @class */ (function () {
             cc.assetManager.loadBundle(url, function (ell, bundle) {
                 bundle.loadDir(fileName, function (ell, asserts) {
                     for (var i = 0; i < asserts.length; i++) {
-                        _this.loadArr.set(asserts[i].name, asserts[i]);
+                        _this.loadList.set(asserts[i].name, asserts[i]);
                     }
                     res();
                 });
@@ -73,7 +73,7 @@ var LoadBase = /** @class */ (function () {
      * @returns
      */
     LoadBase.prototype.getLoadList = function () {
-        return this.loadArr;
+        return this.loadList;
     };
     var LoadBase_1;
     LoadBase = LoadBase_1 = __decorate([

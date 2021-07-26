@@ -6,7 +6,7 @@ import CarPrefabV from './CarPrefabV';
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: CraC
+ * Description: CarC
  */
 const { ccclass, property } = cc._decorator;
 
@@ -32,6 +32,7 @@ export default class CarPrefabC extends LayerBase {
     }
 
     public main() {
-        console.log("遍历根节点:", this.getAllNodeData());
+        // console.log("遍历根节点:", this.getAllNodeData());
+        
     }
 }

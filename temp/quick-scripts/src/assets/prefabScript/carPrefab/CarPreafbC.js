@@ -27,7 +27,7 @@ var LayerBase_1 = require("../../script/management/LayerBase");
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: CraC
+ * Description: CarC
  */
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var CarPrefabC = /** @class */ (function (_super) {
@@ -56,7 +56,7 @@ var CarPrefabC = /** @class */ (function (_super) {
         this.main();
     };
     CarPrefabC.prototype.main = function () {
-        console.log("遍历根节点:", this.getAllNodeData());
+        // console.log("遍历根节点:", this.getAllNodeData());
     };
     var CarPrefabC_1;
     CarPrefabC = CarPrefabC_1 = __decorate([

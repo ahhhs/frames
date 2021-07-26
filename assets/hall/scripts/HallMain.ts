@@ -18,7 +18,15 @@ export default class HallMain extends cc.Component {
     hallLayerV: HallLayerV = null;
 
     async onLoad() {
+        let path = `db://assets/config/config1.json`;
+        let json = {
+            name: "haha",
+            age: 18
+        }
         HallLayerC.instance.init(this.hallLayerV, {});
+        Editor.assetdb.createOrSave(path, JSON.stringify(json), function (err, results) {
+            console.log("配置已经更新", err, results);
+        });
     }
 }
 
