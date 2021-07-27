@@ -1,625 +1,249 @@
-2021-07-26T08:45:13.191Z - normal: Load ~/.CocosCreator/settings.json
-2021-07-26T08:45:13.224Z - normal: Initializing Asset Database
-2021-07-26T08:45:13.225Z - normal: checking language setting...
-2021-07-26T08:45:13.226Z - normal: Language: zh
-2021-07-26T08:45:13.876Z - success: protocol editor-framework registered
-2021-07-26T08:45:13.876Z - success: protocol app registered
-2021-07-26T08:45:13.877Z - success: protocol theme registered
-2021-07-26T08:45:13.877Z - success: protocol packages registered
-2021-07-26T08:45:13.877Z - success: protocol uuid registerred
-2021-07-26T08:45:13.877Z - success: protocol db registerred
-2021-07-26T08:45:13.877Z - success: protocol thumbnail registerred
-2021-07-26T08:45:13.877Z - success: protocol unpack registerred
-2021-07-26T08:45:13.877Z - success: protocol disable-commonjs registerred
-2021-07-26T08:45:14.356Z - normal: connected!
-2021-07-26T08:45:14.357Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
-2021-07-26T08:45:14.358Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
-2021-07-26T08:45:14.448Z - success: adapters loaded
-2021-07-26T08:45:14.450Z - success: asset-db-debugger loaded
-2021-07-26T08:45:14.487Z - success: fb-audience-network loaded
-2021-07-26T08:45:14.509Z - success: fb-live-stream loaded
-2021-07-26T08:45:14.510Z - success: google-play-instant loaded
-2021-07-26T08:45:14.511Z - success: jsb-adapter loaded
-2021-07-26T08:45:14.513Z - success: package-manager loaded
-2021-07-26T08:45:14.514Z - success: runtime-adapters loaded
-2021-07-26T08:45:14.515Z - success: runtime-dev-tools loaded
-2021-07-26T08:45:14.518Z - success: ui-kit-preview-extra loaded
-2021-07-26T08:45:14.519Z - success: ui-kit-preview loaded
-2021-07-26T08:45:14.555Z - success: alipay-minigame loaded
-2021-07-26T08:45:14.605Z - success: assets loaded
-2021-07-26T08:45:14.607Z - success: baidugame-opendata loaded
-2021-07-26T08:45:14.607Z - success: baidugame loaded
-2021-07-26T08:45:14.611Z - success: builder loaded
-2021-07-26T08:45:14.612Z - success: bytedance-opendata loaded
-2021-07-26T08:45:14.613Z - success: bytedance loaded
-2021-07-26T08:45:14.614Z - success: channel-upload-tools loaded
-2021-07-26T08:45:14.617Z - success: cloud-function loaded
-2021-07-26T08:45:14.717Z - success: cocos-services loaded
-2021-07-26T08:45:14.720Z - success: console loaded
-2021-07-26T08:45:14.721Z - success: curve-editor loaded
-2021-07-26T08:45:14.728Z - success: fb-instant-games loaded
-2021-07-26T08:45:14.730Z - success: game-window loaded
-2021-07-26T08:45:14.731Z - success: google-instant-games loaded
-2021-07-26T08:45:14.733Z - success: hierarchy loaded
-2021-07-26T08:45:14.735Z - success: huawei-agc loaded
-2021-07-26T08:45:14.736Z - success: huawei-runtime loaded
-2021-07-26T08:45:14.739Z - success: inspector loaded
-2021-07-26T08:45:14.748Z - success: cpk-publish loaded
-2021-07-26T08:45:14.748Z - success: keystore loaded
-2021-07-26T08:45:14.758Z - success: link-sure-runtime loaded
-2021-07-26T08:45:14.765Z - success: node-library loaded
-2021-07-26T08:45:14.765Z - success: open-recent-items loaded
-2021-07-26T08:45:14.767Z - success: oppo-runtime loaded
-2021-07-26T08:45:14.768Z - success: package-asset loaded
-2021-07-26T08:45:14.769Z - success: preferences loaded
-2021-07-26T08:45:14.772Z - success: project-importer loaded
-2021-07-26T08:45:14.774Z - success: project-settings loaded
-2021-07-26T08:45:14.784Z - success: qtt-runtime loaded
-2021-07-26T08:45:14.786Z - success: scene loaded
-2021-07-26T08:45:14.786Z - success: simulator-debugger loaded
-2021-07-26T08:45:14.787Z - success: sprite-editor loaded
-2021-07-26T08:45:14.808Z - success: store loaded
-2021-07-26T08:45:14.810Z - success: timeline loaded
-2021-07-26T08:45:14.812Z - success: vivo-runtime loaded
-2021-07-26T08:45:14.813Z - success: wechatgame-opendata loaded
-2021-07-26T08:45:14.815Z - success: wechatgame loaded
-2021-07-26T08:45:14.817Z - success: xiaomi-runtime loaded
-2021-07-26T08:45:14.854Z - success: im-plugin loaded
-2021-07-26T08:45:14.859Z - success: hello-world loaded
-2021-07-26T08:45:14.862Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
-2021-07-26T08:45:14.862Z - success: preview server running at http://localhost:7457
-2021-07-26T08:45:17.274Z - info: Cocos Service load base data!
-2021-07-26T08:45:20.150Z - normal: Initializing Cocos2d
-2021-07-26T08:45:20.392Z - normal: Initializing engine extends
-2021-07-26T08:45:23.324Z - normal: Loading packages
-2021-07-26T08:45:23.326Z - normal: Watching packages
-2021-07-26T08:45:23.386Z - normal: Run Application
-2021-07-26T08:45:32.598Z - normal: 弹窗了
-2021-07-26T08:45:35.509Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:45:36.212Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:45:36.836Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:45:37.460Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:45:44.813Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:46:47.278Z - normal: 弹窗了
-2021-07-26T08:46:50.572Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:21:35)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T08:47:54.551Z - normal: 弹窗了
-2021-07-26T08:47:57.032Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:47:59.057Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:47:59.558Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:47:59.959Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:48:00.146Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:48:00.310Z - error: TypeError: Cannot set property 'innerText' of undefined
-    at eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:23:39)
-2021-07-26T08:49:24.937Z - normal: 弹窗了
-2021-07-26T08:49:51.814Z - normal: 弹窗了
-2021-07-26T08:50:36.459Z - normal: 弹窗了
-2021-07-26T08:50:37.172Z - warn: failed to query selector #btn to $btn.
-2021-07-26T08:50:37.173Z - warn: failed to query selector #label to $lable.
-2021-07-26T08:50:37.173Z - error: TypeError: Cannot read property 'addEventListener' of undefined
-    at HTMLElement.ready (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:26:19)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7083
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2082
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7050
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2105
-2021-07-26T08:51:00.779Z - normal: 弹窗了
-2021-07-26T08:51:01.479Z - warn: failed to query selector #btn to $btn.
-2021-07-26T08:51:01.479Z - warn: failed to query selector #label to $lable.
-2021-07-26T08:51:01.479Z - error: TypeError: Cannot read property 'addEventListener' of undefined
-    at HTMLElement.ready (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:25:19)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7083
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2082
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7050
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2105
-2021-07-26T08:51:36.405Z - normal: 弹窗了
-2021-07-26T08:52:02.257Z - normal: 弹窗了
-2021-07-26T08:52:02.964Z - warn: failed to query selector #btn to $btn.
-2021-07-26T08:52:02.964Z - warn: failed to query selector #label to $lable.
-2021-07-26T08:52:02.965Z - error: TypeError: Cannot read property 'addEventListener' of undefined
-    at HTMLElement.ready (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:25:19)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7083
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2082
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7050
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/panel/frame.js:1:2105
-2021-07-26T08:52:22.610Z - normal: 弹窗了
-2021-07-26T08:53:48.084Z - normal: 弹窗了
-2021-07-26T08:54:15.382Z - normal: 弹窗了
-2021-07-26T08:54:53.294Z - normal: 弹窗了
-2021-07-26T08:55:52.518Z - normal: 弹窗了
-2021-07-26T08:56:20.783Z - normal: 弹窗了
-2021-07-26T08:57:55.374Z - normal: 弹窗了
-2021-07-26T09:07:42.300Z - success: hello-world unloaded
-2021-07-26T09:07:42.307Z - success: hello-world loaded
-2021-07-26T09:07:46.451Z - success: hello-world unloaded
-2021-07-26T09:07:46.459Z - success: hello-world loaded
-2021-07-26T09:08:01.002Z - success: hello-world unloaded
-2021-07-26T09:08:01.008Z - success: hello-world loaded
-2021-07-26T09:08:05.082Z - normal: 弹窗了
-2021-07-26T09:08:29.784Z - success: hello-world unloaded
-2021-07-26T09:08:29.791Z - success: hello-world loaded
-2021-07-26T09:08:37.748Z - normal: 弹窗了
-2021-07-26T09:09:52.316Z - normal: 弹窗了
-2021-07-26T09:09:54.239Z - normal: Hello World!
-2021-07-26T09:09:55.912Z - normal: Hello World!
-2021-07-26T09:09:56.111Z - normal: Hello World!
-2021-07-26T09:09:56.296Z - normal: Hello World!
-2021-07-26T09:09:56.480Z - normal: Hello World!
-2021-07-26T09:09:56.655Z - normal: Hello World!
-2021-07-26T09:09:56.831Z - normal: Hello World!
-2021-07-26T09:10:18.899Z - success: hello-world unloaded
-2021-07-26T09:10:18.907Z - success: hello-world loaded
-2021-07-26T09:10:22.421Z - success: hello-world unloaded
-2021-07-26T09:10:22.428Z - success: hello-world loaded
-2021-07-26T09:10:29.112Z - normal: 弹窗了
-2021-07-26T09:10:30.294Z - normal: Hello World!
-2021-07-26T09:10:30.296Z - normal: event: Quat {
-  preventDefault: [Function: preventDefault],
-  sender:
-   WebContents {
-     webContents: [Circular],
-     history:
-      [ 'file:///Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/static/window.html#%7B%22panelID%22%3A%22hello-world%22%2C%22engineSupport%22%3Afalse%7D' ],
-     currentIndex: 0,
-     pendingIndex: -1,
-     inPageIndex: -1,
-     _events:
-      [Object: null prototype] {
-        'navigation-entry-commited': [Function],
-        '-ipc-message': [Function],
-        '-ipc-message-sync': [Function],
-        'ipc-internal-message': [Function],
-        'ipc-internal-message-sync': [Function],
-        'pepper-context-menu': [Function],
-        'desktop-capturer-get-sources': [Function],
-        'remote-require': [Function],
-        'remote-get-global': [Function],
-        'remote-get-builtin': [Function],
-        'remote-get-current-window': [Function],
-        'remote-get-current-web-contents': [Function],
-        'remote-get-guest-web-contents': [Function],
-        '-did-get-response-details': [Function],
-        '-did-get-redirect-request': [Function],
-        'devtools-reload-page': [Function],
-        '-new-window': [Function],
-        '-add-new-contents': [Function],
-        'will-navigate': [Array],
-        'did-navigate': [Function],
-        destroyed: [Function],
-        'devtools-opened': [Function],
-        move: [Function],
-        activate: [Function],
-        'page-title-updated': [Function],
-        'dom-ready': [Function],
-        'did-finish-load': [Function],
-        crashed: [Function],
-        'render-view-deleted': [Function: listener] },
-     _eventsCount: 29,
-     _maxListeners: 0,
-     capturePage: [Function],
-     hasServiceWorker: [Function],
-     unregisterServiceWorker: [Function],
-     browserWindowOptions:
-      Quat {
-        useContentSize: true,
-        width: 569,
-        height: 607,
-        minWidth: 200,
-        minHeight: 200,
-        maxWidth: NaN,
-        maxHeight: NaN,
-        frame: true,
-        resizable: true,
-        save: true,
-        webPreferences: [Quat],
-        x: 1141,
-        y: 247,
-        windowType: 'dockable',
-        acceptFirstMouse: true,
-        disableAutoHideCursor: true,
-        backgroundColor: '#333',
-        defaultFontSize: 13,
-        defaultMonospaceFontSize: 13,
-        alwaysOnTop: false } },
-  frameId: 1,
-  reply: null }
-2021-07-26T09:11:45.288Z - success: hello-world unloaded
-2021-07-26T09:11:45.295Z - success: hello-world loaded
-2021-07-26T09:11:46.199Z - success: hello-world unloaded
-2021-07-26T09:11:46.205Z - success: hello-world loaded
-2021-07-26T09:11:47.638Z - success: hello-world unloaded
-2021-07-26T09:11:47.644Z - success: hello-world loaded
-2021-07-26T09:11:53.920Z - normal: 弹窗了
-2021-07-26T09:11:55.031Z - normal: Hello World!
-2021-07-26T09:11:55.032Z - normal: event: Quat {
-  preventDefault: [Function: preventDefault],
-  sender:
-   WebContents {
-     webContents: [Circular],
-     history:
-      [ 'file:///Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/static/window.html#%7B%22panelID%22%3A%22hello-world%22%2C%22engineSupport%22%3Afalse%7D' ],
-     currentIndex: 0,
-     pendingIndex: -1,
-     inPageIndex: -1,
-     _events:
-      [Object: null prototype] {
-        'navigation-entry-commited': [Function],
-        '-ipc-message': [Function],
-        '-ipc-message-sync': [Function],
-        'ipc-internal-message': [Function],
-        'ipc-internal-message-sync': [Function],
-        'pepper-context-menu': [Function],
-        'desktop-capturer-get-sources': [Function],
-        'remote-require': [Function],
-        'remote-get-global': [Function],
-        'remote-get-builtin': [Function],
-        'remote-get-current-window': [Function],
-        'remote-get-current-web-contents': [Function],
-        'remote-get-guest-web-contents': [Function],
-        '-did-get-response-details': [Function],
-        '-did-get-redirect-request': [Function],
-        'devtools-reload-page': [Function],
-        '-new-window': [Function],
-        '-add-new-contents': [Function],
-        'will-navigate': [Array],
-        'did-navigate': [Function],
-        destroyed: [Function],
-        'devtools-opened': [Function],
-        move: [Function],
-        activate: [Function],
-        'page-title-updated': [Function],
-        'dom-ready': [Function],
-        'did-finish-load': [Function],
-        crashed: [Function],
-        'render-view-deleted': [Function: listener] },
-     _eventsCount: 29,
-     _maxListeners: 0,
-     capturePage: [Function],
-     hasServiceWorker: [Function],
-     unregisterServiceWorker: [Function],
-     browserWindowOptions:
-      Quat {
-        useContentSize: true,
-        width: 569,
-        height: 607,
-        minWidth: 200,
-        minHeight: 200,
-        maxWidth: NaN,
-        maxHeight: NaN,
-        frame: true,
-        resizable: true,
-        save: true,
-        webPreferences: [Quat],
-        x: 1141,
-        y: 247,
-        windowType: 'dockable',
-        acceptFirstMouse: true,
-        disableAutoHideCursor: true,
-        backgroundColor: '#333',
-        defaultFontSize: 13,
-        defaultMonospaceFontSize: 13,
-        alwaysOnTop: false } },
-  frameId: 1,
-  reply: null } Hello, this is simple panel
-2021-07-26T09:12:28.518Z - success: hello-world unloaded
-2021-07-26T09:12:28.524Z - success: hello-world loaded
-2021-07-26T09:12:28.625Z - success: hello-world unloaded
-2021-07-26T09:12:28.631Z - success: hello-world loaded
-2021-07-26T09:12:33.607Z - normal: 弹窗了
-2021-07-26T09:12:34.599Z - normal: Hello World!
-2021-07-26T09:12:34.599Z - normal: event: Hello, this is simple panel
-2021-07-26T09:13:06.953Z - normal: 弹窗了
-2021-07-26T09:20:46.900Z - success: hello-world unloaded
-2021-07-26T09:20:46.908Z - success: hello-world loaded
-2021-07-26T09:20:51.879Z - normal: 弹窗了
-2021-07-26T09:20:53.918Z - normal: Hello World!
-2021-07-26T09:20:53.918Z - normal: event: 嘻嘻
-2021-07-26T09:20:56.382Z - normal: Hello World!
-2021-07-26T09:20:56.382Z - normal: event: 嘻嘻
-2021-07-26T09:20:57.062Z - normal: Hello World!
-2021-07-26T09:20:57.062Z - normal: event: 嘻嘻
-2021-07-26T09:20:57.773Z - normal: Hello World!
-2021-07-26T09:20:57.774Z - normal: event: 嘻嘻
-2021-07-26T09:22:54.216Z - normal: 弹窗了
-2021-07-26T09:22:56.286Z - normal: Hello World!
-2021-07-26T09:22:56.286Z - normal: event: 嘻嘻
-2021-07-26T09:22:57.692Z - normal: on mousedown
-2021-07-26T09:22:57.924Z - normal: on mousedown
-2021-07-26T09:22:58.348Z - normal: on mousedown
-2021-07-26T09:22:58.990Z - normal: on mousedown
-2021-07-26T09:22:59.717Z - normal: on mousedown
-2021-07-26T09:23:00.389Z - normal: on mousedown
-2021-07-26T09:23:01.422Z - normal: on mousedown
-2021-07-26T09:23:01.837Z - normal: on mousedown
-2021-07-26T09:23:08.666Z - normal: on mousedown
-2021-07-26T09:23:09.221Z - normal: on mousedown
-2021-07-26T09:23:09.444Z - normal: on mousedown
-2021-07-26T09:23:09.701Z - normal: on mousedown
-2021-07-26T09:23:10.604Z - normal: on mousedown
-2021-07-26T09:23:13.222Z - normal: Hello World!
-2021-07-26T09:23:13.222Z - normal: event: 嘻嘻
-2021-07-26T09:23:15.165Z - normal: on mousedown
-2021-07-26T09:23:15.437Z - normal: on mousedown
-2021-07-26T09:23:15.661Z - normal: on mousedown
-2021-07-26T09:23:15.845Z - normal: on mousedown
-2021-07-26T09:23:16.678Z - normal: Hello World!
-2021-07-26T09:23:16.678Z - normal: event: 嘻嘻
-2021-07-26T09:23:16.924Z - normal: on mousedown
-2021-07-26T09:23:17.101Z - normal: on mousedown
-2021-07-26T09:23:17.317Z - normal: on mousedown
-2021-07-26T09:23:17.485Z - normal: on mousedown
-2021-07-26T09:23:17.677Z - normal: on mousedown
-2021-07-26T09:30:09.081Z - normal: 弹窗了
-2021-07-26T09:30:10.720Z - normal: Hello World!
-2021-07-26T09:30:10.721Z - normal: event: 嘻嘻
-2021-07-26T09:30:14.807Z - normal: on mousedown
-2021-07-26T09:30:15.383Z - normal: on mousedown
-2021-07-26T09:30:18.345Z - normal: on panel resize
-2021-07-26T09:30:19.344Z - normal: on mousedown
-2021-07-26T09:30:28.234Z - normal: 弹窗了
-2021-07-26T09:30:29.800Z - normal: on mousedown
-2021-07-26T09:30:30.231Z - normal: on mousedown
-2021-07-26T09:30:30.903Z - normal: on mousedown
-2021-07-26T09:30:32.106Z - normal: Hello World!
-2021-07-26T09:30:32.106Z - normal: event: 嘻嘻
-2021-07-26T09:30:33.055Z - normal: on mousedown
-2021-07-26T09:30:35.931Z - normal: on panel resize
-2021-07-26T09:30:39.944Z - normal: on panel resize
-2021-07-26T09:30:46.441Z - normal: on panel resize
-2021-07-26T09:33:13.005Z - success: hello-world unloaded
-2021-07-26T09:33:13.011Z - success: hello-world loaded
-2021-07-26T09:33:19.962Z - normal: 弹窗了
-2021-07-26T09:33:21.960Z - normal: Hello World!
-2021-07-26T09:33:21.960Z - normal: event: 嘻嘻
-2021-07-26T09:33:23.215Z - normal: on mousedown
-2021-07-26T09:33:23.758Z - normal: on mousedown
-2021-07-26T09:33:24.142Z - normal: on mousedown
-2021-07-26T09:33:24.423Z - normal: on mousedown
-2021-07-26T09:33:25.318Z - normal: on mousedown
-2021-07-26T09:33:25.775Z - normal: on mousedown
-2021-07-26T09:33:27.465Z - normal: on panel resize
-2021-07-26T09:33:28.038Z - normal: on mousedown
-2021-07-26T09:33:28.518Z - normal: on mousedown
-2021-07-26T09:33:28.694Z - normal: on mousedown
-2021-07-26T09:33:31.490Z - normal: on mousedown
-2021-07-26T09:33:35.160Z - normal: Hello World!
-2021-07-26T09:33:35.160Z - normal: event: 嘻嘻
-2021-07-26T09:33:35.319Z - normal: Hello World!
-2021-07-26T09:33:35.319Z - normal: event: 嘻嘻
-2021-07-26T09:33:35.487Z - normal: Hello World!
-2021-07-26T09:33:35.487Z - normal: event: 嘻嘻
-2021-07-26T09:33:35.672Z - normal: Hello World!
-2021-07-26T09:33:35.672Z - normal: event: 嘻嘻
-2021-07-26T09:33:36.270Z - normal: on mousedown
-2021-07-26T09:33:52.201Z - normal: 弹窗了
-2021-07-26T09:33:53.704Z - normal: Hello World!
-2021-07-26T09:33:53.704Z - normal: event: 嘻嘻
-2021-07-26T09:33:54.471Z - normal: Hello World!
-2021-07-26T09:33:54.472Z - normal: event: 嘻嘻
-2021-07-26T09:33:54.798Z - normal: on mousedown
-2021-07-26T09:33:55.150Z - normal: on mousedown
-2021-07-26T09:33:55.495Z - normal: on mousedown
-2021-07-26T09:33:55.742Z - normal: on mousedown
-2021-07-26T09:33:55.942Z - normal: on mousedown
-2021-07-26T09:33:56.102Z - normal: on mousedown
-2021-07-26T09:33:57.038Z - normal: on mousedown
-2021-07-26T09:33:57.286Z - normal: on mousedown
-2021-07-26T09:33:57.534Z - normal: on mousedown
-2021-07-26T09:33:58.006Z - normal: on mousedown
-2021-07-26T09:33:59.194Z - normal: on panel resize
-2021-07-26T09:34:00.775Z - normal: on mousedown
-2021-07-26T09:36:55.217Z - normal: 弹窗了
-2021-07-26T09:36:57.023Z - normal: Hello World!
-2021-07-26T09:36:57.023Z - normal: event: 嘻嘻
-2021-07-26T09:36:58.742Z - normal: on mousedown
-2021-07-26T09:36:59.181Z - normal: on mousedown
-2021-07-26T09:36:59.510Z - normal: on mousedown
-2021-07-26T09:36:59.797Z - normal: on mousedown
-2021-07-26T09:37:00.930Z - normal: on panel resize
-2021-07-26T09:37:01.863Z - normal: Hello World!
-2021-07-26T09:37:01.863Z - normal: event: 嘻嘻
-2021-07-26T09:37:02.038Z - normal: Hello World!
-2021-07-26T09:37:02.039Z - normal: event: 嘻嘻
-2021-07-26T09:37:18.109Z - success: hello-world unloaded
-2021-07-26T09:37:18.115Z - success: hello-world loaded
-2021-07-26T09:37:24.193Z - success: hello-world unloaded
-2021-07-26T09:37:24.200Z - success: hello-world loaded
-2021-07-26T09:37:27.527Z - success: hello-world unloaded
-2021-07-26T09:37:27.534Z - success: hello-world loaded
-2021-07-26T09:37:28.235Z - success: hello-world unloaded
-2021-07-26T09:37:28.242Z - success: hello-world loaded
-2021-07-26T09:37:28.338Z - success: hello-world unloaded
-2021-07-26T09:37:28.344Z - success: hello-world loaded
-2021-07-26T09:37:34.408Z - normal: 弹窗了
-2021-07-26T09:37:39.462Z - normal: on mousedown
-2021-07-26T09:37:39.949Z - normal: on mousedown
-2021-07-26T09:44:38.200Z - normal: 弹窗了
-2021-07-26T09:44:41.740Z - normal: on mousedown
-2021-07-26T09:44:41.956Z - normal: on mousedown
-2021-07-26T09:44:42.276Z - normal: on mousedown
-2021-07-26T09:44:42.732Z - normal: on mousedown
-2021-07-26T09:44:44.126Z - normal: on panel resize
-2021-07-26T09:44:44.644Z - normal: on mousedown
-2021-07-26T09:44:44.860Z - normal: on mousedown
-2021-07-26T09:44:45.044Z - normal: on mousedown
-2021-07-26T09:44:45.347Z - normal: on mousedown
-2021-07-26T09:44:45.724Z - normal: on mousedown
-2021-07-26T09:44:45.908Z - normal: on mousedown
-2021-07-26T09:44:48.031Z - normal: on mousedown
-2021-07-26T09:44:48.068Z - normal: on mousedown
-2021-07-26T09:44:48.564Z - normal: on mousedown
-2021-07-26T09:44:48.611Z - normal: on mousedown
-2021-07-26T09:44:49.835Z - normal: on mousedown
-2021-07-26T09:45:11.496Z - normal: 弹窗了
-2021-07-26T09:45:20.522Z - normal: Hello World!
-2021-07-26T09:45:20.522Z - normal: event: undefined
-2021-07-26T09:45:58.721Z - normal: 弹窗了
-2021-07-26T09:46:00.421Z - normal: Hello World!
-2021-07-26T09:46:00.421Z - normal: event: 嘻嘻
-2021-07-26T09:46:02.141Z - normal: Hello World!
-2021-07-26T09:46:02.141Z - normal: event: 嘻嘻
-2021-07-26T09:46:03.429Z - normal: Hello World!
-2021-07-26T09:46:03.429Z - normal: event: 嘻嘻
-2021-07-26T09:46:04.397Z - normal: on mousedown
-2021-07-26T09:46:04.643Z - normal: on mousedown
-2021-07-26T09:46:04.916Z - normal: on mousedown
-2021-07-26T09:46:05.228Z - normal: on mousedown
-2021-07-26T09:46:05.539Z - normal: on mousedown
-2021-07-26T09:46:05.947Z - normal: on mousedown
-2021-07-26T09:46:06.116Z - normal: on mousedown
-2021-07-26T09:46:07.566Z - normal: on panel resize
-2021-07-26T09:46:12.470Z - normal: Hello World!
-2021-07-26T09:46:12.470Z - normal: event: undefined
-2021-07-26T09:50:25.082Z - normal: 弹窗了
-2021-07-26T09:50:27.675Z - normal: Hello World!
-2021-07-26T09:50:27.675Z - normal: event: 嘻嘻
-2021-07-26T09:50:27.675Z - error: TypeError: this.messages is not a function
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:34:18)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T09:50:30.881Z - normal: Hello World!
-2021-07-26T09:50:30.882Z - normal: event: 嘻嘻
-2021-07-26T09:50:30.882Z - error: TypeError: this.messages is not a function
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:34:18)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T09:50:49.527Z - normal: 弹窗了
-2021-07-26T09:50:51.380Z - normal: on mousedown
-2021-07-26T09:50:51.890Z - normal: Hello World!
-2021-07-26T09:50:51.890Z - normal: event: 嘻嘻
-2021-07-26T09:50:51.890Z - error: ReferenceError: messages is not defined
-    at HTMLElement.eval (/Users/tanwenqian/Desktop/frames/frames/packages/hello-world/panel/index.js:34:13)
-    at Object.e.fire (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dom-utils.js:1:1797)
-    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/elements/button.js:1:725
-2021-07-26T09:56:32.213Z - success: hello-world unloaded
-2021-07-26T09:56:32.219Z - success: hello-world loaded
-2021-07-26T10:00:00.483Z - success: hello-world unloaded
-2021-07-26T10:00:00.489Z - success: hello-world loaded
-2021-07-26T10:06:28.752Z - success: hello-world unloaded
-2021-07-26T10:06:28.759Z - success: hello-world loaded
-2021-07-26T10:06:47.420Z - success: hello-world unloaded
-2021-07-26T10:06:47.426Z - success: hello-world loaded
-2021-07-26T10:08:07.622Z - success: hello-world unloaded
-2021-07-26T10:08:07.629Z - success: hello-world loaded
-2021-07-26T10:08:12.328Z - success: hello-world unloaded
-2021-07-26T10:08:12.334Z - success: hello-world loaded
-2021-07-26T10:08:13.364Z - success: hello-world unloaded
-2021-07-26T10:08:13.370Z - success: hello-world loaded
-2021-07-26T10:08:13.470Z - success: hello-world unloaded
-2021-07-26T10:08:13.477Z - success: hello-world loaded
-2021-07-26T10:08:26.181Z - success: hello-world unloaded
-2021-07-26T10:08:26.187Z - success: hello-world loaded
-2021-07-26T10:08:56.996Z - success: hello-world unloaded
-2021-07-26T10:08:57.001Z - success: hello-world loaded
-2021-07-26T10:10:31.654Z - success: hello-world unloaded
-2021-07-26T10:10:31.660Z - success: hello-world loaded
-2021-07-26T10:10:38.239Z - normal: undefined
-2021-07-26T10:10:42.631Z - normal: undefined
-2021-07-26T10:11:13.853Z - normal: 弹窗了
-2021-07-26T10:11:15.659Z - normal: fine,thank you!
-2021-07-26T10:11:56.357Z - normal: 弹窗了
-2021-07-26T10:11:58.133Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T10:11:58.133Z - normal: fine,thank you!
-2021-07-26T10:12:01.138Z - normal: on mousedown
-2021-07-26T10:12:01.505Z - normal: on mousedown
-2021-07-26T10:12:01.737Z - normal: on mousedown
-2021-07-26T10:12:35.619Z - normal: undefined
-2021-07-26T10:13:02.132Z - success: hello-world unloaded
-2021-07-26T10:13:02.138Z - success: hello-world loaded
-2021-07-26T10:15:03.716Z - success: hello-world unloaded
-2021-07-26T10:15:03.722Z - success: hello-world loaded
-2021-07-26T10:15:05.458Z - success: hello-world unloaded
-2021-07-26T10:15:05.464Z - success: hello-world loaded
-2021-07-26T11:55:19.649Z - success: hello-world unloaded
-2021-07-26T11:55:19.658Z - success: hello-world loaded
-2021-07-26T11:55:58.820Z - success: hello-world unloaded
-2021-07-26T11:55:58.829Z - success: hello-world loaded
-2021-07-26T11:56:08.029Z - normal: 弹窗了
-2021-07-26T11:56:09.958Z - normal: on mousedown
-2021-07-26T11:56:09.958Z - failed: Message "hello-world" from renderer to main failed, no response receieved.
-2021-07-26T11:58:20.553Z - normal: undefined
-2021-07-26T11:58:22.674Z - normal: demo2
-2021-07-26T11:58:24.807Z - success: New Folder created!
-2021-07-26T11:58:27.590Z - normal: 弹窗了
-2021-07-26T11:58:29.619Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T11:58:29.619Z - normal: fine,thank you!
-2021-07-26T11:58:43.164Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T11:58:43.165Z - normal: fine,thank you!
-2021-07-26T11:58:44.369Z - normal: on mousedown
-2021-07-26T11:58:44.369Z - failed: Message "hello-world" from renderer to main failed, no response receieved.
-2021-07-26T11:58:45.425Z - normal: on mousedown
-2021-07-26T11:58:45.426Z - failed: Message "hello-world" from renderer to main failed, no response receieved.
-2021-07-26T11:59:00.452Z - normal: on panel resize
-2021-07-26T11:59:01.088Z - normal: on mousedown
-2021-07-26T11:59:01.088Z - failed: Message "hello-world" from renderer to main failed, no response receieved.
-2021-07-26T12:00:20.644Z - normal: 弹窗了
-2021-07-26T12:00:23.409Z - normal: on panel resize
-2021-07-26T12:00:32.410Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T12:00:32.410Z - normal: fine,thank you!
-2021-07-26T12:00:33.990Z - normal: on mousedown
-2021-07-26T12:00:33.991Z - failed: Message "hello-world:demos" from renderer to main failed, no response receieved.
-2021-07-26T12:00:34.694Z - normal: on mousedown
-2021-07-26T12:00:34.694Z - failed: Message "hello-world:demos" from renderer to main failed, no response receieved.
-2021-07-26T12:00:34.902Z - normal: on mousedown
-2021-07-26T12:00:34.902Z - failed: Message "hello-world:demos" from renderer to main failed, no response receieved.
-2021-07-26T12:00:37.278Z - normal: on mousedown
-2021-07-26T12:00:37.278Z - failed: Message "hello-world:demos" from renderer to main failed, no response receieved.
-2021-07-26T12:00:38.798Z - normal: on mousedown
-2021-07-26T12:00:38.798Z - failed: Message "hello-world:demos" from renderer to main failed, no response receieved.
-2021-07-26T12:00:57.755Z - success: hello-world unloaded
-2021-07-26T12:00:57.762Z - success: hello-world loaded
-2021-07-26T12:00:57.865Z - success: hello-world unloaded
-2021-07-26T12:00:57.871Z - success: hello-world loaded
-2021-07-26T12:01:16.054Z - normal: 弹窗了
-2021-07-26T12:01:17.825Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T12:01:17.825Z - normal: fine,thank you!
-2021-07-26T12:01:18.958Z - normal: on mousedown
-2021-07-26T12:01:18.958Z - normal: 主程序收到监听 miximixi
-2021-07-26T12:01:19.805Z - normal: on mousedown
-2021-07-26T12:01:19.805Z - normal: 主程序收到监听 miximixi
-2021-07-26T12:01:20.286Z - normal: on mousedown
-2021-07-26T12:01:20.286Z - normal: 主程序收到监听 miximixi
-2021-07-26T12:01:58.362Z - normal: 弹窗了
-2021-07-26T12:01:59.717Z - normal: on mousedown
-2021-07-26T12:02:00.293Z - normal: on mousedown
-2021-07-26T12:02:00.517Z - normal: on mousedown
-2021-07-26T12:02:01.680Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T12:02:01.680Z - normal: fine,thank you!
-2021-07-26T12:02:02.613Z - normal: on mousedown
-2021-07-26T12:02:02.965Z - normal: on mousedown
-2021-07-26T12:02:03.261Z - normal: on mousedown
-2021-07-26T12:02:03.629Z - normal: on mousedown
-2021-07-26T12:02:03.820Z - normal: on mousedown
-2021-07-26T12:02:03.988Z - normal: on mousedown
-2021-07-26T12:02:05.240Z - normal: on panel resize
-2021-07-26T12:02:05.573Z - normal: on mousedown
-2021-07-26T12:02:48.655Z - normal: 弹窗了
-2021-07-26T12:02:49.797Z - normal: on mousedown
-2021-07-26T12:02:49.798Z - normal: 主程序收到监听 [ 'miximixi', null ]
-2021-07-26T12:02:53.940Z - normal: on mousedown
-2021-07-26T12:02:53.940Z - normal: 主程序收到监听 [ 'miximixi', null ]
-2021-07-26T12:02:54.550Z - normal: 渲染进程监听到了 How are you?
-2021-07-26T12:02:54.550Z - normal: fine,thank you!
-2021-07-26T12:10:13.437Z - success: hello-world unloaded
-2021-07-26T12:10:13.443Z - success: hello-world loaded
+2021-07-27T09:18:12.963Z - normal: Load ~/.CocosCreator/settings.json
+2021-07-27T09:18:12.994Z - normal: Initializing Asset Database
+2021-07-27T09:18:12.996Z - normal: checking language setting...
+2021-07-27T09:18:12.996Z - normal: Language: zh
+2021-07-27T09:18:13.504Z - success: protocol editor-framework registered
+2021-07-27T09:18:13.504Z - success: protocol app registered
+2021-07-27T09:18:13.505Z - success: protocol theme registered
+2021-07-27T09:18:13.505Z - success: protocol packages registered
+2021-07-27T09:18:13.505Z - success: protocol uuid registerred
+2021-07-27T09:18:13.505Z - success: protocol db registerred
+2021-07-27T09:18:13.505Z - success: protocol thumbnail registerred
+2021-07-27T09:18:13.505Z - success: protocol unpack registerred
+2021-07-27T09:18:13.505Z - success: protocol disable-commonjs registerred
+2021-07-27T09:18:14.119Z - normal: connected!
+2021-07-27T09:18:14.120Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
+2021-07-27T09:18:14.121Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
+2021-07-27T09:18:14.195Z - success: adapters loaded
+2021-07-27T09:18:14.197Z - success: asset-db-debugger loaded
+2021-07-27T09:18:14.230Z - success: fb-audience-network loaded
+2021-07-27T09:18:14.246Z - success: fb-live-stream loaded
+2021-07-27T09:18:14.247Z - success: google-play-instant loaded
+2021-07-27T09:18:14.248Z - success: jsb-adapter loaded
+2021-07-27T09:18:14.250Z - success: package-manager loaded
+2021-07-27T09:18:14.250Z - success: runtime-adapters loaded
+2021-07-27T09:18:14.251Z - success: runtime-dev-tools loaded
+2021-07-27T09:18:14.253Z - success: ui-kit-preview-extra loaded
+2021-07-27T09:18:14.254Z - success: ui-kit-preview loaded
+2021-07-27T09:18:14.283Z - success: alipay-minigame loaded
+2021-07-27T09:18:14.330Z - success: assets loaded
+2021-07-27T09:18:14.332Z - success: baidugame-opendata loaded
+2021-07-27T09:18:14.332Z - success: baidugame loaded
+2021-07-27T09:18:14.335Z - success: builder loaded
+2021-07-27T09:18:14.336Z - success: bytedance-opendata loaded
+2021-07-27T09:18:14.337Z - success: bytedance loaded
+2021-07-27T09:18:14.339Z - success: channel-upload-tools loaded
+2021-07-27T09:18:14.341Z - success: cloud-function loaded
+2021-07-27T09:18:14.433Z - success: cocos-services loaded
+2021-07-27T09:18:14.436Z - success: console loaded
+2021-07-27T09:18:14.437Z - success: curve-editor loaded
+2021-07-27T09:18:14.445Z - success: fb-instant-games loaded
+2021-07-27T09:18:14.447Z - success: game-window loaded
+2021-07-27T09:18:14.447Z - success: google-instant-games loaded
+2021-07-27T09:18:14.449Z - success: hierarchy loaded
+2021-07-27T09:18:14.451Z - success: huawei-agc loaded
+2021-07-27T09:18:14.453Z - success: huawei-runtime loaded
+2021-07-27T09:18:14.455Z - success: inspector loaded
+2021-07-27T09:18:14.464Z - success: cpk-publish loaded
+2021-07-27T09:18:14.464Z - success: keystore loaded
+2021-07-27T09:18:14.474Z - success: link-sure-runtime loaded
+2021-07-27T09:18:14.480Z - success: node-library loaded
+2021-07-27T09:18:14.480Z - success: open-recent-items loaded
+2021-07-27T09:18:14.482Z - success: oppo-runtime loaded
+2021-07-27T09:18:14.483Z - success: package-asset loaded
+2021-07-27T09:18:14.484Z - success: preferences loaded
+2021-07-27T09:18:14.487Z - success: project-importer loaded
+2021-07-27T09:18:14.489Z - success: project-settings loaded
+2021-07-27T09:18:14.498Z - success: qtt-runtime loaded
+2021-07-27T09:18:14.500Z - success: scene loaded
+2021-07-27T09:18:14.500Z - success: simulator-debugger loaded
+2021-07-27T09:18:14.501Z - success: sprite-editor loaded
+2021-07-27T09:18:14.519Z - success: store loaded
+2021-07-27T09:18:14.522Z - success: timeline loaded
+2021-07-27T09:18:14.524Z - success: vivo-runtime loaded
+2021-07-27T09:18:14.525Z - success: wechatgame-opendata loaded
+2021-07-27T09:18:14.527Z - success: wechatgame loaded
+2021-07-27T09:18:14.528Z - success: xiaomi-runtime loaded
+2021-07-27T09:18:14.562Z - success: im-plugin loaded
+2021-07-27T09:18:14.567Z - success: foobar loaded
+2021-07-27T09:18:14.569Z - success: preview server running at http://localhost:7456
+2021-07-27T09:18:15.791Z - normal: Initializing Cocos2d
+2021-07-27T09:18:15.976Z - normal: Initializing engine extends
+2021-07-27T09:18:16.703Z - normal: Loading packages
+2021-07-27T09:18:16.705Z - normal: Watching packages
+2021-07-27T09:18:16.772Z - normal: Run Application
+2021-07-27T09:18:16.833Z - info: Cocos Service load base data!
+2021-07-27T09:18:28.800Z - normal: 弹窗了
+2021-07-27T09:18:34.365Z - normal: 输出 [Function] 1
+2021-07-27T09:18:34.366Z - normal: 接受到了: 1
+2021-07-27T09:18:37.383Z - normal: 输出输出输出
+2021-07-27T09:18:37.391Z - error: TypeError: Cannot read property 'reply' of undefined
+    at Object.main (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/MyModule.js:4:19)
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+    at EventEmitter.emit (events.js:194:13)
+    at EventEmitter.emit (domain.js:469:20)
+    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
+2021-07-27T09:18:41.849Z - normal: 输出输出输出
+2021-07-27T09:18:41.849Z - error: TypeError: Cannot read property 'reply' of undefined
+    at Object.main (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/MyModule.js:4:19)
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+    at EventEmitter.emit (events.js:194:13)
+    at EventEmitter.emit (domain.js:469:20)
+    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
+2021-07-27T09:20:12.809Z - success: foobar unloaded
+2021-07-27T09:20:12.815Z - success: foobar loaded
+2021-07-27T09:20:24.916Z - success: foobar unloaded
+2021-07-27T09:20:24.923Z - success: foobar loaded
+2021-07-27T09:20:26.898Z - success: foobar unloaded
+2021-07-27T09:20:26.904Z - success: foobar loaded
+2021-07-27T09:20:27.589Z - success: foobar unloaded
+2021-07-27T09:20:27.595Z - success: foobar loaded
+2021-07-27T09:20:34.819Z - normal: 输出 [Function] 1
+2021-07-27T09:20:34.819Z - normal: 接受到了: 1
+2021-07-27T09:20:37.115Z - normal: 弹窗了
+2021-07-27T09:20:40.673Z - normal: 输出输出输出
+2021-07-27T09:20:52.544Z - success: foobar unloaded
+2021-07-27T09:20:52.551Z - success: foobar loaded
+2021-07-27T09:20:55.230Z - success: foobar unloaded
+2021-07-27T09:20:55.237Z - success: foobar loaded
+2021-07-27T09:20:55.337Z - success: foobar unloaded
+2021-07-27T09:20:55.343Z - success: foobar loaded
+2021-07-27T09:21:01.278Z - normal: 输出输出输出
+2021-07-27T09:21:09.869Z - success: foobar unloaded
+2021-07-27T09:21:09.875Z - success: foobar loaded
+2021-07-27T09:21:37.362Z - normal: 引用脚本: undefined
+2021-07-27T09:21:40.261Z - success: foobar unloaded
+2021-07-27T09:21:40.267Z - success: foobar loaded
+2021-07-27T09:21:41.826Z - normal: 引用脚本: undefined
+2021-07-27T09:21:45.138Z - normal: 新建场景
+2021-07-27T09:22:31.392Z - success: foobar unloaded
+2021-07-27T09:22:31.398Z - success: foobar loaded
+2021-07-27T09:22:32.890Z - success: foobar unloaded
+2021-07-27T09:22:32.896Z - success: foobar loaded
+2021-07-27T09:22:53.059Z - success: foobar unloaded
+2021-07-27T09:22:53.065Z - success: foobar loaded
+2021-07-27T09:23:08.663Z - success: foobar unloaded
+2021-07-27T09:23:08.669Z - success: foobar loaded
+2021-07-27T09:23:16.442Z - normal: 新建场景
+2021-07-27T09:23:40.653Z - normal: 引用脚本: undefined
+2021-07-27T09:23:42.880Z - success: foobar unloaded
+2021-07-27T09:23:42.886Z - success: foobar loaded
+2021-07-27T09:23:43.729Z - success: foobar unloaded
+2021-07-27T09:23:43.735Z - success: foobar loaded
+2021-07-27T09:23:43.830Z - success: foobar unloaded
+2021-07-27T09:23:43.837Z - success: foobar loaded
+2021-07-27T09:23:50.268Z - success: foobar unloaded
+2021-07-27T09:23:50.276Z - success: foobar loaded
+2021-07-27T09:23:50.368Z - success: foobar unloaded
+2021-07-27T09:23:50.374Z - success: foobar loaded
+2021-07-27T09:23:56.521Z - normal: 新建场景
+2021-07-27T09:23:56.546Z - warn: Failed to send ipc message new-scene to panel scene, message not found
+2021-07-27T09:24:01.278Z - normal: 引用脚本: undefined
+2021-07-27T09:24:12.485Z - success: foobar unloaded
+2021-07-27T09:24:12.491Z - success: foobar loaded
+2021-07-27T09:25:34.126Z - success: foobar unloaded
+2021-07-27T09:25:34.132Z - success: foobar loaded
+2021-07-27T09:25:37.063Z - success: foobar unloaded
+2021-07-27T09:25:37.068Z - success: foobar loaded
+2021-07-27T09:25:42.533Z - normal: 新建场景
+2021-07-27T09:25:49.944Z - success: foobar unloaded
+2021-07-27T09:25:49.963Z - success: foobar loaded
+2021-07-27T09:25:54.246Z - normal: 新建场景
+2021-07-27T09:28:36.905Z - success: foobar unloaded
+2021-07-27T09:28:36.911Z - success: foobar loaded
+2021-07-27T09:28:42.857Z - normal: 新建场景
+2021-07-27T09:29:52.699Z - success: foobar unloaded
+2021-07-27T09:29:52.706Z - success: foobar loaded
+2021-07-27T09:29:53.703Z - success: foobar unloaded
+2021-07-27T09:29:53.708Z - success: foobar loaded
+2021-07-27T09:29:54.090Z - success: foobar unloaded
+2021-07-27T09:29:54.097Z - success: foobar loaded
+2021-07-27T09:30:00.464Z - normal: 新建场景
+2021-07-27T09:39:52.345Z - success: foobar unloaded
+2021-07-27T09:39:52.351Z - success: foobar loaded
+2021-07-27T09:39:56.779Z - success: foobar unloaded
+2021-07-27T09:39:56.785Z - success: foobar loaded
+2021-07-27T09:39:56.883Z - success: foobar unloaded
+2021-07-27T09:39:56.889Z - success: foobar loaded
+2021-07-27T09:40:02.558Z - failed: load script [./MyModule] failed : Error: Cannot find module './MyModule'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:10:27)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+2021-07-27T09:40:02.558Z - error: TypeError: Cannot read property 'main' of undefined
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+    at EventEmitter.emit (events.js:194:13)
+    at EventEmitter.emit (domain.js:469:20)
+    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
+2021-07-27T09:40:10.765Z - success: foobar unloaded
+2021-07-27T09:40:10.771Z - success: foobar loaded
+2021-07-27T09:40:10.867Z - success: foobar unloaded
+2021-07-27T09:40:10.872Z - success: foobar loaded
+2021-07-27T09:40:15.834Z - failed: load script [MyModule] failed : Error: Cannot find module 'MyModule'
+Require stack:
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
+- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
+    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
+    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
+    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
+    at Module.require (internal/modules/cjs/loader.js:739:19)
+    at require (internal/modules/cjs/helpers.js:14:16)
+    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:10:27)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+2021-07-27T09:40:15.835Z - error: TypeError: Cannot read property 'main' of undefined
+    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
+    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
+    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
+    at EventEmitter.emit (events.js:194:13)
+    at EventEmitter.emit (domain.js:469:20)
+    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
+2021-07-27T09:40:24.495Z - success: foobar unloaded
+2021-07-27T09:40:24.501Z - success: foobar loaded
+2021-07-27T09:40:24.594Z - success: foobar unloaded
+2021-07-27T09:40:24.600Z - success: foobar loaded
+2021-07-27T09:40:25.764Z - success: foobar unloaded
+2021-07-27T09:40:25.770Z - success: foobar loaded
+2021-07-27T09:40:30.758Z - normal: 输出输出输出
+2021-07-27T09:40:40.424Z - success: foobar unloaded
+2021-07-27T09:40:40.429Z - success: foobar loaded
+2021-07-27T09:43:02.539Z - normal: 引用脚本: undefined
+2021-07-27T09:43:15.815Z - normal: 引用脚本: undefined
+2021-07-27T09:43:30.740Z - normal: 引用脚本: undefined
+2021-07-27T09:47:57.575Z - success: foobar unloaded
+2021-07-27T09:47:57.581Z - success: foobar loaded
+2021-07-27T09:48:01.645Z - success: foobar unloaded
+2021-07-27T09:48:01.651Z - success: foobar loaded
+2021-07-27T09:58:52.619Z - success: foobar unloaded
+2021-07-27T09:58:52.625Z - success: foobar loaded
+2021-07-27T09:58:53.410Z - success: foobar unloaded
+2021-07-27T09:58:53.416Z - success: foobar loaded

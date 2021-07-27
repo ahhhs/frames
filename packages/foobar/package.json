@@ -1,0 +1,29 @@
+{
+    "name": "foobar",
+    "version": "0.0.1",
+    "description": "一份简单的扩展包",
+    "author": "Cocos Creator",
+    "main": "main.js",
+    "main-menu": {
+        "Packages/Test2/Open": {
+            "message": "foobar:open"
+        },
+        "Packages/Test2/getChild": {
+            "message": "foobar:getChild"
+        },
+        "Packages/Test2/getScript": {
+            "message": "foobar:getScript"
+        },
+        "Packages/Test2/addScenes:": {
+            "message": "foobar:addScenes"
+        }
+    },
+    "panel": {
+        "main": "panel/index.js",
+        "type": "dockable",
+        "title": "openMain",
+        "width": 400,
+        "height": 300
+    },
+    "scene-script": "scene.js"
+}
