@@ -97,7 +97,9 @@ var HallLayerC = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.loadResource()];
                     case 1:
                         _a.sent();
-                        this.addNode(LayerBase_1.LayerType.UI, LoadBase_1.default.instance.getLoadList().get("carPrefab"));
+                        return [4 /*yield*/, this.addNode(LayerBase_1.LayerType.UI, LoadBase_1.default.instance.getLoadList().get("carPrefab"))];
+                    case 2:
+                        _a.sent();
                         return [2 /*return*/];
                 }
             });

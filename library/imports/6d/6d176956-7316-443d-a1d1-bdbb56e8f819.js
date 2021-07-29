@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'a5559+MrHZArrB0Tq+TYDpK', 'CarPrefabV');
-// prefabScript/carPrefab/CarPrefabV.ts
+cc._RF.push(module, '6d176lWcxZEPaHRvbtW6PgZ', 'demo');
+// text/demo.ts
 
 "use strict";
 /*
@@ -29,30 +29,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode;
-var CarPrefabV = /** @class */ (function (_super) {
-    __extends(CarPrefabV, _super);
-    function CarPrefabV() {
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, menu = _a.menu;
+var demos = /** @class */ (function (_super) {
+    __extends(demos, _super);
+    function demos() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    CarPrefabV_1 = CarPrefabV;
-    Object.defineProperty(CarPrefabV, "instance", {
-        get: function () {
-            if (!this._instance) {
-                this._instance = new CarPrefabV_1();
-            }
-            return this._instance;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    var CarPrefabV_1;
-    CarPrefabV = CarPrefabV_1 = __decorate([
+    demos.prototype.onLoad = function () {
+        console.log("输出");
+    };
+    demos = __decorate([
         ccclass,
-        executeInEditMode
-    ], CarPrefabV);
-    return CarPrefabV;
+        menu("CommonPools/ClickFinger")
+    ], demos);
+    return demos;
 }(cc.Component));
-exports.default = CarPrefabV;
+exports.default = demos;
 
 cc._RF.pop();

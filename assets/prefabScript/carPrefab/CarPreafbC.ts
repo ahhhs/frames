@@ -33,6 +33,5 @@ export default class CarPrefabC extends LayerBase {
 
     public main() {
         // console.log("遍历根节点:", this.getAllNodeData());
-        
     }
 }

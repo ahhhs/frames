@@ -5,9 +5,10 @@
  * Description:
  */
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
+@executeInEditMode
 export default class CarPrefabV extends cc.Component {
     private static _instance: CarPrefabV;
 

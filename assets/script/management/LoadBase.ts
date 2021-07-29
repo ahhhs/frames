@@ -26,17 +26,21 @@ export default class LoadBase {
      */
     public loadPrefab(url: string, asserts: string) {
         return new Promise<void>((res) => {
-            cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
-                bundle.load(asserts, (ell, asserts) => {
-                    if (asserts instanceof cc.Prefab) {
-                        this.loadList.set(asserts.name, asserts);
-                        res();
-                    }
+            if (CC_EDITOR) {
+                let path = `db://assets/prefabAB/carPrefab.prefab`;
+                this.editorLoad(path);
+            } else {
+                cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
+                    bundle.load(asserts, (ell, asserts) => {
+                        if (asserts instanceof cc.Prefab) {
+                            this.loadList.set(asserts.name, asserts);
+                            res();
+                        }
+                    });
                 });
-            });
+            }
         });
     }
-
     /**
      * 加载预制体文件夹
      * @param url 路径
@@ -60,5 +64,21 @@ export default class LoadBase {
      */
     public getLoadList() {
         return this.loadList;
+    }
+    /**
+     * 编辑器模式加载
+     * @param path 
+     * @param cb 
+     */
+    public editorLoad(path: string, cb?: Function) {
+        const fileUuid = Editor.assetdb.remote.urlToUuid(path);
+        this.getAssetByUuid(fileUuid, cb);
+    }
+    public getAssetByUuid(uuid: string, cb?: Function) {
+        cc.assetManager.loadAny(uuid, (err, asset) => {
+            if(cb){
+                cb(err, asset);
+            }
+        })
     }
 }

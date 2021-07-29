@@ -1,249 +1,1144 @@
-2021-07-27T09:18:12.963Z - normal: Load ~/.CocosCreator/settings.json
-2021-07-27T09:18:12.994Z - normal: Initializing Asset Database
-2021-07-27T09:18:12.996Z - normal: checking language setting...
-2021-07-27T09:18:12.996Z - normal: Language: zh
-2021-07-27T09:18:13.504Z - success: protocol editor-framework registered
-2021-07-27T09:18:13.504Z - success: protocol app registered
-2021-07-27T09:18:13.505Z - success: protocol theme registered
-2021-07-27T09:18:13.505Z - success: protocol packages registered
-2021-07-27T09:18:13.505Z - success: protocol uuid registerred
-2021-07-27T09:18:13.505Z - success: protocol db registerred
-2021-07-27T09:18:13.505Z - success: protocol thumbnail registerred
-2021-07-27T09:18:13.505Z - success: protocol unpack registerred
-2021-07-27T09:18:13.505Z - success: protocol disable-commonjs registerred
-2021-07-27T09:18:14.119Z - normal: connected!
-2021-07-27T09:18:14.120Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
-2021-07-27T09:18:14.121Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
-2021-07-27T09:18:14.195Z - success: adapters loaded
-2021-07-27T09:18:14.197Z - success: asset-db-debugger loaded
-2021-07-27T09:18:14.230Z - success: fb-audience-network loaded
-2021-07-27T09:18:14.246Z - success: fb-live-stream loaded
-2021-07-27T09:18:14.247Z - success: google-play-instant loaded
-2021-07-27T09:18:14.248Z - success: jsb-adapter loaded
-2021-07-27T09:18:14.250Z - success: package-manager loaded
-2021-07-27T09:18:14.250Z - success: runtime-adapters loaded
-2021-07-27T09:18:14.251Z - success: runtime-dev-tools loaded
-2021-07-27T09:18:14.253Z - success: ui-kit-preview-extra loaded
-2021-07-27T09:18:14.254Z - success: ui-kit-preview loaded
-2021-07-27T09:18:14.283Z - success: alipay-minigame loaded
-2021-07-27T09:18:14.330Z - success: assets loaded
-2021-07-27T09:18:14.332Z - success: baidugame-opendata loaded
-2021-07-27T09:18:14.332Z - success: baidugame loaded
-2021-07-27T09:18:14.335Z - success: builder loaded
-2021-07-27T09:18:14.336Z - success: bytedance-opendata loaded
-2021-07-27T09:18:14.337Z - success: bytedance loaded
-2021-07-27T09:18:14.339Z - success: channel-upload-tools loaded
-2021-07-27T09:18:14.341Z - success: cloud-function loaded
-2021-07-27T09:18:14.433Z - success: cocos-services loaded
-2021-07-27T09:18:14.436Z - success: console loaded
-2021-07-27T09:18:14.437Z - success: curve-editor loaded
-2021-07-27T09:18:14.445Z - success: fb-instant-games loaded
-2021-07-27T09:18:14.447Z - success: game-window loaded
-2021-07-27T09:18:14.447Z - success: google-instant-games loaded
-2021-07-27T09:18:14.449Z - success: hierarchy loaded
-2021-07-27T09:18:14.451Z - success: huawei-agc loaded
-2021-07-27T09:18:14.453Z - success: huawei-runtime loaded
-2021-07-27T09:18:14.455Z - success: inspector loaded
-2021-07-27T09:18:14.464Z - success: cpk-publish loaded
-2021-07-27T09:18:14.464Z - success: keystore loaded
-2021-07-27T09:18:14.474Z - success: link-sure-runtime loaded
-2021-07-27T09:18:14.480Z - success: node-library loaded
-2021-07-27T09:18:14.480Z - success: open-recent-items loaded
-2021-07-27T09:18:14.482Z - success: oppo-runtime loaded
-2021-07-27T09:18:14.483Z - success: package-asset loaded
-2021-07-27T09:18:14.484Z - success: preferences loaded
-2021-07-27T09:18:14.487Z - success: project-importer loaded
-2021-07-27T09:18:14.489Z - success: project-settings loaded
-2021-07-27T09:18:14.498Z - success: qtt-runtime loaded
-2021-07-27T09:18:14.500Z - success: scene loaded
-2021-07-27T09:18:14.500Z - success: simulator-debugger loaded
-2021-07-27T09:18:14.501Z - success: sprite-editor loaded
-2021-07-27T09:18:14.519Z - success: store loaded
-2021-07-27T09:18:14.522Z - success: timeline loaded
-2021-07-27T09:18:14.524Z - success: vivo-runtime loaded
-2021-07-27T09:18:14.525Z - success: wechatgame-opendata loaded
-2021-07-27T09:18:14.527Z - success: wechatgame loaded
-2021-07-27T09:18:14.528Z - success: xiaomi-runtime loaded
-2021-07-27T09:18:14.562Z - success: im-plugin loaded
-2021-07-27T09:18:14.567Z - success: foobar loaded
-2021-07-27T09:18:14.569Z - success: preview server running at http://localhost:7456
-2021-07-27T09:18:15.791Z - normal: Initializing Cocos2d
-2021-07-27T09:18:15.976Z - normal: Initializing engine extends
-2021-07-27T09:18:16.703Z - normal: Loading packages
-2021-07-27T09:18:16.705Z - normal: Watching packages
-2021-07-27T09:18:16.772Z - normal: Run Application
-2021-07-27T09:18:16.833Z - info: Cocos Service load base data!
-2021-07-27T09:18:28.800Z - normal: 弹窗了
-2021-07-27T09:18:34.365Z - normal: 输出 [Function] 1
-2021-07-27T09:18:34.366Z - normal: 接受到了: 1
-2021-07-27T09:18:37.383Z - normal: 输出输出输出
-2021-07-27T09:18:37.391Z - error: TypeError: Cannot read property 'reply' of undefined
-    at Object.main (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/MyModule.js:4:19)
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-    at EventEmitter.emit (events.js:194:13)
-    at EventEmitter.emit (domain.js:469:20)
-    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
-2021-07-27T09:18:41.849Z - normal: 输出输出输出
-2021-07-27T09:18:41.849Z - error: TypeError: Cannot read property 'reply' of undefined
-    at Object.main (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/MyModule.js:4:19)
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-    at EventEmitter.emit (events.js:194:13)
-    at EventEmitter.emit (domain.js:469:20)
-    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
-2021-07-27T09:20:12.809Z - success: foobar unloaded
-2021-07-27T09:20:12.815Z - success: foobar loaded
-2021-07-27T09:20:24.916Z - success: foobar unloaded
-2021-07-27T09:20:24.923Z - success: foobar loaded
-2021-07-27T09:20:26.898Z - success: foobar unloaded
-2021-07-27T09:20:26.904Z - success: foobar loaded
-2021-07-27T09:20:27.589Z - success: foobar unloaded
-2021-07-27T09:20:27.595Z - success: foobar loaded
-2021-07-27T09:20:34.819Z - normal: 输出 [Function] 1
-2021-07-27T09:20:34.819Z - normal: 接受到了: 1
-2021-07-27T09:20:37.115Z - normal: 弹窗了
-2021-07-27T09:20:40.673Z - normal: 输出输出输出
-2021-07-27T09:20:52.544Z - success: foobar unloaded
-2021-07-27T09:20:52.551Z - success: foobar loaded
-2021-07-27T09:20:55.230Z - success: foobar unloaded
-2021-07-27T09:20:55.237Z - success: foobar loaded
-2021-07-27T09:20:55.337Z - success: foobar unloaded
-2021-07-27T09:20:55.343Z - success: foobar loaded
-2021-07-27T09:21:01.278Z - normal: 输出输出输出
-2021-07-27T09:21:09.869Z - success: foobar unloaded
-2021-07-27T09:21:09.875Z - success: foobar loaded
-2021-07-27T09:21:37.362Z - normal: 引用脚本: undefined
-2021-07-27T09:21:40.261Z - success: foobar unloaded
-2021-07-27T09:21:40.267Z - success: foobar loaded
-2021-07-27T09:21:41.826Z - normal: 引用脚本: undefined
-2021-07-27T09:21:45.138Z - normal: 新建场景
-2021-07-27T09:22:31.392Z - success: foobar unloaded
-2021-07-27T09:22:31.398Z - success: foobar loaded
-2021-07-27T09:22:32.890Z - success: foobar unloaded
-2021-07-27T09:22:32.896Z - success: foobar loaded
-2021-07-27T09:22:53.059Z - success: foobar unloaded
-2021-07-27T09:22:53.065Z - success: foobar loaded
-2021-07-27T09:23:08.663Z - success: foobar unloaded
-2021-07-27T09:23:08.669Z - success: foobar loaded
-2021-07-27T09:23:16.442Z - normal: 新建场景
-2021-07-27T09:23:40.653Z - normal: 引用脚本: undefined
-2021-07-27T09:23:42.880Z - success: foobar unloaded
-2021-07-27T09:23:42.886Z - success: foobar loaded
-2021-07-27T09:23:43.729Z - success: foobar unloaded
-2021-07-27T09:23:43.735Z - success: foobar loaded
-2021-07-27T09:23:43.830Z - success: foobar unloaded
-2021-07-27T09:23:43.837Z - success: foobar loaded
-2021-07-27T09:23:50.268Z - success: foobar unloaded
-2021-07-27T09:23:50.276Z - success: foobar loaded
-2021-07-27T09:23:50.368Z - success: foobar unloaded
-2021-07-27T09:23:50.374Z - success: foobar loaded
-2021-07-27T09:23:56.521Z - normal: 新建场景
-2021-07-27T09:23:56.546Z - warn: Failed to send ipc message new-scene to panel scene, message not found
-2021-07-27T09:24:01.278Z - normal: 引用脚本: undefined
-2021-07-27T09:24:12.485Z - success: foobar unloaded
-2021-07-27T09:24:12.491Z - success: foobar loaded
-2021-07-27T09:25:34.126Z - success: foobar unloaded
-2021-07-27T09:25:34.132Z - success: foobar loaded
-2021-07-27T09:25:37.063Z - success: foobar unloaded
-2021-07-27T09:25:37.068Z - success: foobar loaded
-2021-07-27T09:25:42.533Z - normal: 新建场景
-2021-07-27T09:25:49.944Z - success: foobar unloaded
-2021-07-27T09:25:49.963Z - success: foobar loaded
-2021-07-27T09:25:54.246Z - normal: 新建场景
-2021-07-27T09:28:36.905Z - success: foobar unloaded
-2021-07-27T09:28:36.911Z - success: foobar loaded
-2021-07-27T09:28:42.857Z - normal: 新建场景
-2021-07-27T09:29:52.699Z - success: foobar unloaded
-2021-07-27T09:29:52.706Z - success: foobar loaded
-2021-07-27T09:29:53.703Z - success: foobar unloaded
-2021-07-27T09:29:53.708Z - success: foobar loaded
-2021-07-27T09:29:54.090Z - success: foobar unloaded
-2021-07-27T09:29:54.097Z - success: foobar loaded
-2021-07-27T09:30:00.464Z - normal: 新建场景
-2021-07-27T09:39:52.345Z - success: foobar unloaded
-2021-07-27T09:39:52.351Z - success: foobar loaded
-2021-07-27T09:39:56.779Z - success: foobar unloaded
-2021-07-27T09:39:56.785Z - success: foobar loaded
-2021-07-27T09:39:56.883Z - success: foobar unloaded
-2021-07-27T09:39:56.889Z - success: foobar loaded
-2021-07-27T09:40:02.558Z - failed: load script [./MyModule] failed : Error: Cannot find module './MyModule'
-Require stack:
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
-    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
-    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
-    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
-    at Module.require (internal/modules/cjs/loader.js:739:19)
-    at require (internal/modules/cjs/helpers.js:14:16)
-    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:10:27)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-2021-07-27T09:40:02.558Z - error: TypeError: Cannot read property 'main' of undefined
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-    at EventEmitter.emit (events.js:194:13)
-    at EventEmitter.emit (domain.js:469:20)
-    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
-2021-07-27T09:40:10.765Z - success: foobar unloaded
-2021-07-27T09:40:10.771Z - success: foobar loaded
-2021-07-27T09:40:10.867Z - success: foobar unloaded
-2021-07-27T09:40:10.872Z - success: foobar loaded
-2021-07-27T09:40:15.834Z - failed: load script [MyModule] failed : Error: Cannot find module 'MyModule'
-Require stack:
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/sandbox.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/editor.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/index.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/renderer.js
-- /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/index.html
-    at Module._resolveFilename (internal/modules/cjs/loader.js:683:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:43:12)
-    at Function.c._resolveFilename (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1272)
-    at Function.Module._load (internal/modules/cjs/loader.js:601:27)
-    at Module.require (internal/modules/cjs/loader.js:739:19)
-    at require (internal/modules/cjs/helpers.js:14:16)
-    at Object.cc.require (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:689)
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:10:27)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-2021-07-27T09:40:15.835Z - error: TypeError: Cannot read property 'main' of undefined
-    at Object.inits (/Users/tanwenqian/Desktop/frames/frames/packages/foobar/scene.js:11:18)
-    at Object.e._dispatch (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1876)
-    at EventEmitter.<anonymous> (/Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2952)
-    at EventEmitter.emit (events.js:194:13)
-    at EventEmitter.emit (domain.js:469:20)
-    at EventEmitter.topLevelDomainCallback (domain.js:124:23)
-2021-07-27T09:40:24.495Z - success: foobar unloaded
-2021-07-27T09:40:24.501Z - success: foobar loaded
-2021-07-27T09:40:24.594Z - success: foobar unloaded
-2021-07-27T09:40:24.600Z - success: foobar loaded
-2021-07-27T09:40:25.764Z - success: foobar unloaded
-2021-07-27T09:40:25.770Z - success: foobar loaded
-2021-07-27T09:40:30.758Z - normal: 输出输出输出
-2021-07-27T09:40:40.424Z - success: foobar unloaded
-2021-07-27T09:40:40.429Z - success: foobar loaded
-2021-07-27T09:43:02.539Z - normal: 引用脚本: undefined
-2021-07-27T09:43:15.815Z - normal: 引用脚本: undefined
-2021-07-27T09:43:30.740Z - normal: 引用脚本: undefined
-2021-07-27T09:47:57.575Z - success: foobar unloaded
-2021-07-27T09:47:57.581Z - success: foobar loaded
-2021-07-27T09:48:01.645Z - success: foobar unloaded
-2021-07-27T09:48:01.651Z - success: foobar loaded
-2021-07-27T09:58:52.619Z - success: foobar unloaded
-2021-07-27T09:58:52.625Z - success: foobar loaded
-2021-07-27T09:58:53.410Z - success: foobar unloaded
-2021-07-27T09:58:53.416Z - success: foobar loaded
+2021-07-29T11:43:24.175Z - normal: Load ~/.CocosCreator/settings.json
+2021-07-29T11:43:24.209Z - normal: Initializing Asset Database
+2021-07-29T11:43:24.211Z - normal: checking language setting...
+2021-07-29T11:43:24.211Z - normal: Language: zh
+2021-07-29T11:43:24.860Z - success: protocol editor-framework registered
+2021-07-29T11:43:24.860Z - success: protocol app registered
+2021-07-29T11:43:24.860Z - success: protocol theme registered
+2021-07-29T11:43:24.860Z - success: protocol packages registered
+2021-07-29T11:43:24.860Z - success: protocol uuid registerred
+2021-07-29T11:43:24.860Z - success: protocol db registerred
+2021-07-29T11:43:24.860Z - success: protocol thumbnail registerred
+2021-07-29T11:43:24.860Z - success: protocol unpack registerred
+2021-07-29T11:43:24.860Z - success: protocol disable-commonjs registerred
+2021-07-29T11:43:25.029Z - normal: connected!
+2021-07-29T11:43:25.030Z - normal: Check project /Users/tanwenqian/Desktop/frames/frames
+2021-07-29T11:43:25.031Z - normal: Initializing project /Users/tanwenqian/Desktop/frames/frames
+2021-07-29T11:43:25.146Z - success: adapters loaded
+2021-07-29T11:43:25.149Z - success: asset-db-debugger loaded
+2021-07-29T11:43:25.194Z - success: fb-audience-network loaded
+2021-07-29T11:43:25.214Z - success: fb-live-stream loaded
+2021-07-29T11:43:25.216Z - success: google-play-instant loaded
+2021-07-29T11:43:25.216Z - success: jsb-adapter loaded
+2021-07-29T11:43:25.219Z - success: package-manager loaded
+2021-07-29T11:43:25.220Z - success: runtime-adapters loaded
+2021-07-29T11:43:25.221Z - success: runtime-dev-tools loaded
+2021-07-29T11:43:25.224Z - success: ui-kit-preview-extra loaded
+2021-07-29T11:43:25.226Z - success: ui-kit-preview loaded
+2021-07-29T11:43:25.264Z - success: alipay-minigame loaded
+2021-07-29T11:43:25.311Z - success: assets loaded
+2021-07-29T11:43:25.313Z - success: baidugame-opendata loaded
+2021-07-29T11:43:25.314Z - success: baidugame loaded
+2021-07-29T11:43:25.317Z - success: builder loaded
+2021-07-29T11:43:25.318Z - success: bytedance-opendata loaded
+2021-07-29T11:43:25.319Z - success: bytedance loaded
+2021-07-29T11:43:25.322Z - success: channel-upload-tools loaded
+2021-07-29T11:43:25.326Z - success: cloud-function loaded
+2021-07-29T11:43:25.453Z - success: cocos-services loaded
+2021-07-29T11:43:25.456Z - success: console loaded
+2021-07-29T11:43:25.457Z - success: curve-editor loaded
+2021-07-29T11:43:25.464Z - success: fb-instant-games loaded
+2021-07-29T11:43:25.467Z - success: game-window loaded
+2021-07-29T11:43:25.468Z - success: google-instant-games loaded
+2021-07-29T11:43:25.471Z - success: hierarchy loaded
+2021-07-29T11:43:25.473Z - success: huawei-agc loaded
+2021-07-29T11:43:25.476Z - success: huawei-runtime loaded
+2021-07-29T11:43:25.478Z - success: inspector loaded
+2021-07-29T11:43:25.489Z - success: cpk-publish loaded
+2021-07-29T11:43:25.489Z - success: keystore loaded
+2021-07-29T11:43:25.502Z - success: link-sure-runtime loaded
+2021-07-29T11:43:25.511Z - success: node-library loaded
+2021-07-29T11:43:25.511Z - success: open-recent-items loaded
+2021-07-29T11:43:25.513Z - success: oppo-runtime loaded
+2021-07-29T11:43:25.515Z - success: package-asset loaded
+2021-07-29T11:43:25.516Z - success: preferences loaded
+2021-07-29T11:43:25.520Z - success: project-importer loaded
+2021-07-29T11:43:25.521Z - success: project-settings loaded
+2021-07-29T11:43:25.532Z - success: qtt-runtime loaded
+2021-07-29T11:43:25.535Z - success: scene loaded
+2021-07-29T11:43:25.536Z - success: simulator-debugger loaded
+2021-07-29T11:43:25.536Z - success: sprite-editor loaded
+2021-07-29T11:43:25.564Z - success: store loaded
+2021-07-29T11:43:25.567Z - success: timeline loaded
+2021-07-29T11:43:25.570Z - success: vivo-runtime loaded
+2021-07-29T11:43:25.571Z - success: wechatgame-opendata loaded
+2021-07-29T11:43:25.573Z - success: wechatgame loaded
+2021-07-29T11:43:25.575Z - success: xiaomi-runtime loaded
+2021-07-29T11:43:25.609Z - success: im-plugin loaded
+2021-07-29T11:43:25.616Z - success: foobar loaded
+2021-07-29T11:43:25.618Z - warn: The current '7456' preview port is already occupied, the port is automatically incremented
+2021-07-29T11:43:25.619Z - success: preview server running at http://localhost:7457
+2021-07-29T11:43:27.190Z - info: Cocos Service load base data!
+2021-07-29T11:43:31.004Z - normal: Initializing Cocos2d
+2021-07-29T11:43:31.264Z - normal: Initializing engine extends
+2021-07-29T11:43:34.079Z - normal: Loading packages
+2021-07-29T11:43:34.081Z - normal: Watching packages
+2021-07-29T11:43:34.148Z - normal: Run Application
+2021-07-29T11:43:36.975Z - normal: onLoad
+2021-07-29T11:51:08.260Z - normal: onLoad
+2021-07-29T11:51:08.435Z - normal: onLoad
+2021-07-29T11:51:08.470Z - error: TypeError: cb is not a function
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/script/management/LoadBase.js:106:13
+    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/utils.js:74:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:9)
+2021-07-29T11:51:08.477Z - error: TypeError: cb is not a function
+    at /Users/tanwenqian/Desktop/frames/frames/temp/quick-scripts/dst/assets/script/management/LoadBase.js:106:13
+    at /Applications/CocosCreator/Creator/2.4.3/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/utils.js:74:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:9)
+2021-07-29T11:51:45.892Z - normal: onLoad
+2021-07-29T11:51:46.159Z - normal: onLoad
+2021-07-29T11:52:12.421Z - normal: onLoad
+2021-07-29T11:52:54.018Z - normal: onLoad
+2021-07-29T11:53:00.134Z - normal: 输出 [ cc_Node {
+    _name: 'Main Camera',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 2,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [],
+       _reorderChildDirty: false,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65520,
+       _worldMatDirty: false,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 256,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [cc_Camera] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 0, height: 0 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs:
+     Float64Array [ 0, 0, 261.5396719429005, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project] },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 1,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '6cxy5HCEpHXrOnjCQgWdFv',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: null,
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65520,
+    _worldMatDirty: false,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 0,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: [create],
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: Quat {},
+       _isInited: true,
+       _target: [Circular],
+       _currentName: 'Main Camera',
+       _lastMapping: [Vec2] } },
+  cc_Node {
+    _name: 'UILayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 2,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [],
+       _reorderChildDirty: false,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65520,
+       _worldMatDirty: false,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 256,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project],
+       __id__: undefined },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 2,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: 'e6zTy64h1Pw5Kugph6Ahko',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: EventTarget { _callbackTable: [Object] },
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65520,
+    _worldMatDirty: false,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 0,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: [create],
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: [Quat],
+       _isInited: true,
+       _target: [Circular],
+       _currentName: 'UILayer',
+       _lastMapping: [Vec2] } },
+  cc_Node {
+    _name: 'ADAPTIVELayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 2,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [],
+       _reorderChildDirty: false,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65520,
+       _worldMatDirty: false,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 256,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project],
+       __id__: undefined },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 3,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '8bngrhW5ZLNbqc1wJDW4uy',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: EventTarget { _callbackTable: [Object] },
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65520,
+    _worldMatDirty: false,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 0,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: [create],
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: [Quat],
+       _isInited: true,
+       _target: [Circular],
+       _currentName: 'ADAPTIVELayer',
+       _lastMapping: [Vec2] } },
+  cc_Node {
+    _name: 'POPUPLayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 2,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [],
+       _reorderChildDirty: false,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65520,
+       _worldMatDirty: false,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 256,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project],
+       __id__: undefined },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 4,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '341BdRpPJN9o8zJmsYLTce',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: EventTarget { _callbackTable: [Object] },
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65520,
+    _worldMatDirty: false,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 0,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: [create],
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: [Quat],
+       _isInited: true,
+       _target: [Circular],
+       _currentName: 'POPUPLayer',
+       _lastMapping: [Vec2] } } ]
+2021-07-29T11:53:00.164Z - normal: 配置已更新
+2021-07-29T11:53:31.294Z - normal: Introduced global variable while editing: isSave
+2021-07-29T11:53:31.368Z - normal: onLoad
+2021-07-29T11:53:31.370Z - normal: 输出 [ cc_Node {
+    _name: 'Main Camera',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 1,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [Array],
+       _reorderChildDirty: true,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65535,
+       _worldMatDirty: true,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 364,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [cc_Camera] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 0, height: 0 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs:
+     Float64Array [ 0, 0, 261.5396719429005, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project] },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 1,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '6cxy5HCEpHXrOnjCQgWdFv',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: null,
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65535,
+    _worldMatDirty: true,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 108,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: null,
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: Quat {},
+       _isInited: false,
+       _target: [Circular] } },
+  cc_Node {
+    _name: 'UILayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 1,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [Array],
+       _reorderChildDirty: true,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65535,
+       _worldMatDirty: true,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 364,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project] },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 2,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '72Q9RD2T5JiqY3w7i7GWI/',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: null,
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65535,
+    _worldMatDirty: true,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 108,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: null,
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: Quat {},
+       _isInited: false,
+       _target: [Circular] } },
+  cc_Node {
+    _name: 'ADAPTIVELayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 1,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [Array],
+       _reorderChildDirty: true,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65535,
+       _worldMatDirty: true,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 364,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project] },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 3,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: '00mSpNYx1MBoRDA56iFIuB',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: null,
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65535,
+    _worldMatDirty: true,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 108,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: null,
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: Quat {},
+       _isInited: false,
+       _target: [Circular] } },
+  cc_Node {
+    _name: 'POPUPLayer',
+    _objFlags: 0,
+    _parent:
+     cc_Node {
+       _name: 'Canvas',
+       _objFlags: 0,
+       _parent: [cc_Scene],
+       _children: [Circular],
+       _active: true,
+       _components: [Array],
+       _prefab: null,
+       _opacity: 255,
+       _color: [Color],
+       _contentSize: [Size],
+       _anchorPoint: [Vec2],
+       _position: undefined,
+       _scale: undefined,
+       _trs: [Float64Array],
+       _eulerAngles: [Vec3],
+       _skewX: 0,
+       _skewY: 0,
+       _zIndex: undefined,
+       _localZOrder: 1,
+       _is3DNode: false,
+       _groupIndex: 0,
+       _scaleX: undefined,
+       _scaleY: undefined,
+       _activeInHierarchy: true,
+       _id: '935S1P2GxB3rZjHFA+3NSd',
+       __eventTargets: [Array],
+       _reorderChildDirty: true,
+       _widget: [cc_Widget],
+       _renderComponent: null,
+       _capturingListeners: null,
+       _bubblingListeners: [EventTarget],
+       _touchListener: null,
+       _mouseListener: null,
+       _spaceInfo: [Quat],
+       _matrix: [Mat4],
+       _worldMatrix: [Mat4],
+       _localMatDirty: 65535,
+       _worldMatDirty: true,
+       _eventMask: 9,
+       _cullingMask: 1,
+       _childArrivalOrder: 4,
+       _renderFlag: 364,
+       gizmo: [Quat] },
+    _children: [],
+    _active: true,
+    _components: [ [AdaptiveComm] ],
+    _prefab: null,
+    _opacity: 255,
+    _color: Color { _val: 4294967295 },
+    _contentSize: Size { width: 1404, height: 302 },
+    _anchorPoint:
+     Vec2 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0.5,
+       y: 0.5,
+       z: 0 },
+    _position: undefined,
+    _scale: undefined,
+    _trs: Float64Array [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
+    _eulerAngles:
+     Vec3 {
+       mag: [Function: len],
+       magSqr: [Function: lengthSqr],
+       subSelf: [Function: subtract],
+       mulSelf: [Function: multiplyScalar],
+       divSelf: [Function: divide],
+       scaleSelf: [Function: multiply],
+       negSelf: [Function: negate],
+       x: 0,
+       y: 0,
+       z: 0,
+       angle: [Function: angle],
+       project: [Function: project] },
+    _skewX: 0,
+    _skewY: 0,
+    _zIndex: undefined,
+    _localZOrder: 4,
+    _is3DNode: false,
+    _groupIndex: 0,
+    _scaleX: undefined,
+    _scaleY: undefined,
+    _activeInHierarchy: true,
+    _id: 'e1aCR5Io9L9Jvmd73VoyEb',
+    __eventTargets: [],
+    _reorderChildDirty: false,
+    _widget: null,
+    _renderComponent: null,
+    _capturingListeners: null,
+    _bubblingListeners: null,
+    _touchListener: null,
+    _mouseListener: null,
+    _spaceInfo:
+     Quat {
+       trs: [Float64Array],
+       localMat: [Float64Array],
+       worldMat: [Float64Array] },
+    _matrix: Mat4 { m: [Float64Array] },
+    _worldMatrix: Mat4 { m: [Float64Array] },
+    _localMatDirty: 65535,
+    _worldMatDirty: true,
+    _eventMask: 0,
+    _cullingMask: 1,
+    _childArrivalOrder: 0,
+    _renderFlag: 108,
+    gizmo:
+     Quat {
+       _dirty: true,
+       _hovering: false,
+       _selecting: false,
+       _editing: false,
+       _view: [HTMLElement],
+       _root: null,
+       _hidden: true,
+       _controller: null,
+       _adjustMap: [Array],
+       _lastMats: Quat {},
+       _isInited: false,
+       _target: [Circular] } } ]
+2021-07-29T11:53:31.411Z - normal: 配置已更新
+2021-07-29T11:55:09.458Z - normal: Introduced global variable while editing: isSave
+2021-07-29T11:55:09.530Z - normal: onLoad
+2021-07-29T11:55:09.573Z - normal: 配置已更新
+2021-07-29T11:59:07.584Z - normal: Introduced global variable while editing: isSave

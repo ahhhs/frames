@@ -78,6 +78,8 @@ var LayerBase = /** @class */ (function () {
      * @description 添加层级node,并且添加适配脚本
      */
     LayerBase.prototype.addLayer = function (string) {
+        if (this.getLayer(string))
+            return;
         var node = new cc.Node();
         node.name = string + "Layer";
         node.addComponent(AdaptiveComm_1.default).init();

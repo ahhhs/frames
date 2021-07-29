@@ -9,24 +9,38 @@ import LoadBase from '../../script/management/LoadBase';
 import HallLayerC from './HallLayerC';
 import HallLayerV from './HallLayerV';
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
+// @executeInEditMode
 export default class HallMain extends cc.Component {
-
     @property(HallLayerV)
     hallLayerV: HallLayerV = null;
-
-    async onLoad() {
-        let path = `db://assets/config/config1.json`;
-        let json = {
-            name: "haha",
-            age: 18
+    @property({ displayName: "更新配置" })
+    public set config(fiag) {
+        this.demo();
+    }
+    public get config() {
+        return false;
+    }
+    demo() {
+        if (CC_EDITOR) {
+            let path = `db://assets/config/config1.json`;
+            let nodeName = {
+            }
+            for (let i = 0; i < this.node.children.length; i++) {
+                nodeName[this.node.children[i].name + "Id"] = this.node.children[i].uuid;
+            }
+            Editor.assetdb.createOrSave(path, JSON.stringify(nodeName), function (err, results) {
+                this.isSave = false;
+                cc.log('配置已更新')
+            });
         }
+    }
+    async onLoad() {
+        cc.log("onLoad");
         HallLayerC.instance.init(this.hallLayerV, {});
-        Editor.assetdb.createOrSave(path, JSON.stringify(json), function (err, results) {
-            console.log("配置已经更新", err, results);
-        });
+        this.demo();
     }
 }
 

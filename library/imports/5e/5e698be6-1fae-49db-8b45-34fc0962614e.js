@@ -28,7 +28,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode;
 var AdaptiveComms = /** @class */ (function (_super) {
     __extends(AdaptiveComms, _super);
     function AdaptiveComms() {
@@ -50,7 +50,8 @@ var AdaptiveComms = /** @class */ (function (_super) {
         this.node.setContentSize(nodeSize);
     };
     AdaptiveComms = __decorate([
-        ccclass
+        ccclass,
+        executeInEditMode
     ], AdaptiveComms);
     return AdaptiveComms;
 }(cc.Component));

@@ -67,6 +67,8 @@ export class LayerBase {
      * @description 添加层级node,并且添加适配脚本
      */
     private addLayer(string: string) {
+        if (this.getLayer(string)) return;
+
         const node = new cc.Node();
         node.name = string + "Layer";
         node.addComponent(AdaptiveComm).init();

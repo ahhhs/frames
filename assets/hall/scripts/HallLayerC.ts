@@ -29,8 +29,8 @@ export default class HallLayerC extends LayerBase {
         this.hallLayerV = v;
         this.hallLayerM = m;
         this.initLayerBase(this.hallLayerV.node);
-        await this.loadResource();
-        this.addNode(LayerType.UI, LoadBase.instance.getLoadList().get("carPrefab"));
+        await this.loadResource(); 
+        await this.addNode(LayerType.UI, LoadBase.instance.getLoadList().get("carPrefab"));
     }
     /**
      * 加载资源 

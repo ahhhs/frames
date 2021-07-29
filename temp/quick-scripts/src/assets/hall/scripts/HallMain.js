@@ -66,27 +66,44 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var HallLayerC_1 = require("./HallLayerC");
 var HallLayerV_1 = require("./HallLayerV");
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode;
 var HallMain = /** @class */ (function (_super) {
     __extends(HallMain, _super);
+    // @executeInEditMode
     function HallMain() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.hallLayerV = null;
         return _this;
     }
+    Object.defineProperty(HallMain.prototype, "config", {
+        get: function () {
+            return false;
+        },
+        set: function (fiag) {
+            this.demo();
+        },
+        enumerable: false,
+        configurable: true
+    });
+    HallMain.prototype.demo = function () {
+        if (CC_EDITOR) {
+            var path = "db://assets/config/config1.json";
+            var nodeName = {};
+            for (var i = 0; i < this.node.children.length; i++) {
+                nodeName[this.node.children[i].name + "Id"] = this.node.children[i].uuid;
+            }
+            Editor.assetdb.createOrSave(path, JSON.stringify(nodeName), function (err, results) {
+                this.isSave = false;
+                cc.log('配置已更新');
+            });
+        }
+    };
     HallMain.prototype.onLoad = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var path, json;
             return __generator(this, function (_a) {
-                path = "db://assets/config/config1.json";
-                json = {
-                    name: "haha",
-                    age: 18
-                };
+                cc.log("onLoad");
                 HallLayerC_1.default.instance.init(this.hallLayerV, {});
-                Editor.assetdb.createOrSave(path, JSON.stringify(json), function (err, results) {
-                    console.log("配置已经更新", err, results);
-                });
+                this.demo();
                 return [2 /*return*/];
             });
         });
@@ -94,8 +111,12 @@ var HallMain = /** @class */ (function (_super) {
     __decorate([
         property(HallLayerV_1.default)
     ], HallMain.prototype, "hallLayerV", void 0);
+    __decorate([
+        property({ displayName: "更新配置" })
+    ], HallMain.prototype, "config", null);
     HallMain = __decorate([
         ccclass
+        // @executeInEditMode
     ], HallMain);
     return HallMain;
 }(cc.Component));

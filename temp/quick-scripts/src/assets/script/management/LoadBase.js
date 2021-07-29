@@ -40,14 +40,20 @@ var LoadBase = /** @class */ (function () {
     LoadBase.prototype.loadPrefab = function (url, asserts) {
         var _this = this;
         return new Promise(function (res) {
-            cc.assetManager.loadBundle(url, function (ell, bundle) {
-                bundle.load(asserts, function (ell, asserts) {
-                    if (asserts instanceof cc.Prefab) {
-                        _this.loadList.set(asserts.name, asserts);
-                        res();
-                    }
+            if (CC_EDITOR) {
+                var path = "db://assets/prefabAB/carPrefab.prefab";
+                _this.editorLoad(path);
+            }
+            else {
+                cc.assetManager.loadBundle(url, function (ell, bundle) {
+                    bundle.load(asserts, function (ell, asserts) {
+                        if (asserts instanceof cc.Prefab) {
+                            _this.loadList.set(asserts.name, asserts);
+                            res();
+                        }
+                    });
                 });
-            });
+            }
         });
     };
     /**
@@ -74,6 +80,22 @@ var LoadBase = /** @class */ (function () {
      */
     LoadBase.prototype.getLoadList = function () {
         return this.loadList;
+    };
+    /**
+     * 编辑器模式加载
+     * @param path
+     * @param cb
+     */
+    LoadBase.prototype.editorLoad = function (path, cb) {
+        var fileUuid = Editor.assetdb.remote.urlToUuid(path);
+        this.getAssetByUuid(fileUuid, cb);
+    };
+    LoadBase.prototype.getAssetByUuid = function (uuid, cb) {
+        cc.assetManager.loadAny(uuid, function (err, asset) {
+            if (cb) {
+                cb(err, asset);
+            }
+        });
     };
     var LoadBase_1;
     LoadBase = LoadBase_1 = __decorate([

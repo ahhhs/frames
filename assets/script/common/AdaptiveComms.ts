@@ -4,9 +4,10 @@
  * Description: 等比例适配
  */
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
+@executeInEditMode
 export default class AdaptiveComms extends cc.Component {
 
     init() {

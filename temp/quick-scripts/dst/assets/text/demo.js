@@ -2,7 +2,7 @@
                 (function() {
                     var nodeEnv = typeof require !== 'undefined' && typeof process !== 'undefined';
                     var __module = nodeEnv ? module : {exports:{}};
-                    var __filename = 'preview-scripts/assets/hall/scripts/HallLayerV.js';
+                    var __filename = 'preview-scripts/assets/text/demo.js';
                     var __require = nodeEnv ? function (request) {
                         return cc.require(request);
                     } : function (request) {
@@ -10,8 +10,8 @@
                     };
                     function __define (exports, require, module) {
                         if (!nodeEnv) {__quick_compile_project__.registerModule(__filename, module);}"use strict";
-cc._RF.push(module, '6e37bu9SN1FhZZKGGd4JX84', 'HallLayerV');
-// hall/scripts/HallLayerV.ts
+cc._RF.push(module, '6d176lWcxZEPaHRvbtW6PgZ', 'demo');
+// text/demo.ts
 
 "use strict";
 /*
@@ -40,21 +40,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode;
-var HallLayerV = /** @class */ (function (_super) {
-    __extends(HallLayerV, _super);
-    function HallLayerV() {
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, menu = _a.menu;
+var demos = /** @class */ (function (_super) {
+    __extends(demos, _super);
+    function demos() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    HallLayerV.prototype.onLoad = function () {
+    demos.prototype.onLoad = function () {
+        console.log("输出");
     };
-    HallLayerV = __decorate([
+    demos = __decorate([
         ccclass,
-        executeInEditMode
-    ], HallLayerV);
-    return HallLayerV;
+        menu("CommonPools/ClickFinger")
+    ], demos);
+    return demos;
 }(cc.Component));
-exports.default = HallLayerV;
+exports.default = demos;
 
 cc._RF.pop();
                     }
@@ -67,4 +68,4 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9oYWxsL3NjcmlwdHMvSGFsbExheWVyVi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7Ozs7O0dBS0c7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUVHLElBQUEsS0FBMkMsRUFBRSxDQUFDLFVBQVUsRUFBdEQsT0FBTyxhQUFBLEVBQUUsUUFBUSxjQUFBLEVBQUUsaUJBQWlCLHVCQUFrQixDQUFDO0FBSS9EO0lBQXdDLDhCQUFZO0lBQXBEOztJQUtBLENBQUM7SUFIRywyQkFBTSxHQUFOO0lBRUEsQ0FBQztJQUpnQixVQUFVO1FBRjlCLE9BQU87UUFDUCxpQkFBaUI7T0FDRyxVQUFVLENBSzlCO0lBQUQsaUJBQUM7Q0FMRCxBQUtDLENBTHVDLEVBQUUsQ0FBQyxTQUFTLEdBS25EO2tCQUxvQixVQUFVIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIENvcHlyaWdodCAoQykgMjAyMSwgRmxpY2tlcmluZyBJbmMuIEFsbCByaWdodHMgcmVzZXJ2ZWQuXG4gKiBBdXRob3I6IHdlbnFpYW5xaW4gKHdlbnFpYW5xaW5AZmxpY2tlcmluZy5haSlcbiAqXG4gKiBEZXNjcmlwdGlvbjpcbiAqL1xuXG5jb25zdCB7IGNjY2xhc3MsIHByb3BlcnR5LCBleGVjdXRlSW5FZGl0TW9kZSB9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbkBleGVjdXRlSW5FZGl0TW9kZVxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgSGFsbExheWVyViBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG5cbiAgICBvbkxvYWQoKSB7XG5cbiAgICB9XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy90ZXh0L2RlbW8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUFBOzs7OztHQUtHOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFRyxJQUFBLEtBQTZCLEVBQUUsQ0FBQyxVQUFVLEVBQXhDLE9BQU8sYUFBQSxFQUFFLFFBQVEsY0FBQSxFQUFDLElBQUksVUFBa0IsQ0FBQztBQUlqRDtJQUFtQyx5QkFBWTtJQUEvQzs7SUFJQSxDQUFDO0lBSEcsc0JBQU0sR0FBTjtRQUNJLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDdEIsQ0FBQztJQUhnQixLQUFLO1FBRnpCLE9BQU87UUFDUCxJQUFJLENBQUMseUJBQXlCLENBQUM7T0FDWCxLQUFLLENBSXpCO0lBQUQsWUFBQztDQUpELEFBSUMsQ0FKa0MsRUFBRSxDQUFDLFNBQVMsR0FJOUM7a0JBSm9CLEtBQUsiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogQ29weXJpZ2h0IChDKSAyMDIxLCBGbGlja2VyaW5nIEluYy4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cbiAqIEF1dGhvcjogd2VucWlhbnFpbiAod2VucWlhbnFpbkBmbGlja2VyaW5nLmFpKVxuICpcbiAqIERlc2NyaXB0aW9uOlxuICovXG5cbmNvbnN0IHsgY2NjbGFzcywgcHJvcGVydHksbWVudSB9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbkBtZW51KFwiQ29tbW9uUG9vbHMvQ2xpY2tGaW5nZXJcIilcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGRlbW9zIGV4dGVuZHMgY2MuQ29tcG9uZW50IHtcbiAgICBvbkxvYWQoKSB7IFxuICAgICAgICBjb25zb2xlLmxvZyhcIui+k+WHulwiKTtcbiAgICB9XG59XG4iXX0=

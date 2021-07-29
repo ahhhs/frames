@@ -3267,6 +3267,16 @@
     "sync": false
   },
   {
+    "__type__": "a5559+MrHZArrB0Tq+TYDpK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_id": ""
+  },
+  {
     "__type__": "fd93eYGUP5M7r6N/Kz/FJh7",
     "_name": "",
     "_objFlags": 0,
@@ -3275,18 +3285,8 @@
     },
     "_enabled": true,
     "carPrefabV": {
-      "__id__": 90
+      "__id__": 89
     },
-    "_id": ""
-  },
-  {
-    "__type__": "a5559+MrHZArrB0Tq+TYDpK",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
     "_id": ""
   },
   {

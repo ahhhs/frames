@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'a5559+MrHZArrB0Tq+TYDpK', 'CarPrefabV');
-// gameLogicScript/gameV/CarPrefabV.ts
+// prefabScript/carPrefab/CarPrefabV.ts
 
 "use strict";
 /*
@@ -29,7 +29,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executeInEditMode = _a.executeInEditMode;
 var CarPrefabV = /** @class */ (function (_super) {
     __extends(CarPrefabV, _super);
     function CarPrefabV() {
@@ -48,7 +48,8 @@ var CarPrefabV = /** @class */ (function (_super) {
     });
     var CarPrefabV_1;
     CarPrefabV = CarPrefabV_1 = __decorate([
-        ccclass
+        ccclass,
+        executeInEditMode
     ], CarPrefabV);
     return CarPrefabV;
 }(cc.Component));
