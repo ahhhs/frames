@@ -28,7 +28,6 @@ require('./assets/text/MVC/ABCCtl');
 require('./assets/text/MVC/ABCView');
 require('./assets/text/MVC/Helloworld');
 require('./assets/text/MVC/Model');
-require('./assets/text/demo');
 
                     }
                     if (nodeEnv) {

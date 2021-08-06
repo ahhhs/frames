@@ -5,8 +5,8 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 27,
+      "x": 780,
+      "y": 95,
       "width": 1920,
       "height": 985,
       "layout": {
@@ -55,7 +55,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 344.8125,
+                "height": 528.296875,
                 "type": "panel",
                 "width": 1406
               },
@@ -66,7 +66,7 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 547.6875,
+                "height": 364.203125,
                 "type": "panel",
                 "width": 1406
               }
@@ -95,10 +95,10 @@
   },
   "panels": {
     "builder": {
-      "x": 0,
-      "y": 0,
+      "x": 140,
+      "y": 521,
       "width": 1920,
-      "height": 1080
+      "height": 988
     },
     "hello-world": {
       "x": 481,
@@ -117,10 +117,23 @@
       "y": 0,
       "width": 1920,
       "height": 1080
+    },
+    "project-settings": {
+      "x": 414,
+      "y": 281,
+      "width": 584,
+      "height": 554
+    },
+    "preferences": {
+      "x": 1043,
+      "y": 344,
+      "width": 584,
+      "height": 554
     }
   },
   "panelLabelWidth": {
     "inspector": null,
-    "builder": null
+    "builder": null,
+    "preferences": null
   }
 }

@@ -1,7 +1,7 @@
 {
-  "platform": "ios",
-  "actualPlatform": "ios",
-  "template": "link",
+  "platform": "android",
+  "actualPlatform": "android",
+  "template": "default",
   "buildPath": "./build",
   "debug": false,
   "sourceMaps": false,
@@ -13,8 +13,11 @@
   "keystorePassword": "",
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
-  "apiLevel": "",
-  "appABIs": [],
+  "apiLevel": "android-31",
+  "appABIs": [
+    "x86_64",
+    "armeabi-v7a"
+  ],
   "vsVersion": "auto",
   "buildScriptsOnly": false
 }

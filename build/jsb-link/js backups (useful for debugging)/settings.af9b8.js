@@ -1,0 +1,1 @@
+window._CCSettings={platform:"android",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/hall/hall.fire",orientation:"",server:"",jsList:[],bundleVers:{prefabAB:"0cff1",internal:"4dc8c",main:"b3a65"}};
