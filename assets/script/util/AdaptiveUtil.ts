@@ -7,7 +7,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class AdaptiveComm extends cc.Component {
+export default class AdaptiveUtil extends cc.Component {
 
     init() {
         this.node.width = cc.winSize.width;

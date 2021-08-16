@@ -1,7 +1,6 @@
-import { LayerBase } from '../../script/management/LayerBase';
+import { PrLayerManager } from '../../script/manager/PrLayerManager';
 import CarPrefabM from './CarPreafbM';
 import CarPrefabV from './CarPrefabV';
-
 
 /*
  * Author: ahhh (new_q8@163.com)
@@ -11,7 +10,7 @@ import CarPrefabV from './CarPrefabV';
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class CarPrefabC extends LayerBase {
+export default class CarPrefabC extends PrLayerManager {
     private static _instance: CarPrefabC;
 
     public static get instance() {

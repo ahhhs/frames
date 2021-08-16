@@ -1,20 +1,20 @@
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: 加载基类
+ * Description: 加载管理器
  */
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class LoadBase {
+export default class PrLoadResouceManager {
 
-    private static _instance: LoadBase;
+    private static _instance: PrLoadResouceManager;
     private loadList: Map<string, any> = new Map();
 
     public static get instance() {
         if (!this._instance) {
-            this._instance = new LoadBase();
+            this._instance = new PrLoadResouceManager();
         }
         return this._instance;
     }
@@ -76,7 +76,7 @@ export default class LoadBase {
     }
     public getAssetByUuid(uuid: string, cb?: Function) {
         cc.assetManager.loadAny(uuid, (err, asset) => {
-            if(cb){
+            if (cb) {
                 cb(err, asset);
             }
         })

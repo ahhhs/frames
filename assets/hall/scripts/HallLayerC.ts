@@ -1,18 +1,19 @@
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: 大厅层级基类
+ * Description: 
  */
 
-import { LayerBase, LayerType } from '../../script/management/LayerBase';
-import LoadBase from '../../script/management/LoadBase';
+
+import { LayerType, PrLayerManager } from '../../script/manager/PrLayerManager';
+import PrLoadResouceManager from '../../script/manager/PrLoadResourceManager';
 import HallLayerM from './HallLayerM';
 import HallLayerV from './HallLayerV';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class HallLayerC extends LayerBase {
+export default class HallLayerC extends PrLayerManager {
     private static _instance: HallLayerC;
 
     public static get instance() {
@@ -29,13 +30,13 @@ export default class HallLayerC extends LayerBase {
         this.hallLayerV = v;
         this.hallLayerM = m;
         this.initLayerBase(this.hallLayerV.node);
-        await this.loadResource(); 
-        await this.addNode(LayerType.UI, LoadBase.instance.getLoadList().get("carPrefab"));
+        await this.loadResource();
+        await this.addNode(LayerType.UI, PrLoadResouceManager.instance.getLoadList().get("carPrefab"));
     }
     /**
      * 加载资源 
      */
     private async loadResource() {
-        await LoadBase.instance.loadPrefab("prefabAB", "carPrefab");
+        await PrLoadResouceManager.instance.loadPrefab("prefabAB", "carPrefab");
     }
 }

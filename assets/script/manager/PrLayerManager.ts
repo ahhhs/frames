@@ -1,11 +1,11 @@
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: 层级基类
+ * Description: 层级管理器
  */
 
-import AdaptiveComm from '../common/AdaptiveComm';
-import AdaptiveComms from '../common/AdaptiveComms';
+import AdaptiveUtils from '../util/AdaptiveUtils';
+
 /**
  * 层级类型
  */
@@ -36,7 +36,7 @@ export class NodeSize {
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export class LayerBase {
+export class PrLayerManager {
 
     private root: cc.Node = undefined;
     private rootZIndex: 0;
@@ -71,7 +71,7 @@ export class LayerBase {
 
         const node = new cc.Node();
         node.name = string + "Layer";
-        node.addComponent(AdaptiveComm).init();
+        node.addComponent(AdaptiveUtils).init();
         this.root.addChild(node, this.rootZIndex++);
     }
     /**

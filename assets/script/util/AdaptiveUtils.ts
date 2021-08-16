@@ -8,7 +8,7 @@ const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
 @executeInEditMode
-export default class AdaptiveComms extends cc.Component {
+export default class AdaptiveUtils extends cc.Component {
 
     init() {
         this.fixedViewSize();

@@ -8,15 +8,20 @@
 import CarPrefabC from './CarPreafbC';
 import CarPrefabV from './CarPrefabV';
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
+@executeInEditMode
 export class CarPrefabMain extends cc.Component {
 
     @property(CarPrefabV)
     carPrefabV: CarPrefabV = null;
 
     public onLoad() {
-        CarPrefabC.instance.init(this.carPrefabV, {});
+        if (CC_EDITOR) {
+            CarPrefabC.instance.init(this.carPrefabV, {});
+        }
+    }
+    public init() {
     }
 }

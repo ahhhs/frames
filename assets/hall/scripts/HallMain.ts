@@ -4,28 +4,30 @@
  * Description: Hall入口
  */
 
-import { LayerType } from '../../script/management/LayerBase';
-import LoadBase from '../../script/management/LoadBase';
+import { PathData } from '../../script/data/PathData';
 import HallLayerC from './HallLayerC';
 import HallLayerV from './HallLayerV';
 
 const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
-// @executeInEditMode
+@executeInEditMode
 export default class HallMain extends cc.Component {
     @property(HallLayerV)
     hallLayerV: HallLayerV = null;
+
     @property({ displayName: "更新配置" })
     public set config(fiag) {
-        this.demo();
+        this.stockpileUpda(PathData.HallUIPaht);
     }
     public get config() {
         return false;
     }
-    demo() {
+    /**
+     * 更新配置到json
+     */
+    public stockpileUpda(path: string) {
         if (CC_EDITOR) {
-            let path = `db://assets/config/config1.json`;
             let nodeName = {
             }
             for (let i = 0; i < this.node.children.length; i++) {
@@ -33,14 +35,15 @@ export default class HallMain extends cc.Component {
             }
             Editor.assetdb.createOrSave(path, JSON.stringify(nodeName), function (err, results) {
                 this.isSave = false;
-                cc.log('配置已更新')
+                cc.log('配置已更新');
             });
+
         }
     }
     async onLoad() {
-        cc.log("onLoad");
-        HallLayerC.instance.init(this.hallLayerV, {});
-        this.demo();
+        if (CC_EDITOR) {
+            //HallLayerC.instance.init(this.hallLayerV, {});
+            // this.stockpileUpda(PathManagement.HallUIPaht);
+        }
     }
 }
-
