@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/text/Model.ts"],"names":[],"mappings":";;;;;AAAA;;;;;GAKG","file":"","sourceRoot":"/","sourcesContent":["/*\n * Copyright (C) 2021, Flickering Inc. All rights reserved.\n * Author: wenqianqin (wenqianqin@flickering.ai)\n *\n * Description:\n */\n\nexport interface IAbc {\n    name: string;\n    age: number;\n}\n"]}
