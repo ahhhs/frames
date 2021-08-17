@@ -4,7 +4,7 @@
  * Description: 层级管理器
  */
 
-import AdaptiveUtils from '../util/AdaptiveUtils';
+import PrData from '../data/PrData';
 
 /**
  * 层级类型
@@ -36,7 +36,7 @@ export class NodeSize {
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export class PrLayerManager {
+export class PrLayerUtil {
 
     private root: cc.Node = undefined;
     private rootZIndex: 0;
@@ -71,7 +71,7 @@ export class PrLayerManager {
 
         const node = new cc.Node();
         node.name = string + "Layer";
-        node.addComponent(AdaptiveUtils).init();
+        node.addComponent(PrData.adaptive).init();
         this.root.addChild(node, this.rootZIndex++);
     }
     /**

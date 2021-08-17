@@ -2,7 +2,7 @@
  * Copyright (C) 2021, Flickering Inc. All rights reserved.
  * Author: wenqianqin (wenqianqin@flickering.ai)
  *
- * Description:
+ * Description: 首页v
  */
 
 const { ccclass, property, executeInEditMode } = cc._decorator;

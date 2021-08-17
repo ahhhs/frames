@@ -1,7 +1,7 @@
 /*
  * Author: ahhh (new_q8@163.com)
  *
- * Description: Hall入口
+ * Description: 首页入口
  */
 
 import { PathData } from '../../script/data/PathData';
@@ -40,9 +40,11 @@ export default class HallMain extends cc.Component {
 
         }
     }
-    async onLoad() {
+    public onLoad() {
+    }
+    public editorMain() {
         if (CC_EDITOR) {
-            //HallLayerC.instance.init(this.hallLayerV, {});
+            HallLayerC.instance.init(this.hallLayerV, {});
             // this.stockpileUpda(PathManagement.HallUIPaht);
         }
     }

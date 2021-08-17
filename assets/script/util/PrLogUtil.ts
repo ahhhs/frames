@@ -15,7 +15,7 @@ export enum Authority {
  * 示例: CrLogManagers.log1("输出log")();
  *      CrLogManagers.assignLog("Type","输出log")();
  */
-export class PrLogManagers {
+export class PrLogUtil {
     // public static script = "";//脚本名字
     public static authority: number = 2;//当前权限等级 数值越高 权限越高
     public static isSpecified: boolean = false;//指定输出开关 true是指定 false不是
