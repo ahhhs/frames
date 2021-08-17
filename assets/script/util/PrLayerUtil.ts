@@ -4,7 +4,7 @@
  * Description: 层级管理器
  */
 
-import PrData from '../data/PrData';
+import Pr from '../data/Pr';
 
 /**
  * 层级类型
@@ -63,31 +63,69 @@ export class PrLayerUtil {
     }
     /**
      * 添加层级
-     * 
      * @description 添加层级node,并且添加适配脚本
      */
-    private addLayer(string: string) {
-        if (this.getLayer(string)) return;
-
+    private addLayer(layerName: string) {
+        let layerNames = this.getLayer(layerName);
+        if (layerNames) return;
         const node = new cc.Node();
-        node.name = string + "Layer";
-        node.addComponent(PrData.adaptive).init();
-        this.root.addChild(node, this.rootZIndex++);
+        node.name = layerName + "Layer";
+        node.addComponent(Pr.adaptive).init();
+        layerNames.addChild(node, this.rootZIndex++);
     }
     /**
      * 获得一个层级
      * @param name nodeName
+     * @param isLayer 是否是在层级上加
      * @returns 
      */
     public getLayer(name: string) {
-        return this.root.getChildByName(name + "Layer");
+        return this.getRootNode().getChildByName(name + "Layer");
     }
     /**
      * 获得根节点
      * @returns 
      */
     public getRootNode() {
-        return this.root;
+        return cc.director.getScene().getChildByName("Canvas");
+    }
+    /**
+     * addnodeMain 
+     * @param url 路径
+     * @param urlName 名字
+     * @param isLayer 是否是在主层级上添加
+     * @param pather 父节点
+     */
+    public async addNodeMain(layerName, url: string, urlName: string, isLayer = true, pather?: cc.Node) {
+        let cbJudge = await this.loadResource(url, urlName);
+        if (cbJudge) {
+            if (isLayer) {
+                await this.addLayerNode(layerName, Pr.loadPresource.getLoadList().get(urlName));
+            } else {
+                await this.addNode(Pr.loadPresource.getLoadList().get(urlName), pather);
+            }
+        } else {
+        }
+    }
+    /**
+     * 加载资源
+     * @returns 
+     */
+    private async loadResource(url: string, urlName: string) {
+        return await Pr.loadPresource.loadPrefab(url, urlName).then(() => {
+            return true;
+        }, () => {
+            return false;
+        });
+    }
+    /**
+     * 添加node
+     * @param parentNode 
+     * @param pather 
+     */
+    public addNode(parentNode: cc.Node, pather: cc.Node) {
+        let nodes: cc.Node = cc.instantiate(parentNode);
+        pather.addChild(nodes);
     }
     /**
      * 层级添加node
@@ -97,7 +135,7 @@ export class PrLayerUtil {
      * @param isAdpitve 是否使用默认适配方式
      * @param ZIndex 层级
      */
-    public addNode(parentNode: number, node: cc.Node, isAdpitve: boolean = true, ZIndex: number = 0) {
+    public addLayerNode(parentNode: number, node: cc.Node, isAdpitve: boolean = true, ZIndex: number = 0) {
         let nodes: cc.Node = cc.instantiate(node);
         nodes.zIndex = ZIndex;
         this.getLayer(LayerType[parentNode]).addChild(nodes);

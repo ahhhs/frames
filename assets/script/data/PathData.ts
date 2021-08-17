@@ -6,5 +6,6 @@
 const { ccclass, property } = cc._decorator;
 @ccclass
 export class PathData {
-    static HallUIPaht = `db://assets/config/hallUIPath.json`;//大厅ui层json保存的路径
+    static HomeUIPaht = `db://assets/config/hallUIPath.json`;//大厅ui层json保存的路径
+    static ABFilePath = `db://assets/`;//ab包
 }

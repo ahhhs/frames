@@ -4,21 +4,21 @@
  * Description: 首页入口
  */
 
-import { PathData } from '../../script/data/PathData';
-import HallLayerC from './HallLayerC';
-import HallLayerV from './HallLayerV';
+import Pr from '../../script/data/Pr';
+import HomeLayerC from './HomeLayerC';
+import HomeLayerV from './HomeLayerV';
 
 const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
 @executeInEditMode
-export default class HallMain extends cc.Component {
-    @property(HallLayerV)
-    hallLayerV: HallLayerV = null;
+export default class homeMain extends cc.Component {
+    @property(HomeLayerV)
+    homeLayerV: HomeLayerV = null;
 
     @property({ displayName: "更新配置" })
     public set config(fiag) {
-        this.stockpileUpda(PathData.HallUIPaht);
+        this.stockpileUpda(Pr.pathUrl.HomeUIPaht);
     }
     public get config() {
         return false;
@@ -37,15 +37,16 @@ export default class HallMain extends cc.Component {
                 this.isSave = false;
                 cc.log('配置已更新');
             });
-
         }
     }
     public onLoad() {
+        HomeLayerC.instance.init(this.homeLayerV);
+        
     }
     public editorMain() {
         if (CC_EDITOR) {
-            HallLayerC.instance.init(this.hallLayerV, {});
-            // this.stockpileUpda(PathManagement.HallUIPaht);
+            HomeLayerC.instance.init(this.homeLayerV);
+            // this.stockpileUpda(PathManagement.homeUIPaht);
         }
     }
 }

@@ -4,6 +4,8 @@
  * Description: 加载管理器
  */
 
+import Pr from '../data/Pr';
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -25,18 +27,28 @@ export default class PrLoadResouceManager {
      * @returns 
      */
     public loadPrefab(url: string, asserts: string) {
-        return new Promise<void>((res) => {
+        return new Promise<void>((res, rej) => {
             if (CC_EDITOR) {
-                let path = `db://assets/prefabAB/carPrefab.prefab`;
-                this.editorLoad(path);
+                this.editorLoad(Pr.pathUrl.ABFilePath + url + "/" + asserts + ".prefab");
             } else {
                 cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
-                    bundle.load(asserts, (ell, asserts) => {
-                        if (asserts instanceof cc.Prefab) {
-                            this.loadList.set(asserts.name, asserts);
-                            res();
-                        }
-                    });
+                    if (ell) {
+                        Pr.logUtil.log2("加载ab包 " + bundle + " 失败...",)();
+                        rej();
+                    } else {
+                        bundle.load(asserts, (ell, asserts) => {
+                            if (ell) {
+                                Pr.logUtil.log2("加载预制体 " + asserts + " 失败...",)();
+                                rej();
+                            } else {
+                                if (asserts instanceof cc.Prefab) {
+                                    Pr.logUtil.log2("加载预制体 " + asserts.name + " 成功...",)();
+                                    this.loadList.set(asserts.name, asserts);
+                                    res();
+                                }
+                            }
+                        });
+                    }
                 });
             }
         });
