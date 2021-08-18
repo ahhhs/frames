@@ -4,9 +4,8 @@
  * Description: 首页v
  */
 
-import Pr from '../../script/data/Pr';
-import { EventUserType } from '../../script/data/PrEnum';
-import HomeLayerC from './HomeLayerC';
+import Pr from '../../scriptComm/data/Pr';
+import { EventUserType } from '../../scriptComm/data/PrEnum';
 
 const { ccclass, property, executeInEditMode } = cc._decorator;
 

@@ -4,7 +4,7 @@
  * Description: 首页入口
  */
 
-import Pr from '../../script/data/Pr';
+import Pr from '../../scriptComm/data/Pr';
 import HomeLayerC from './HomeLayerC';
 import HomeLayerV from './HomeLayerV';
 
@@ -12,7 +12,7 @@ const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
 @executeInEditMode
-export default class homeMain extends cc.Component {
+export default class HomeMain extends cc.Component {
     @property(HomeLayerV)
     homeLayerV: HomeLayerV = null;
 
@@ -41,7 +41,6 @@ export default class homeMain extends cc.Component {
     }
     public onLoad() {
         HomeLayerC.instance.init(this.homeLayerV);
-        
     }
     public editorMain() {
         if (CC_EDITOR) {

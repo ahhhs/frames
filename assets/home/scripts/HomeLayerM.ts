@@ -5,8 +5,8 @@
  * Description: 
  */
 
-import Pr from '../../script/data/Pr';
-import { LayerType } from '../../script/util/PrLayerUtil';
+import Pr from '../../scriptComm/data/Pr';
+import { LayerType } from '../../scriptComm/util/PrLayerUtil';
 import HomeLayerV from './HomeLayerV';
 
 const { ccclass, property } = cc._decorator;
@@ -24,10 +24,9 @@ export default class HomeLayerM extends Pr.layerUtil {
     }
 
     nodeV: HomeLayerV;
-
     public async init(V: HomeLayerV) {
         this.nodeV = V;
         this.initLayerBase(this.nodeV.node);
-        this.addNodeMain(LayerType.UI,"prefabAB/homeAB", "gameMain");
+        this.addNodeMain(LayerType.UI, "prefabAB/homeAB", "homesMain");
     }
 }

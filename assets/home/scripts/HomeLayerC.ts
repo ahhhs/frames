@@ -4,7 +4,7 @@
  * Description: 首页c
  */
 
-import Pr from '../../script/data/Pr';
+import Pr from '../../scriptComm/data/Pr';
 import HomeLayerM from './HomeLayerM';
 import HomeLayerV from './HomeLayerV';
 
@@ -33,5 +33,5 @@ export default class HomeLayerC {
         this.homeLayerV = v;
         this.homeLayerM.init(this.homeLayerV);
     }
-   
+
 }
