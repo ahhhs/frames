@@ -22,7 +22,6 @@ export default class HomeLayerM extends Pr.layerUtil {
         }
         return this._instance;
     }
-
     nodeV: HomeLayerV;
     public async init(V: HomeLayerV) {
         this.nodeV = V;
@@ -30,3 +29,4 @@ export default class HomeLayerM extends Pr.layerUtil {
         this.addNodeMain(LayerType.UI, "prefabAB/homeAB", "homesMain");
     }
 }
+

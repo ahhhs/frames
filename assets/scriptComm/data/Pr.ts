@@ -11,14 +11,14 @@ import { PrEventManager } from '../manager/PrEventManager';
 import PrLoadResouceManager from '../manager/PrLoadResourceManager';
 import { PrLayerUtil } from '../util/PrLayerUtil';
 import { PrLogUtil } from '../util/PrLogUtil';
-import { PathData } from './PathData';
+import { PrPathData } from './PrPathData';
 import { PrEnum } from './PrEnum';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Pr {
-    static pathUrl = PathData;//路径
+    static pathUrl = PrPathData;//路径
 
     static logUtil = PrLogUtil;//log工具
     static layerUtil = PrLayerUtil;//层级工具

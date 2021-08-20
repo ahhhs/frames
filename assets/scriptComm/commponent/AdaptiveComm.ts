@@ -14,7 +14,7 @@ export default class AdaptiveComm extends cc.Component {
     onLoad() {
         this.node.width = cc.winSize.width;
         this.node.height = cc.winSize.height;
-        Pr.logUtil.log1("查看节点尺寸width:", this.node.width, "height", this.node.height)();
+        Pr.logUtil.log2("查看节点尺寸width:", this.node.width, "height", this.node.height)();
     }
 }
 

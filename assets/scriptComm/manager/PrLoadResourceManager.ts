@@ -10,7 +10,6 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class PrLoadResouceManager {
-
     private static _instance: PrLoadResouceManager;
     private loadList: Map<string, any> = new Map();
 
@@ -24,26 +23,25 @@ export default class PrLoadResouceManager {
      * 加载预制体
      * @param url 路径
      * @param asserts 资源name
-     * @returns 
+     * @returns
      */
     public loadPrefab(url: string, asserts: string) {
-        Pr.logUtil.log1("查看加载资源的路径:", url, asserts);
         return new Promise<void>((res, rej) => {
             if (CC_EDITOR) {
-                this.editorLoad(Pr.pathUrl.ABFilePath + url + "/" + asserts + ".prefab");
+                this.editorLoad(Pr.pathUrl.ABFilePath + url + '/' + asserts + '.prefab');
             } else {
                 cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
                     if (ell) {
-                        Pr.logUtil.log2("加载ab包 " + bundle + " 失败...",)();
+                        Pr.logUtil.log1('加载ab包 ' + bundle + ' 失败...')();
                         rej();
                     } else {
                         bundle.load(asserts, (ell, asserts) => {
                             if (ell) {
-                                Pr.logUtil.log2("加载预制体 " + asserts + " 失败...",)();
+                                Pr.logUtil.log1('加载预制体 ' + asserts + ' 失败...')();
                                 rej();
                             } else {
                                 if (asserts instanceof cc.Prefab) {
-                                    Pr.logUtil.log2("加载预制体 " + asserts.name + " 成功...",)();
+                                    Pr.logUtil.log1('加载预制体 ' + asserts.name + ' 成功...')();
                                     this.loadList.set(asserts.name, asserts);
                                     res();
                                 }
@@ -52,6 +50,23 @@ export default class PrLoadResouceManager {
                     }
                 });
             }
+        });
+    }
+    /**
+     * 加载图片资源
+     * @param url
+     * @param resName
+     */
+    public loadPicRes(url: string, resName: string) {
+        return new Promise((res, rej) => {
+            cc.assetManager.loadBundle(url, (err, bundle) => {
+                if (!err) {
+                    bundle.load(resName, cc.SpriteFrame, (ell, ress) => {
+                        Pr.logUtil.log1('加载图片资源' + ress + '成功')();
+                        res(ress);
+                    });
+                }
+            });
         });
     }
     /**
@@ -66,22 +81,22 @@ export default class PrLoadResouceManager {
                     for (let i = 0; i < asserts.length; i++) {
                         this.loadList.set(asserts[i].name, asserts[i]);
                     }
-                    res()
+                    res();
                 });
             });
         });
     }
     /**
      * 获得加载列表
-     * @returns 
+     * @returns
      */
     public getLoadList() {
         return this.loadList;
     }
     /**
      * 编辑器模式加载
-     * @param path 
-     * @param cb 
+     * @param path
+     * @param cb
      */
     public editorLoad(path: string, cb?: Function) {
         const fileUuid = Editor.assetdb.remote.urlToUuid(path);
@@ -92,6 +107,6 @@ export default class PrLoadResouceManager {
             if (cb) {
                 cb(err, asset);
             }
-        })
+        });
     }
 }

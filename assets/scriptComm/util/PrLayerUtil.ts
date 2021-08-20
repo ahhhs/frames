@@ -10,9 +10,9 @@ import Pr from '../data/Pr';
  * 层级类型
  */
 export enum LayerType {
-    "UI",
-    "ADAPTIVE",
-    "POPUP",
+    'UI',
+    'ADAPTIVE',
+    'POPUP',
 }
 /**
  * node uuid类型
@@ -37,7 +37,6 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export class PrLayerUtil {
-
     private root: cc.Node = undefined;
     private rootZIndex: 0;
     private nodeList: Array<NodeType> = [];
@@ -57,7 +56,6 @@ export class PrLayerUtil {
      * 添加层级入口
      */
     private addLayerMain() {
-
         for (let i = 0; i < Object.values(LayerType).length / 2; i++) {
             this.addLayer(LayerType[i]);
         }
@@ -70,7 +68,7 @@ export class PrLayerUtil {
         let layerNames = this.getLayer(layerName);
         if (layerNames) return;
         const node = new cc.Node();
-        node.name = layerName + "Layer";
+        node.name = layerName + 'Layer';
         node.addComponent(Pr.adaptive);
         this.getRootNode().addChild(node, this.rootZIndex++);
     }
@@ -78,55 +76,67 @@ export class PrLayerUtil {
      * 获得一个层级
      * @param name nodeName
      * @param isLayer 是否是在层级上加
-     * @returns 
+     * @returns
      */
     public getLayer(name: string) {
-        return this.getRootNode().getChildByName(name + "Layer");
+        return this.getRootNode().getChildByName(name + 'Layer');
     }
     /**
      * 获得根节点
-     * @returns 
+     * @returns
      */
     public getRootNode() {
-        return cc.director.getScene().getChildByName("Canvas");
+        return cc.director.getScene().getChildByName('Canvas');
     }
     /**
-     * addnodeMain 
+     * addnodeMain
      * @param url 路径
+     * @param layerName 层级name
      * @param urlName 名字
      * @param isLayer 是否是在主层级上添加
      * @param pather 父节点
      */
-    public async addNodeMain(layerName, url: string, urlName: string, isLayer = true, pather?: cc.Node) {
+    public async addNodeMain(
+        layerName: number,
+        url: string,
+        urlName: string,
+        isLayer = true,
+        pather?: cc.Node,
+        cb?
+    ) {
         let cbJudge = await this.loadResource(url, urlName);
         if (cbJudge) {
             if (isLayer) {
-                await this.addLayerNode(layerName, Pr.loadPresource.getLoadList().get(urlName));
+                await this.addLayerNode(layerName, Pr.loadPresource.getLoadList().get(urlName), cb);
             } else {
-                await this.addNode(Pr.loadPresource.getLoadList().get(urlName), pather);
+                await this.addNode(Pr.loadPresource.getLoadList().get(urlName), pather, cb);
             }
-        } else {
         }
     }
     /**
      * 加载资源
-     * @returns 
+     * @returns
      */
     private async loadResource(url: string, urlName: string) {
-        return await Pr.loadPresource.loadPrefab(url, urlName).then(() => {
-            return true;
-        }, () => {
-            return false;
-        });
+        return await Pr.loadPresource.loadPrefab(url, urlName).then(
+            () => {
+                return true;
+            },
+            () => {
+                return false;
+            }
+        );
     }
     /**
      * 添加node
-     * @param parentNode 
-     * @param pather 
+     * @param parentNode
+     * @param pather
      */
-    public addNode(parentNode: cc.Node, pather: cc.Node) {
+    public addNode(parentNode: cc.Node, pather: cc.Node, cb) {
         let nodes: cc.Node = cc.instantiate(parentNode);
         pather.addChild(nodes);
+        cb && cb(nodes);
+        return nodes;
     }
     /**
      * 层级添加node
@@ -136,15 +146,15 @@ export class PrLayerUtil {
      * @param isAdpitve 是否使用默认适配方式
      * @param ZIndex 层级
      */
-    public addLayerNode(parentNode: number, node: cc.Node, isAdpitve: boolean = true, ZIndex: number = 0) {
+    public addLayerNode(parentNode: number, node: cc.Node, cb?) {
         let nodes: cc.Node = cc.instantiate(node);
-        nodes.zIndex = ZIndex;
-        console.log('添加的层级name:', parentNode, LayerType[parentNode]);
         this.getLayer(LayerType[parentNode]).addChild(nodes);
+        cb && cb(nodes);
+        return nodes;
     }
     /**
      * 获得所有的node属性
-     * @returns 
+     * @returns
      */
     public getAllNodeData() {
         this.traverseNodeData(this.root);

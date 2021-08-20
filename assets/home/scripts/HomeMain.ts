@@ -5,6 +5,7 @@
  */
 
 import Pr from '../../scriptComm/data/Pr';
+import { DiceAreaClassData, DiceClassData } from '../../scriptComm/data/PrClassData';
 import HomeLayerC from './HomeLayerC';
 import HomeLayerV from './HomeLayerV';
 
@@ -16,7 +17,7 @@ export default class HomeMain extends cc.Component {
     @property(HomeLayerV)
     homeLayerV: HomeLayerV = null;
 
-    @property({ displayName: "更新配置" })
+    @property({ displayName: '更新配置' })
     public set config(fiag) {
         this.stockpileUpda(Pr.pathUrl.HomeUIPaht);
     }
@@ -28,10 +29,9 @@ export default class HomeMain extends cc.Component {
      */
     public stockpileUpda(path: string) {
         if (CC_EDITOR) {
-            let nodeName = {
-            }
+            let nodeName = {};
             for (let i = 0; i < this.node.children.length; i++) {
-                nodeName[this.node.children[i].name + "Id"] = this.node.children[i].uuid;
+                nodeName[this.node.children[i].name + 'Id'] = this.node.children[i].uuid;
             }
             Editor.assetdb.createOrSave(path, JSON.stringify(nodeName), function (err, results) {
                 this.isSave = false;
@@ -39,13 +39,13 @@ export default class HomeMain extends cc.Component {
             });
         }
     }
-    public onLoad() {
-        HomeLayerC.instance.init(this.homeLayerV);
-    }
     public editorMain() {
         if (CC_EDITOR) {
             HomeLayerC.instance.init(this.homeLayerV);
             // this.stockpileUpda(PathManagement.homeUIPaht);
         }
+    }
+    public onLoad() {
+        HomeLayerC.instance.init(this.homeLayerV);
     }
 }

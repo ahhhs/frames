@@ -15,7 +15,10 @@ export enum EventUserType {
  * 职业
  */
 export enum OccupationType {
-
+    Archer = "弓箭手",
+    Master = "法师",
+    Knight = "骑士",
+    AssAssin = "幻刺"
 }
 /**
  * 种族
