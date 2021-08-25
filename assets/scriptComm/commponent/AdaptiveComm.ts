@@ -4,17 +4,15 @@
  * Description: 等宽高适配
  */
 
-import Pr from '../data/Pr';
+import pr from '../data/pr';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class AdaptiveComm extends cc.Component {
-
+export class AdaptiveComm extends cc.Component {
     onLoad() {
         this.node.width = cc.winSize.width;
         this.node.height = cc.winSize.height;
-        Pr.logUtil.log2("查看节点尺寸width:", this.node.width, "height", this.node.height)();
+        pr.logUtil.log2('查看节点尺寸width:', this.node.width, 'height', this.node.height)();
     }
 }
-

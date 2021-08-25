@@ -4,14 +4,14 @@
  * Description: 首页c
  */
 
-import Pr from '../../scriptComm/data/Pr';
+import { LayerType } from '../../scriptComm/util/PrLayerUtil';
 import HomeLayerM from './HomeLayerM';
-import HomeLayerV from './HomeLayerV';
+import { HomeLayerV } from './HomeLayerV';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class HomeLayerC {
+export class HomeLayerC {
     private static _instance: HomeLayerC;
 
     public static get instance() {
@@ -20,10 +20,8 @@ export default class HomeLayerC {
         }
         return this._instance;
     }
-
     private homeLayerV: HomeLayerV;
     private homeLayerM: HomeLayerM = HomeLayerM.instance;
-
     /**
      * 初始化控制器
      * @param v 表现层
@@ -33,5 +31,10 @@ export default class HomeLayerC {
         this.homeLayerV = v;
         this.homeLayerM.init(this.homeLayerV);
     }
-
+    /**
+     * 添加组件入口
+     */
+    private addNodeMain() {
+        this.homeLayerM.addNodeMain(LayerType.UI, 'PrefabAB/homeAB', 'homesMain');
+    }
 }

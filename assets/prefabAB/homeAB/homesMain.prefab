@@ -455,7 +455,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 11
@@ -477,7 +477,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 120,
+      "width": 126.74,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -597,8 +597,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "骰子库",
-    "_N$string": "骰子库",
+    "_string": "touziku",
+    "_N$string": "touziku",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,

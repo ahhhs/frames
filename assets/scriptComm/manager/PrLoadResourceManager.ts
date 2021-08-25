@@ -4,12 +4,12 @@
  * Description: 加载管理器
  */
 
-import Pr from '../data/Pr';
+import pr from '../data/pr';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class PrLoadResouceManager {
+export class PrLoadResouceManager {
     private static _instance: PrLoadResouceManager;
     private loadList: Map<string, any> = new Map();
 
@@ -28,20 +28,21 @@ export default class PrLoadResouceManager {
     public loadPrefab(url: string, asserts: string) {
         return new Promise<void>((res, rej) => {
             if (CC_EDITOR) {
-                this.editorLoad(Pr.pathUrl.ABFilePath + url + '/' + asserts + '.prefab');
+                this.editorLoad(pr.pathUrl.ABFilePath + url + '/' + asserts + '.prefab');
             } else {
                 cc.assetManager.loadBundle(url, (ell, bundle: cc.AssetManager.Bundle) => {
                     if (ell) {
-                        Pr.logUtil.log1('加载ab包 ' + bundle + ' 失败...')();
+                        pr.logUtil.log1('加载ab包 ' + bundle + ' 失败...')();
                         rej();
                     } else {
                         bundle.load(asserts, (ell, asserts) => {
                             if (ell) {
-                                Pr.logUtil.log1('加载预制体 ' + asserts + ' 失败...')();
+                                pr.logUtil.log1('加载预制体 ' + asserts + ' 失败...')();
                                 rej();
                             } else {
                                 if (asserts instanceof cc.Prefab) {
-                                    Pr.logUtil.log1('加载预制体 ' + asserts.name + ' 成功...')();
+                                    asserts.addRef();
+                                    pr.logUtil.log1('加载预制体 ' + asserts.name + ' 成功...')();
                                     this.loadList.set(asserts.name, asserts);
                                     res();
                                 }
@@ -62,7 +63,7 @@ export default class PrLoadResouceManager {
             cc.assetManager.loadBundle(url, (err, bundle) => {
                 if (!err) {
                     bundle.load(resName, cc.SpriteFrame, (ell, ress) => {
-                        Pr.logUtil.log1('加载图片资源' + ress + '成功')();
+                        pr.logUtil.log1('加载图片资源' + ress + '成功')();
                         res(ress);
                     });
                 }

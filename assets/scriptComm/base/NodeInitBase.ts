@@ -8,7 +8,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NodeInitBase extends cc.Component {
+export class NodeInitBase extends cc.Component {
     onLoad() {}
 
     /**

@@ -6,7 +6,7 @@
  */
 
 import { HomesC } from './HomesC';
-import HomesV from './HomesV';
+import { HomesV } from './HomesV';
 
 const { ccclass, property } = cc._decorator;
 

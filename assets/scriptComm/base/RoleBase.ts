@@ -8,12 +8,9 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class RoleBase extends cc.Component {
-
-    @property({ type: cc.Sprite, displayName: "角色图片" })
+export class RoleBase extends cc.Component {
+    @property({ type: cc.Sprite, displayName: '角色图片' })
     RolePic: cc.Sprite = null;
 
-    onLoad() {
-
-    }
+    onLoad() {}
 }

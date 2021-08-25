@@ -4,8 +4,8 @@
  * Description: 基础弹窗
  */
 
-import Pr from '../data/Pr';
-import NodeInitBase from './NodeInitBase';
+import pr from '../data/pr';
+import { NodeInitBase } from './NodeInitBase';
 
 const { ccclass, property } = cc._decorator;
 
@@ -28,10 +28,10 @@ export class PopUpBase extends NodeInitBase {
         cc.tween(this.node).to(0.2, { scale: 1.1 }).to(0.1, { scale: 1 }).start();
     }
     public onClick() {
-        Pr.logUtil.log1('点击弹窗确定')();
+        pr.logUtil.log1('点击弹窗确定')();
     }
     public onReturn() {
-        Pr.logUtil.log1('点击弹出退出')();
+        pr.logUtil.log1('点击弹出退出')();
         this.node.destroy();
     }
 }

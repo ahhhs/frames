@@ -4,7 +4,7 @@
  * Description: 层级管理器
  */
 
-import Pr from '../data/Pr';
+import pr from '../data/pr';
 
 /**
  * 层级类型
@@ -69,7 +69,7 @@ export class PrLayerUtil {
         if (layerNames) return;
         const node = new cc.Node();
         node.name = layerName + 'Layer';
-        node.addComponent(Pr.adaptive);
+        node.addComponent(pr.adaptive);
         this.getRootNode().addChild(node, this.rootZIndex++);
     }
     /**
@@ -90,9 +90,9 @@ export class PrLayerUtil {
     }
     /**
      * addnodeMain
-     * @param url 路径
+     * @param url 资源路径
      * @param layerName 层级name
-     * @param urlName 名字
+     * @param urlName 资源名字
      * @param isLayer 是否是在主层级上添加
      * @param pather 父节点
      */
@@ -107,9 +107,9 @@ export class PrLayerUtil {
         let cbJudge = await this.loadResource(url, urlName);
         if (cbJudge) {
             if (isLayer) {
-                await this.addLayerNode(layerName, Pr.loadPresource.getLoadList().get(urlName), cb);
+                await this.addLayerNode(layerName, pr.loadPresource.getLoadList().get(urlName), cb);
             } else {
-                await this.addNode(Pr.loadPresource.getLoadList().get(urlName), pather, cb);
+                await this.addNode(pr.loadPresource.getLoadList().get(urlName), pather, cb);
             }
         }
     }
@@ -118,7 +118,7 @@ export class PrLayerUtil {
      * @returns
      */
     private async loadResource(url: string, urlName: string) {
-        return await Pr.loadPresource.loadPrefab(url, urlName).then(
+        return await pr.loadPresource.loadPrefab(url, urlName).then(
             () => {
                 return true;
             },

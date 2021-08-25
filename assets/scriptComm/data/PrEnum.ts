@@ -8,48 +8,39 @@
  * 用户事件
  */
 export enum EventUserType {
-    StartGanme,//开始游戏
-    Shop,//商店
+    StartGanme, //开始游戏
+    Shop, //商店
+    DiceWarehouse, //骰子库
 }
 /**
  * 职业
  */
 export enum OccupationType {
-    Archer = "弓箭手",
-    Master = "法师",
-    Knight = "骑士",
-    AssAssin = "幻刺"
+    Archer = '弓箭手',
+    Master = '法师',
+    Knight = '骑士',
+    AssAssin = '幻刺',
 }
 /**
  * 种族
  */
-export enum RaceType {
-
-}
+export enum RaceType {}
 /**
  * 怪物星级
  */
-export enum MonsterLevelType {
-
-}
+export enum MonsterLevelType {}
 /**
  * 攻击范围
  */
-export enum AtkScopeType {
-
-}
+export enum AtkScopeType {}
 /**
  * 天赋技能
  */
-export enum TalentSkillType {
-
-}
+export enum TalentSkillType {}
 /**
  * 种族特性
  */
-export enum TaecPeculiarityType {
-
-}
+export enum TaecPeculiarityType {}
 /**
  * 枚举类
  */

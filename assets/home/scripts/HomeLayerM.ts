@@ -2,18 +2,17 @@
  * Copyright (C) 2021, Flickering Inc. All rights reserved.
  * Author: wenqianqin (wenqianqin@flickering.ai)
  *
- * Description: 
+ * Description:
  */
 
-import Pr from '../../scriptComm/data/Pr';
+import pr from '../../scriptComm/data/pr';
 import { LayerType } from '../../scriptComm/util/PrLayerUtil';
-import HomeLayerV from './HomeLayerV';
+import { HomeLayerV } from './HomeLayerV';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class HomeLayerM extends Pr.layerUtil {
-
+export default class HomeLayerM extends pr.layerUtil {
     private static _instance: HomeLayerM;
 
     public static get instance() {
@@ -26,7 +25,6 @@ export default class HomeLayerM extends Pr.layerUtil {
     public async init(V: HomeLayerV) {
         this.nodeV = V;
         this.initLayerBase(this.nodeV.node);
-        this.addNodeMain(LayerType.UI, "prefabAB/homeAB", "homesMain");
+        this.addNodeMain(LayerType.UI, 'prefabAB/homeAB', 'homesMain');
     }
 }
-

@@ -8,8 +8,9 @@
 /**
  * 怪物详情
  */
-export class MonsterClassData {
-    public monsterPic: cc.SpriteFrame; //图片
+export class CDMonsterClassData {
+    public monsterPic: cc.SpriteFrame; //怪物图片
+    public monsterUI: cc.SpriteFrame; //怪物ui
     public monsterName: string = ''; //名字
     public race: number = 1;
     public monsterLevel: number = 1; //5个等级 1星,2星,3星,4星,5星
@@ -20,7 +21,7 @@ export class MonsterClassData {
     public skill: Array<string> = []; //技能
     public talentSkill: number = 1; //天赋技能
     public brief: string = ''; //简介
-    public dice: DiceClassData; //骰子实例
+    public dice: CDDiceClassData; //骰子实例
     constructor(data: {
         monsterName: string;
         race: number;
@@ -33,7 +34,8 @@ export class MonsterClassData {
         talentSkill: number;
         monsterPic: cc.SpriteFrame;
         brief: string;
-        dice: DiceClassData;
+        dice: CDDiceClassData;
+        monsterUI: cc.SpriteFrame;
     }) {
         this.monsterName = data.monsterName;
         this.race = data.race;
@@ -47,6 +49,7 @@ export class MonsterClassData {
         this.monsterPic = data.monsterPic;
         this.brief = data.brief;
         this.dice = data.dice;
+        this.monsterUI = data.monsterUI;
     }
     getDice() {
         return this.dice;
@@ -55,15 +58,15 @@ export class MonsterClassData {
 /**
  * 骰子
  */
-export class DiceClassData {
+export class CDDiceClassData {
     diceId: number = 1;
     diceLevel: number = 1; //共有5个等级 岩灰,梨黄,幽蓝.绯红,暗黑
-    diceSurface: DiceAreaClassData; //共有6个面 移动,攻击,技能,禁忌,召唤
+    diceSurface: CDDiceAreaClassData; //共有6个面 移动,攻击,技能,禁忌,召唤
     gold: number = 1; //出售价格
     constructor(data: {
         diceId: number;
         diceLevel: number;
-        diceSurface: DiceAreaClassData;
+        diceSurface: CDDiceAreaClassData;
         gold: number;
     }) {
         this.diceId = data.diceId;
@@ -84,11 +87,10 @@ export class DiceClassData {
         return this.gold;
     }
 }
-
 /**
  * 骰子面
  */
-export class DiceAreaClassData {
+export class CDDiceAreaClassData {
     atk: number = 0;
     move: number = 0;
     skill: number = 0;
@@ -101,12 +103,4 @@ export class DiceAreaClassData {
         this.taboo = taboo;
         this.summon = summon;
     }
-}
-
-const { ccclass, property } = cc._decorator;
-
-@ccclass
-export class PrClassData {
-    static monster: MonsterClassData;
-    static dice: DiceClassData;
 }

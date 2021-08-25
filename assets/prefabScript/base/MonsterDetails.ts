@@ -6,35 +6,40 @@
  */
 
 import { PopUpBase } from '../../scriptComm/base/PopUpBase';
-import Pr from '../../scriptComm/data/Pr';
+import pr from '../../scriptComm/data/pr';
 import {
-    DiceAreaClassData,
-    DiceClassData,
-    MonsterClassData,
+    CDDiceAreaClassData,
+    CDDiceClassData,
+    CDMonsterClassData,
 } from '../../scriptComm/data/PrClassData';
+
 import { DiceDetatils } from './DiceDetatils';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class MonsterDetails extends PopUpBase {
+export class MonsterDetails extends PopUpBase {
     @property({ type: cc.Sprite, displayName: '怪物立绘' })
     private monsterPic: cc.Sprite = null;
 
     /**
      * 怪物详情
      */
-    private MonsterDetailsData: MonsterClassData = null;
-    private MonsterDetailsM = new Pr.layerUtil();
+    private MonsterDetailsData: CDMonsterClassData = null;
+    private MonsterDetailsM = new pr.layerUtil();
     async onLoad() {
         super.onLoad();
 
         let pics: cc.SpriteFrame;
-        await Pr.loadPresource.loadPicRes('PicCommAB', 'key').then((pic: cc.SpriteFrame) => {
+        await pr.loadPresource.loadPicRes('PicCommAB', 'key').then((pic: cc.SpriteFrame) => {
+            pic.addRef();
             pics = pic;
         });
+        let monsterUI: cc.SpriteFrame;
+        await pr.loadPresource.loadPicRes('PicCommAB', 'key').then(() => {});
+
         this.init(
-            new MonsterClassData({
+            new CDMonsterClassData({
                 atk: 10,
                 monsterName: '哈哈',
                 race: 9,
@@ -46,12 +51,13 @@ export default class MonsterDetails extends PopUpBase {
                 talentSkill: 1,
                 brief: '',
                 monsterPic: pics,
-                dice: new DiceClassData({
+                dice: new CDDiceClassData({
                     diceId: 1,
                     diceLevel: 1,
-                    diceSurface: new DiceAreaClassData(1, 2, 3, 4, 5),
+                    diceSurface: new CDDiceAreaClassData(1, 2, 3, 4, 5),
                     gold: 1,
                 }),
+                monsterUI: monsterUI,
             })
         );
     }
@@ -60,7 +66,7 @@ export default class MonsterDetails extends PopUpBase {
      */
     public async init(data) {
         let pics: cc.SpriteFrame;
-        await Pr.loadPresource
+        await pr.loadPresource
             .loadPicRes('PicCommAB', data.monsterPic)
             .then((pic: cc.SpriteFrame) => {
                 pics = pic;
@@ -69,7 +75,7 @@ export default class MonsterDetails extends PopUpBase {
         data.monsterPic = pics;
         this.initData(data);
     }
-    private initData(data: MonsterClassData) {
+    private initData(data: CDMonsterClassData) {
         this.MonsterDetailsData = data;
         let content: cc.Node = this.node.getChildByName('content');
         for (let i = 0; i < content.children.length; i++) {

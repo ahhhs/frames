@@ -17,7 +17,7 @@ export class Observers {
     }
     /**
      * 发送通知
-     * @param args 
+     * @param args
      */
     public notify(...args: any[]) {
         let self = this;
@@ -25,8 +25,8 @@ export class Observers {
     }
     /**
      * 比较上下文
-     * @param context 
-     * @returns 
+     * @param context
+     * @returns
      */
     public conmpar(context): boolean {
         return this.context == context;

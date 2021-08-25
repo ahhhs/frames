@@ -4,22 +4,21 @@
  * Description: 首页入口
  */
 
-import Pr from '../../scriptComm/data/Pr';
-import { DiceAreaClassData, DiceClassData } from '../../scriptComm/data/PrClassData';
-import HomeLayerC from './HomeLayerC';
-import HomeLayerV from './HomeLayerV';
+import pr from '../../scriptComm/data/pr';
+import { HomeLayerC } from './HomeLayerC';
+import { HomeLayerV } from './HomeLayerV';
 
 const { ccclass, property, executeInEditMode } = cc._decorator;
 
 @ccclass
 @executeInEditMode
-export default class HomeMain extends cc.Component {
+export class HomeMain extends cc.Component {
     @property(HomeLayerV)
     homeLayerV: HomeLayerV = null;
 
     @property({ displayName: '更新配置' })
     public set config(fiag) {
-        this.stockpileUpda(Pr.pathUrl.HomeUIPaht);
+        this.stockpileUpda(pr.pathUrl.HomeUIPaht);
     }
     public get config() {
         return false;
