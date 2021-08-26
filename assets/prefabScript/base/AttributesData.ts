@@ -9,14 +9,13 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export class AttributesData extends cc.Component {
-
-    @property({ type: cc.SpriteFrame, displayName: "属性图片" })
+    @property({ type: cc.SpriteFrame, displayName: '属性图片' })
     attributesPic: cc.SpriteFrame = null;
 
-    @property({ type: cc.Label, displayName: "属性值" })
+    @property({ type: cc.Label, displayName: '属性值' })
     attributesValue: cc.Label = null;
 
-    onLoad() { }
+    onLoad() {}
 
     public init(data) {
         this.setStr(data.str);

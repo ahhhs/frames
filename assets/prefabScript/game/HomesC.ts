@@ -7,6 +7,7 @@
 
 import pr from '../../scriptComm/data/pr';
 import { LayerType } from '../../scriptComm/util/PrLayerUtil';
+import { DiceWarehouseMain } from './DiceWarehouseMain';
 import HomesM from './HomesM';
 import { HomesV } from './HomesV';
 
@@ -21,34 +22,30 @@ export class HomesC {
     }
 
     private homesV: HomesV;
-    private homesM: HomesM = HomesM.instance;
 
     public init(V) {
         this.homesV = V;
-        this.homesM.init(this.homesV);
+        HomesM.instance.init(this.homesV);
     }
     /**
      * 开始游戏
      */
-    public startGame() {
-        // this.homesM.addNodeMain(LayerType.POPUP,"")
-    }
-    /**
-     * 商店
-     */
-    public clickShop() {
-        // this.homesM.addNodeMain(
-        //     LayerType.POPUP,
-        //     'prefabAB/baseAB',
-        //     'popUp',
-        //     false,
-        //     this.homesV.node
-        // );
-    }
+    public startGame() {}
+
     /**
      * 点击骰子库
      */
     public clickDiceWarehouse() {
-        pr.logUtil.log('点击了骰子库')();
+        pr.logUtil.log1('点击了骰子库')();
+        pr.layerUtil.addNodeMain(
+            LayerType.POPUP,
+            'prefabAB/homeAB/',
+            'diceWarehouse'
+            // true,
+            // null,
+            // (node: cc.Node) => {
+            //     node.getComponent(DiceWarehouseMain).init();
+            // }
+        );
     }
 }

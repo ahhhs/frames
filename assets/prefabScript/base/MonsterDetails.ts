@@ -26,7 +26,6 @@ export class MonsterDetails extends PopUpBase {
      * 怪物详情
      */
     private MonsterDetailsData: CDMonsterClassData = null;
-    private MonsterDetailsM = new pr.layerUtil();
     async onLoad() {
         super.onLoad();
 
@@ -91,7 +90,7 @@ export class MonsterDetails extends PopUpBase {
                 );
             }
         }
-        this.MonsterDetailsM.addNodeMain(
+        pr.layerUtil.addNodeMain(
             0,
             'prefabAB/baseAB',
             'diceDetails',

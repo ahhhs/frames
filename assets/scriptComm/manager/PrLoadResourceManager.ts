@@ -41,7 +41,6 @@ export class PrLoadResouceManager {
                                 rej();
                             } else {
                                 if (asserts instanceof cc.Prefab) {
-                                    asserts.addRef();
                                     pr.logUtil.log1('加载预制体 ' + asserts.name + ' 成功...')();
                                     this.loadList.set(asserts.name, asserts);
                                     res();

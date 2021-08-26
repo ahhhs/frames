@@ -17,7 +17,7 @@ export class MonsterBase extends cc.Component {
     @property({ type: cc.Animation, displayName: '动作' })
     animation: cc.Animation = null;
 
-    MonsterM = new pr.layerUtil();
+    // MonsterM = new pr.layerUtil();
     /**
      * 长按回调
      */
@@ -45,7 +45,7 @@ export class MonsterBase extends cc.Component {
      * 显示角色信息
      */
     public showMonsterData() {
-        this.MonsterM.addNodeMain(LayerType.POPUP, 'prefabAB/baseAB', 'detailsData');
+        // this.MonsterM.addNodeMain(LayerType.POPUP, 'prefabAB/baseAB', 'detailsData');
     }
     /**
      * 播放动画

@@ -4,6 +4,7 @@
  * Description: 首页c
  */
 
+import pr from '../../scriptComm/data/pr';
 import { LayerType } from '../../scriptComm/util/PrLayerUtil';
 import HomeLayerM from './HomeLayerM';
 import { HomeLayerV } from './HomeLayerV';
@@ -20,21 +21,12 @@ export class HomeLayerC {
         }
         return this._instance;
     }
-    private homeLayerV: HomeLayerV;
-    private homeLayerM: HomeLayerM = HomeLayerM.instance;
     /**
      * 初始化控制器
      * @param v 表现层
      * @param m 模型
      */
     public async init(v: HomeLayerV) {
-        this.homeLayerV = v;
-        this.homeLayerM.init(this.homeLayerV);
-    }
-    /**
-     * 添加组件入口
-     */
-    private addNodeMain() {
-        this.homeLayerM.addNodeMain(LayerType.UI, 'PrefabAB/homeAB', 'homesMain');
+        await HomeLayerM.instance.init(v);
     }
 }

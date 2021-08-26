@@ -37,16 +37,16 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export class PrLayerUtil {
-    private root: cc.Node = undefined;
-    private rootZIndex: 0;
-    private nodeList: Array<NodeType> = [];
+    private static root: cc.Node = undefined;
+    private static rootZIndex: 0;
+    private static nodeList: Array<NodeType> = [];
 
     /**
      * 初始化
      * @param node 根节点
      * @param isAddLayer 是否要添加基础层级
      */
-    public initLayerBase(node: cc.Node, isAddLayer: boolean = true) {
+    public static initLayerBase(node: cc.Node, isAddLayer: boolean = true) {
         this.root = node;
         if (isAddLayer) {
             this.addLayerMain();
@@ -55,7 +55,7 @@ export class PrLayerUtil {
     /**
      * 添加层级入口
      */
-    private addLayerMain() {
+    private static addLayerMain() {
         for (let i = 0; i < Object.values(LayerType).length / 2; i++) {
             this.addLayer(LayerType[i]);
         }
@@ -64,7 +64,7 @@ export class PrLayerUtil {
      * 添加层级
      * @description 添加层级node,并且添加适配脚本
      */
-    private addLayer(layerName: string) {
+    private static addLayer(layerName: string) {
         let layerNames = this.getLayer(layerName);
         if (layerNames) return;
         const node = new cc.Node();
@@ -78,25 +78,25 @@ export class PrLayerUtil {
      * @param isLayer 是否是在层级上加
      * @returns
      */
-    public getLayer(name: string) {
+    public static getLayer(name: string) {
         return this.getRootNode().getChildByName(name + 'Layer');
     }
     /**
      * 获得根节点
      * @returns
      */
-    public getRootNode() {
+    public static getRootNode() {
         return cc.director.getScene().getChildByName('Canvas');
     }
     /**
-     * addnodeMain
+     * 动态加载预制体,并且添加到节点上
      * @param url 资源路径
      * @param layerName 层级name
      * @param urlName 资源名字
      * @param isLayer 是否是在主层级上添加
      * @param pather 父节点
      */
-    public async addNodeMain(
+    public static async addNodeMain(
         layerName: number,
         url: string,
         urlName: string,
@@ -104,12 +104,20 @@ export class PrLayerUtil {
         pather?: cc.Node,
         cb?
     ) {
-        let cbJudge = await this.loadResource(url, urlName);
-        if (cbJudge) {
+        let func = async () => {
             if (isLayer) {
                 await this.addLayerNode(layerName, pr.loadPresource.getLoadList().get(urlName), cb);
             } else {
                 await this.addNode(pr.loadPresource.getLoadList().get(urlName), pather, cb);
+            }
+        };
+
+        if (pr.loadPresource.getLoadList().get(urlName)) {
+            func();
+        } else {
+            let cbJudge = await this.loadResource(url, urlName);
+            if (cbJudge) {
+                func();
             }
         }
     }
@@ -117,7 +125,7 @@ export class PrLayerUtil {
      * 加载资源
      * @returns
      */
-    private async loadResource(url: string, urlName: string) {
+    public static async loadResource(url: string, urlName: string) {
         return await pr.loadPresource.loadPrefab(url, urlName).then(
             () => {
                 return true;
@@ -129,11 +137,11 @@ export class PrLayerUtil {
     }
     /**
      * 添加node
-     * @param parentNode
+     * @param prefabNode
      * @param pather
      */
-    public addNode(parentNode: cc.Node, pather: cc.Node, cb) {
-        let nodes: cc.Node = cc.instantiate(parentNode);
+    public static addNode(prefabNode: cc.Node, pather: cc.Node, cb) {
+        let nodes: cc.Node = cc.instantiate(prefabNode);
         pather.addChild(nodes);
         cb && cb(nodes);
         return nodes;
@@ -146,7 +154,7 @@ export class PrLayerUtil {
      * @param isAdpitve 是否使用默认适配方式
      * @param ZIndex 层级
      */
-    public addLayerNode(parentNode: number, node: cc.Node, cb?) {
+    public static addLayerNode(parentNode: number, node: cc.Node, cb?) {
         let nodes: cc.Node = cc.instantiate(node);
         this.getLayer(LayerType[parentNode]).addChild(nodes);
         cb && cb(nodes);
@@ -156,7 +164,7 @@ export class PrLayerUtil {
      * 获得所有的node属性
      * @returns
      */
-    public getAllNodeData() {
+    public static getAllNodeData() {
         this.traverseNodeData(this.root);
         return this.nodeList;
     }
@@ -164,7 +172,7 @@ export class PrLayerUtil {
      * 遍历目标node数据
      * @param node 需要遍历获得的目标节点
      */
-    public traverseNodeData(node: cc.Node) {
+    public static traverseNodeData(node: cc.Node) {
         for (let i = 0; i < node.children.length; i++) {
             let childNode: cc.Node = node.children[i];
             let type = new NodeType(childNode.name, childNode.uuid);

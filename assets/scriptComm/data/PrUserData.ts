@@ -10,5 +10,5 @@ import { CDMonsterClassData } from './PrClassData';
 const { ccclass, property } = cc._decorator;
 @ccclass
 export class PrUserData {
-    UDiceDetails: Array<CDMonsterClassData> = []; //用户骰子库
+    static UDiceDetails: Array<CDMonsterClassData> = []; //用户骰子库
 }

@@ -12,7 +12,7 @@ import { HomeLayerV } from './HomeLayerV';
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class HomeLayerM extends pr.layerUtil {
+export default class HomeLayerM {
     private static _instance: HomeLayerM;
 
     public static get instance() {
@@ -24,7 +24,7 @@ export default class HomeLayerM extends pr.layerUtil {
     nodeV: HomeLayerV;
     public async init(V: HomeLayerV) {
         this.nodeV = V;
-        this.initLayerBase(this.nodeV.node);
-        this.addNodeMain(LayerType.UI, 'prefabAB/homeAB', 'homesMain');
+        pr.layerUtil.initLayerBase(this.nodeV.node);
+        pr.layerUtil.addNodeMain(LayerType.UI, 'prefabAB/homeAB', 'homesMain');
     }
 }

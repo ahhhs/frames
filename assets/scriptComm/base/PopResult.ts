@@ -2,16 +2,15 @@
  * Copyright (C) 2021, Flickering Inc. All rights reserved.
  * Author: wenqianqin (wenqianqin@flickering.ai)
  *
- * Description: 骰子仓库
+ * Description: 弹窗效果
  */
-
-import { PopUpBase } from '../../scriptComm/base/PopUpBase';
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export class DiceWarehouse extends PopUpBase {
+export class PopResult extends cc.Component {
     onLoad() {
-        super.onLoad();
+        this.node.scale = 0.6;
+        cc.tween(this.node).to(0.2, { scale: 1.1 }).to(0.1, { scale: 1 }).start();
     }
 }

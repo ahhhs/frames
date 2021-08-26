@@ -11,7 +11,7 @@ import { HomesV } from './HomesV';
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class HomesM extends pr.layerUtil {
+export default class HomesM {
     private static _instance: HomesM;
     private nodeV: HomesV = null;
 
@@ -23,6 +23,6 @@ export default class HomesM extends pr.layerUtil {
     }
     public init(V: HomesV) {
         this.nodeV = V;
-        this.initLayerBase(this.nodeV.node, false);
+        pr.layerUtil.initLayerBase(this.nodeV.node, false);
     }
 }

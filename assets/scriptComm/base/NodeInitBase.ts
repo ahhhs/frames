@@ -10,7 +10,6 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export class NodeInitBase extends cc.Component {
     onLoad() {}
-
     /**
      * 修改str
      * @param data
